@@ -83,8 +83,8 @@
 | 神戸風月堂 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-15-50 |
 | メリーチョコレート | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-15-03 |
 | チョコレート | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-01-03 |
-| クッキー・焼き菓子 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-01-01（焼菓子）、https://fujisaki-online.jp/goods/list.html?cid=food-01-02（クッキー） |
-| ケーキ・生菓子 | ⚠️ 専用カテゴリー無し | 洋菓子カテゴリー内に存在 |
+| 焼き菓子 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-01-01 |
+| クッキー |  ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-01-02|
 | ゼリー・プリン | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-01-04 |
 | アイスクリーム | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-01-05 |
 
@@ -100,34 +100,29 @@
 #### 左カラム：肉・魚・惣菜
 | 項目 | ステータス | URL |
 |------|------------|-----|
-| うなぎ | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
-| ハム・ソーセージ | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-07-02（加工肉） |
-| ローストビーフ | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
-| ハンバーグ | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
-| 魚介類 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-08-01 |
+| 乳製品 |⚠️ 商品存在なし |  https://fujisaki-online.jp/goods/list.html?cid=food-05 |
+| 惣菜 | ✅ 存在 |  https://fujisaki-online.jp/goods/list.html?cid=food-06 |
+| 加工肉 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-07-02 |
+｜精肉 | ✅ 存在(３件) ([お肉お買い得セール](https://fujisaki-online.jp/goods/list.html?cid=food-21)の商品が入っていない)  | https://fujisaki-online.jp/goods/list.html?cid=food-07-01 |
+| 魚介・海産品 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-08-01 |
 | 海苔・昆布 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-11-02（海苔・乾物） |
 | 缶詰・瓶詰 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-08-04 |
 
 #### 中央カラム：主食・麺類
 | 項目 | ステータス | URL |
 |------|------------|-----|
-| ブランド米 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-11-01 |
-| 雑穀・玄米 | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
-| うどん・そば | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-12-01 |
-| パスタ・ラーメン | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-12-02（ラーメン）、パスタは別カテゴリー |
-| そうめん | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-12-03（その他の麺類） |
+| 米 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-11-01 |
+| パン | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-04-01 |
+| うどん・そば | ⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=food-12-01 |
+| パスタ| ⚠️ 商品存在なし| https://fujisaki-online.jp/goods/list.html?cid=food-12-02 |
+| その他の麺類 | ⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=food-12-03 |
 
-#### 右カラム：調味料・その他
+#### 右カラム：飲料・調味料・その他
 | 項目 | ステータス | URL |
 |------|------------|-----|
-| レギュラーコーヒー | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-03-03 |
-| インスタントコーヒー | ⚠️ 専用カテゴリー無し | コーヒーカテゴリー内に存在 |
-| 紅茶・ハーブティー | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-03-02 |
-| 醤油・味噌・酢 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-11-04（調味料） |
+| 調味料 | ✅ 存在 (3件) | https://fujisaki-online.jp/goods/list.html?cid=food-11-04 |
 | 缶詰・レトルト | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-11-05 |
-| オイル・ドレッシング | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-11-04（調味料内） |
-| パン・ベーカリー | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-04-01 |
-| チーズ・乳製品 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-05 |
+| チーズ・乳製品 | ⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=food-05 |
 | ジャム・はちみつ | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-04-02 |
 
 ## 4. 酒類飲料
@@ -143,36 +138,27 @@
 | 項目 | ステータス | URL |
 |------|------------|-----|
 | 宮城の日本酒 | ✅ 存在 | https://fujisaki-online.jp/sp.html?fkey=miyagisake |
-| 一ノ蔵・浦霞・愛宕の松 | ⚠️ 専用カテゴリー無し | 商品は存在するが各ブランド専用ページなし |
-| 墨廼江・蔵王酒造 | ⚠️ 専用カテゴリー無し | 商品は存在するが各ブランド専用ページなし |
 | 酒蔵マップから選ぶ | ✅ 存在 | https://fujisaki-online.jp/sp.html?fkey=miyagisake |
-| 国産ビール | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-03 |
-| 地ビール・クラフト | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
-| 発泡酒・第3のビール | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
+| 蔵元から選ぶ | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=tohoku-06-01 |
+| ブランドから選ぶ |⚠️ 商品存在なし 各ブランドと紐づいていない | https://fujisaki-online.jp/goods/list.html?cid=tohoku-06-05 |
 
 #### 中央カラム：日本酒・焼酎
 | 項目 | ステータス | URL |
 |------|------------|-----|
 | 全国の日本酒 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-01 |
-| 地域別日本酒 | ❌ URL無し | 地域別の分類ページなし |
-| 有名銘柄 | ❌ URL無し | 銘柄別の専用ページなし |
-| 季節限定酒 | ❌ URL無し | 専用カテゴリーページなし |
-| 芋・麦・米焼酎 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-02 |
-| 梅酒・リキュール | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
-| 泡盛・その他 | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
+| 焼酎 |⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=food-14-02 |
+| ビール |⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=food-14-03 |
+| ワイン | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-04 |
+|洋酒 | ⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=food-14-05 |
 
-#### 右カラム：ワイン・洋酒・ソフトドリンク
+#### 右カラム：コーヒー・お茶・ソフトドリンク
 | 項目 | ステータス | URL |
 |------|------------|-----|
-| 国産ワイン | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-04 |
-| 輸入ワイン | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-04（ワイン内） |
-| スパークリング | ⚠️ 専用カテゴリー無し | 商品は存在するが専用カテゴリーページなし |
-| 国産ウイスキー | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-05（洋酒） |
-| 輸入ウイスキー | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-05（洋酒） |
-| ブランデー・ラム | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-14-05（洋酒） |
-| コーヒー・紅茶 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-03 |
-| ジュース・清涼飲料 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-03-04 |
-| 健康ドリンク | ⚠️ 専用カテゴリー無し | 健康食品カテゴリー内に存在 |
+| 日本茶 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-03-01 |
+| コーヒー | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-03-03 |
+| 紅茶 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-03-02 |
+| ジュース・水 | ⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=food-03-04 |
+| その他のドリンク | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=food-03-05 |
 
 ## 5. コスメ美容
 
