@@ -11,6 +11,44 @@
 
 # メニュー項目
 
+## 0. 夏のギフト
+
+### メインカテゴリー
+| 項目 | ステータス | URL |
+|------|------------|-----|
+| 夏のギフト | ✅ 存在 | https://fujisaki-online.jp/summergift/ |
+
+### サブカテゴリー詳細
+
+#### 基本メニュー
+| 項目 | ステータス | URL |
+|------|------------|-----|
+| 送料無料のアイテムから選ぶ | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-item |
+| 送料込・産地直送グルメ | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-santyoku |
+| カタログギフト | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-catalog |
+| 手渡し贈答品 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-tewatasi |
+
+#### ご予算から選ぶ
+| 項目 | ステータス | URL |
+|------|------------|-----|
+| ご予算から選ぶ | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-price |
+| ～3,000円 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-price-01 |
+| 3,001円～4,000円 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-price-02 |
+| 4,001円～5,000円 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-price-03 |
+| 5,001円～10,000円 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-price-04 |
+| 10,000円～ | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-price-05 |
+
+#### 宮城東北の名産品を贈る
+| 項目 | ステータス | URL |
+|------|------------|-----|
+| 宮城東北の名産品を贈る | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-tohoku |
+| 藤崎オリジナルギフト | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-original |
+| 笹かまぼこ | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-tohoku-sasakama |
+| 牛タン | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-tohoku-gyutan |
+| 海の幸 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-tohoku-kaisan |
+| 東北の銘菓 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-tohoku-meika |
+| 東北の地酒 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=summer_gift-tohoku-jizake |
+
 ## 1. 宮城・東北の名産品
 
 ### メインカテゴリー
@@ -244,25 +282,25 @@
 | カバーマーク | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-cvm |
 | カネボウ | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-knb |
 | クリニーク | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-cli |
-| シスレー | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-sis |
+| シスレー | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-ssl |
 | 資生堂 | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-shi |
 | ラ・メール | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-dlm |
 | ドクターシーラボ |✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-dcl |
 | ルナソル |✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-lun |
-| グッチ | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-guc |
-| クロエ | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-chl |
+| グッチ | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-gcc |
+| クロエ | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-cle |
 | ジミー チュウ |✅ 存在   | https://fujisaki-online.jp/brand/index.html?cid=b-jmc  |
 | ティファニー | |✅ 存在   | https://fujisaki-online.jp/brand/index.html?cid=b-tfn |
-| ドルチェ＆ガッバーナ | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-dig |
+| ドルチェ＆ガッバーナ | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-dlg |
 | バーバリー | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-bbr |
-| ランバン | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-lv |
+| ランバン | ✅ 存在 | https://fujisaki-online.jp/brand/index.html?cid=b-lvn |
 
 #### 右カラム：ランキング・おすすめ
 | 項目 | ステータス | URL |
 |------|------------|-----|
 | 注目商品 | ✅ 存在  | https://fujisaki-online.jp/goods/list.html?cid=hotitem |
-| ランキング売れ筋純 | ✅ 存在  |https://fujisaki-online.jp/goods/list.html?stype=salableness&pnum=1&asc=false&cid=cosme-all&vtype=thumbs |
-| ランキング新着順 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?stype=new&pnum=1&asc=false&cid=cosme-all&vtype=thumbs|
+| 売れ筋ランキング | ✅ 存在  |https://fujisaki-online.jp/goods/list.html?stype=salableness&pnum=1&asc=false&cid=cosme-all&vtype=thumbs |
+| 新着ランキング | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?stype=new&pnum=1&asc=false&cid=cosme-all&vtype=thumbs|
 
 ## 5. ライフスタイル
 
@@ -279,7 +317,7 @@
 | 項目 | ステータス | URL |
 |------|------------|-----|
 | 服飾雑貨 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=life-01-01 |
-| 婦人用品 | ⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=life-01-02 |
+| 婦人洋品 | ⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=life-01-02 |
 | 婦人靴 | ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=life-01-04 |
 | 紳士小物| ✅ 存在 | https://fujisaki-online.jp/goods/list.html?cid=life-01-05 |
 | ピックアップブランド | ⚠️ 商品存在なし | https://fujisaki-online.jp/goods/list.html?cid=life-01-06 |
@@ -321,17 +359,18 @@
 ### カテゴリー別URL存在状況（改善要件書ベース調査結果）
 | メインカテゴリー | 存在 | 商品存在無し | URL無し | 項目総数 | 対応率 |
 |------------------|------|------------|---------|----------|---------|
+| 夏のギフト | 17 | 0 | 0 | 17 | 100% |
 | 宮城・東北の名産品 | 12 | 1 | 0 | 13 | 92% |
 | ギフト贈答 | 25 | 0 | 0 | 25 | 100% |
 | フード・スイーツ・リカー（統合） | 12 | 2 | 11 | 25 | 48% |
 | コスメ美容 | 30 | 0 | 0 | 30 | 100% |
 | ライフスタイル | 22 | 5 | 0 | 27 | 81% |
-| **合計** | **101** | **8** | **11** | **120** | **84%** |
+| **合計** | **118** | **8** | **11** | **137** | **86%** |
 
 ### 調査結果詳細分析
 
 **対応状況の詳細**:
-- **完全対応（100%）**: ギフト贈答、コスメ美容
+- **完全対応（100%）**: 夏のギフト、ギフト贈答、コスメ美容
 - **高対応率（90%以上）**: 宮城・東北の名産品（92%）
 - **中対応率（70-90%）**: ライフスタイル（81%）
 - **改善要請（50%以下）**: フード・スイーツ・リカー統合カテゴリー（48%）
