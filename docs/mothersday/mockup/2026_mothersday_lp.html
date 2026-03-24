@@ -1632,6 +1632,9 @@
                       </div>
 
                     </div>
+                    <div style="text-align:center; margin-top:24px;">
+                      <a href="/goods/list.html?cid=MothersDay-all&stype=salableness&asc=false" style="display:inline-block; background:#C8A063; border:1px solid #C8A063; color:#fff; padding:14px 48px; font-size:16px; font-weight:bold; text-decoration:none; letter-spacing:0.06em; transition:all 0.2s;">人気の商品をもっと見る</a>
+                    </div>
                   </div>
                 </div>
                 <!-- /人気ランキング2026 -->
@@ -2315,17 +2318,27 @@
                   }
                   @media screen and (max-width: 767px) {
                     .catBrowse { padding: 32px 16px; }
-                    .catBrowseGrid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
                     .catBrowse .catBrowseTitle { font-size: 18px; margin-bottom: 24px; }
+                    .catBrowseGrid {
+                      display: grid;
+                      grid-template-columns: repeat(2, 1fr);
+                      gap: 16px;
+                    }
                   }
                   .catBrowseGrid .catBrowseItem {
                     text-decoration: none;
                     color: #333;
                     display: block;
                     text-align: left;
-                    transition: opacity 0.2s;
+                    border: 2px solid transparent;
+                    padding: 4px;
                   }
-                  .catBrowseGrid .catBrowseItem:hover { opacity: 0.8; }
+                  .catBrowseGrid .catBrowseItem:hover {
+                    border-color: #E88030;
+                    opacity: 1 !important;
+                    transform: none !important;
+                    transition: none !important;
+                  }
                   .catBrowseGrid .catBrowseItem .catBrowseImg {
                     border-radius: 0 !important;
                     overflow: hidden;
@@ -2343,7 +2356,7 @@
                   }
                   .catBrowseGrid .catBrowseItem .catBrowseDesc {
                     font-size: 13px;
-                    color: #555;
+                    color: #333;
                     margin-top: 6px;
                     line-height: 1.5;
                   }
@@ -2362,9 +2375,9 @@
                       </a>
                       <a class="catBrowseItem" href="/goods/list.html?cid=MothersDay-02-02">
                         <div class="catBrowseImg">
-                          <img src="/d_images/campaign/mothersday2025/img_category02.jpg?releaseVer=2510171926" alt="セットギフト">
+                          <img src="/d_images/campaign/mothersday2025/img_category02.jpg?releaseVer=2510171926" alt="お花のギフトセット">
                         </div>
-                        <p class="catBrowseName">セットギフト</p>
+                        <p class="catBrowseName">お花のギフトセット</p>
                         <p class="catBrowseDesc">お花とお菓子の組み合わせで届ける</p>
                       </a>
                       <a class="catBrowseItem" href="/goods/list.html?cid=MothersDay-02-03">
@@ -2417,7 +2430,7 @@
                 <!-- 予算から選ぶ -->
                 <div id="price" class="section sectionPrice">
                   <div class="title">
-                    <h3 class="h3">予算<span class="small">から選ぶ</span></h3>
+                    <h3 class="h3">母の日ギフトを予算から探す</h3>
                   </div>
                   <div class="content">
                     <div class="grid">
@@ -2457,7 +2470,7 @@
                 <!-- 贈る相手から選ぶ -->
                 <div class="section sectionPrice">
                   <div class="title">
-                    <h3 class="h3">贈る相手<span class="small">から選ぶ</span></h3>
+                    <h3 class="h3">母の日ギフトを贈る相手から探す</h3>
                   </div>
                   <div class="content">
                     <div class="grid" style="display:grid !important; grid-template-columns:1fr 1fr !important; flex-wrap:unset !important;">
@@ -2479,9 +2492,9 @@
                 <!-- /贈る相手から選ぶ -->
 
                 <div style="text-align:center; margin:40px 0;">
-                  <p style="font-size:20px; font-weight:bold; color:#4A90B8; margin-bottom:12px; letter-spacing:0.1em;">＼ 母の日より前にお届けします ／</p>
-                  <a href="#" style="display:block; max-width:680px; margin:0 auto 20px; padding:20px 24px; background:#4A90B8; border:2px solid #4A90B8; color:#fff; text-align:center; font-size:18px; font-weight:bold; letter-spacing:0.06em; text-decoration:none; box-shadow:inset 0 0 0 2px rgba(255,255,255,0.4); transition:opacity 0.2s;">ゴールデンウィークの手土産に　商品を見る</a>
-                  <a href="/goods/list.html?cid=MothersDay-all" style="display:block; max-width:680px; margin:0 auto; padding:20px 24px; background:#C8186E; border:2px solid #C8186E; color:#fff; text-align:center; font-size:18px; font-weight:bold; letter-spacing:0.06em; text-decoration:none; box-shadow:inset 0 0 0 2px rgba(255,255,255,0.4); transition:opacity 0.2s;">母の日　すべての商品を見る</a>
+                  <p style="font-size:20px; font-weight:bold; color:#4A90B8; margin-bottom:12px; letter-spacing:0.1em;">＼ ゴールデンウィークの手土産に ／</p>
+                  <a href="#" style="display:block; max-width:680px; margin:0 auto 20px; padding:20px 24px; background:#4A90B8; border:2px solid #4A90B8; color:#fff; text-align:center; font-size:18px; font-weight:bold; letter-spacing:0.06em; text-decoration:none; box-shadow:inset 0 0 0 2px rgba(255,255,255,0.4);">母の日より前にお届けする商品を見る</a>
+                  <a href="/goods/list.html?cid=MothersDay-all" style="display:block; max-width:680px; margin:0 auto; padding:20px 24px; background:#C8186E; border:2px solid #C8186E; color:#fff; text-align:center; font-size:18px; font-weight:bold; letter-spacing:0.06em; text-decoration:none; box-shadow:inset 0 0 0 2px rgba(255,255,255,0.4);">母の日ギフトのすべての商品を見る</a>
                 </div>
 
                 <div class="cosmeBannerWrap">
