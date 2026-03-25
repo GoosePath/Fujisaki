@@ -1017,23 +1017,24 @@
                     background: #C8637D !important;
                     color: #fff !important;
                     border-color: #C8637D !important;
+                    font-weight: bold !important;
                   }
                   .mothersday2025 .anchor .anchorBtn a:hover {
                     background: #B5566E !important;
                     border-color: #B5566E !important;
                   }
 
-                  /* アコーディオン: ピンク背景・白文字・シェブロンアイコン */
+                  /* アコーディオン: 赤系アウトライン */
                   .mothersday2025 .accordion .accordionTitle {
-                    background: #C0899B !important;
-                    border: none !important;
-                    color: #fff !important;
+                    background: #fff !important;
+                    border: 2px solid #B5243C !important;
+                    color: #B5243C !important;
                     font-weight: bold !important;
                     position: relative !important;
                     cursor: pointer;
                   }
                   .mothersday2025 .accordion .accordionTitle span {
-                    color: #fff !important;
+                    color: #B5243C !important;
                     font-weight: bold !important;
                   }
                   .mothersday2025 .accordion .accordionTitle::before {
@@ -1050,8 +1051,8 @@
                     top: 50% !important;
                     width: 12px !important;
                     height: 12px !important;
-                    border-right: 2.5px solid #fff !important;
-                    border-bottom: 2.5px solid #fff !important;
+                    border-right: 2.5px solid #B5243C !important;
+                    border-bottom: 2.5px solid #B5243C !important;
                     transform: translateY(-70%) rotate(45deg) !important;
                     transition: transform 0.3s !important;
                   }
@@ -1669,22 +1670,7 @@
                     flex-direction: column;
                     align-items: center;
                   }
-                  /* サブコピー: 上にプレーンテキスト表示 */
                   .productSection2026 .sectionHeading .sectionLead {
-                    display: block;
-                    order: -1;
-                    font-size: 14px;
-                    font-weight: normal;
-                    color: #5A4A3A !important;
-                    background: none !important;
-                    padding: 0;
-                    margin-bottom: 12px;
-                    line-height: 1.6;
-                    letter-spacing: 0.08em;
-                  }
-                  .productSection2026 .sectionHeading .sectionLead::before,
-                  .productSection2026 .sectionHeading .sectionLead::after {
-                    content: none !important;
                     display: none !important;
                   }
                   /* タイトル: 帯スタイル（リボン左右V字切り込み） */
@@ -1736,6 +1722,13 @@
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     gap: 20px;
+                    justify-content: center;
+                  }
+                  .productGrid2026.sku3 {
+                    grid-template-columns: repeat(3, 1fr);
+                    max-width: 75%;
+                    margin-left: auto;
+                    margin-right: auto;
                   }
                   @media screen and (max-width: 767px) {
                     .productSection2026 { padding: 36px 16px 32px; }
@@ -1743,6 +1736,7 @@
                     .productSection2026 .sectionHeading h3::before { border-width: 20px 0 20px 12px; }
                     .productSection2026 .sectionHeading h3::after { border-width: 20px 12px 20px 0; }
                     .productGrid2026 { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+                    .productGrid2026.sku3 { max-width: 100%; }
                   }
                   .productGrid2026 .goods {
                     position: relative;
@@ -1770,7 +1764,7 @@
                   .productGrid2026 .goodsBrand {
                     font-size: 12px;
                     color: #333;
-                    display: block;
+                    display: block !important;
                     margin-bottom: 4px;
                   }
                   .productGrid2026 .goodsCopy {
@@ -1819,26 +1813,29 @@
                   }
                   /* 価格・商品名・ブランド名フォントをゴシック体に統一（サイト標準に合わせる） */
                   .rankingGrid5 .rankItemPrice,
-                  .rankingGrid5 .rankItemPrice *,
                   .rankingGrid5 .rankItemName,
-                  .rankingGrid5 .rankItemName *,
                   .productGrid2026 .goodsPrice,
-                  .productGrid2026 .goodsPrice *,
                   .productGrid2026 .goodsName,
-                  .productGrid2026 .goodsName *,
                   .herveGrid .goodsPrice,
-                  .herveGrid .goodsPrice *,
                   .herveGrid .goodsName,
-                  .herveGrid .goodsName *,
                   .mothersday2025 .goodsPrice,
-                  .mothersday2025 .goodsPrice *,
                   .mothersday2025 .goodsName,
-                  .mothersday2025 .goodsName *,
                   p.itemPrice,
-                  p.itemPrice *,
-                  p.itemName,
-                  p.itemName * {
+                  p.itemName {
                     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
+                  }
+                  /* おすすめバッジ */
+                  .recommendBadge {
+                    position: absolute;
+                    top: -8px;
+                    left: -6px;
+                    background: #E25B70;
+                    color: #fff;
+                    font-size: 11px;
+                    font-weight: bold;
+                    padding: 4px 10px;
+                    z-index: 2;
+                    letter-spacing: 0.05em;
                   }
                   .sectionCta2026 {
                     text-align: center;
@@ -1868,12 +1865,12 @@
                   .sweetsSection { background: #FDF0E0; }
                 </style>
 
-                <!-- ========== お花とスイーツのギフトセット ========== -->
+                <!-- ========== お花のギフトセット ========== -->
                 <div class="productSection2026 giftsetSection">
                   <div class="sectionInner">
                     <div class="sectionHeading">
                       <span class="sectionLead">美しさと美味しさを合わせた、特別なギフト</span>
-                      <h3>お花とスイーツのギフトセット</h3>
+                      <h3>お花のギフトセット</h3>
                     </div>
                     <p class="sectionCopy">華やかなカーネーションに人気のお菓子を添えて。<br class="spNone">一つで気持ちが届く、贈る相手を選ばない安心のセットギフトです。</p>
 
@@ -1966,7 +1963,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- /お花とスイーツのギフトセット -->
+                <!-- /お花のギフトセット -->
 
                 <div class="productSection2026 carnationSection">
                   <div class="sectionInner">
@@ -1976,7 +1973,7 @@
                     </div>
                     <p class="sectionCopy">色とりどりのカーネーションで、<br class="spNone">まっすぐな「ありがとう」の気持ちを届けませんか。</p>
 
-                    <div class="productGrid2026">
+                    <div class="productGrid2026 sku3">
 
                       <!-- カーネーション 赤 -->
                       <div class="goods">
