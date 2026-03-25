@@ -1023,22 +1023,40 @@
                     border-color: #B5566E !important;
                   }
 
-                  /* アコーディオン: 赤系ボーダー強調、初心者マーク削除 */
+                  /* アコーディオン: ピンク背景・白文字・シェブロンアイコン */
                   .mothersday2025 .accordion .accordionTitle {
-                    background: #fff !important;
-                    border: 2px solid #B5243C !important;
-                    color: #B5243C !important;
+                    background: #C0899B !important;
+                    border: none !important;
+                    color: #fff !important;
                     font-weight: bold !important;
+                    position: relative !important;
+                    cursor: pointer;
                   }
                   .mothersday2025 .accordion .accordionTitle span {
-                    color: #B5243C !important;
+                    color: #fff !important;
                     font-weight: bold !important;
                   }
-                  .mothersday2025 .accordion .accordionTitle::before,
-                  .mothersday2025 .accordion .accordionTitle::after {
+                  .mothersday2025 .accordion .accordionTitle::before {
                     content: none !important;
                     display: none !important;
                     background-image: none !important;
+                  }
+                  .mothersday2025 .accordion .accordionTitle::after {
+                    content: "" !important;
+                    display: block !important;
+                    background-image: none !important;
+                    position: absolute !important;
+                    right: 20px !important;
+                    top: 50% !important;
+                    width: 12px !important;
+                    height: 12px !important;
+                    border-right: 2.5px solid #fff !important;
+                    border-bottom: 2.5px solid #fff !important;
+                    transform: translateY(-70%) rotate(45deg) !important;
+                    transition: transform 0.3s !important;
+                  }
+                  .mothersday2025 .accordion .accordionTitle.open::after {
+                    transform: translateY(-30%) rotate(-135deg) !important;
                   }
                   .mothersday2025 .accordion .accordionTitle img {
                     display: none !important;
@@ -1498,10 +1516,7 @@
                     font-weight: bold;
                   }
                   .rankingGrid5 .rankItemCopy {
-                    font-size: 12px;
-                    color: #555;
-                    margin-top: 6px;
-                    line-height: 1.5;
+                    display: none;
                   }
                   .rankingGrid5 .rankItemPrice .icon {
                     width: 50px;
@@ -1633,9 +1648,6 @@
                       </div>
 
                     </div>
-                    <div style="text-align:center; margin-top:24px;">
-                      <a href="/goods/list.html?cid=MothersDay-all&stype=salableness&asc=false" style="display:inline-block; background:#C8A063; border:1px solid #C8A063; color:#fff; padding:14px 48px; font-size:16px; font-weight:bold; text-decoration:none; letter-spacing:0.06em; transition:all 0.2s;">人気の商品をもっと見る</a>
-                    </div>
                   </div>
                 </div>
                 <!-- /人気ランキング2026 -->
@@ -1653,21 +1665,42 @@
                   .productSection2026 .sectionHeading {
                     text-align: center;
                     margin-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                   }
+                  /* サブコピー: 上にプレーンテキスト表示 */
                   .productSection2026 .sectionHeading .sectionLead {
+                    display: block;
+                    order: -1;
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #5A4A3A !important;
+                    background: none !important;
+                    padding: 0;
+                    margin-bottom: 12px;
+                    line-height: 1.6;
+                    letter-spacing: 0.08em;
+                  }
+                  .productSection2026 .sectionHeading .sectionLead::before,
+                  .productSection2026 .sectionHeading .sectionLead::after {
+                    content: none !important;
+                    display: none !important;
+                  }
+                  /* タイトル: 帯スタイル（リボン左右V字切り込み） */
+                  .productSection2026 .sectionHeading h3 {
                     display: inline-block;
                     position: relative;
-                    font-size: 14px;
+                    font-size: 22px;
                     font-weight: bold;
                     color: #fff !important;
-                    padding: 10px 40px;
+                    padding: 10px 48px;
                     margin-bottom: 16px;
                     line-height: 1.6;
                     letter-spacing: 0.08em;
                   }
-                  /* リボン左右V字切り込み */
-                  .productSection2026 .sectionHeading .sectionLead::before,
-                  .productSection2026 .sectionHeading .sectionLead::after {
+                  .productSection2026 .sectionHeading h3::before,
+                  .productSection2026 .sectionHeading h3::after {
                     content: "";
                     position: absolute;
                     top: 0;
@@ -1675,30 +1708,23 @@
                     height: 0;
                     border-style: solid;
                   }
-                  .productSection2026 .sectionHeading .sectionLead::before {
+                  .productSection2026 .sectionHeading h3::before {
                     left: 0;
-                    border-width: 19px 0 19px 14px;
+                    border-width: 24px 0 24px 14px;
                   }
-                  .productSection2026 .sectionHeading .sectionLead::after {
+                  .productSection2026 .sectionHeading h3::after {
                     right: 0;
-                    border-width: 19px 14px 19px 0;
+                    border-width: 24px 14px 24px 0;
                   }
-                  .carnationSection .sectionLead { background: #F07888; }
-                  .carnationSection .sectionLead::before { border-color: #F07888 transparent #F07888 #FCEEE9; }
-                  .carnationSection .sectionLead::after { border-color: #F07888 #FCEEE9 #F07888 transparent; }
-                  .giftsetSection .sectionLead { background: #B480E0; }
-                  .giftsetSection .sectionLead::before { border-color: #B480E0 transparent #B480E0 #F0EBF5; }
-                  .giftsetSection .sectionLead::after { border-color: #B480E0 #F0EBF5 #B480E0 transparent; }
-                  .sweetsSection .sectionLead { background: #F0A040; }
-                  .sweetsSection .sectionLead::before { border-color: #F0A040 transparent #F0A040 #FDF0E0; }
-                  .sweetsSection .sectionLead::after { border-color: #F0A040 #FDF0E0 #F0A040 transparent; }
-                  .productSection2026 .sectionHeading h3 {
-                    font-size: 28px;
-                    font-weight: bold;
-                    color: #2A1A0A;
-                    letter-spacing: 0.06em;
-                    margin-bottom: 12px;
-                  }
+                  .carnationSection h3 { background: #F07888; }
+                  .carnationSection h3::before { border-color: #F07888 transparent #F07888 #FCEEE9; }
+                  .carnationSection h3::after { border-color: #F07888 #FCEEE9 #F07888 transparent; }
+                  .giftsetSection h3 { background: #B480E0; }
+                  .giftsetSection h3::before { border-color: #B480E0 transparent #B480E0 #F0EBF5; }
+                  .giftsetSection h3::after { border-color: #B480E0 #F0EBF5 #B480E0 transparent; }
+                  .sweetsSection h3 { background: #F0A040; }
+                  .sweetsSection h3::before { border-color: #F0A040 transparent #F0A040 #FDF0E0; }
+                  .sweetsSection h3::after { border-color: #F0A040 #FDF0E0 #F0A040 transparent; }
                   .productSection2026 .sectionCopy {
                     text-align: center;
                     font-size: 15px;
@@ -1713,7 +1739,9 @@
                   }
                   @media screen and (max-width: 767px) {
                     .productSection2026 { padding: 36px 16px 32px; }
-                    .productSection2026 .sectionHeading h3 { font-size: 22px; }
+                    .productSection2026 .sectionHeading h3 { font-size: 18px; padding: 8px 36px; }
+                    .productSection2026 .sectionHeading h3::before { border-width: 20px 0 20px 12px; }
+                    .productSection2026 .sectionHeading h3::after { border-width: 20px 12px 20px 0; }
                     .productGrid2026 { grid-template-columns: repeat(2, 1fr); gap: 14px; }
                   }
                   .productGrid2026 .goods {
@@ -1788,6 +1816,29 @@
                     display: block !important;
                     text-align: left !important;
                     justify-content: flex-start !important;
+                  }
+                  /* 価格・商品名・ブランド名フォントをゴシック体に統一（サイト標準に合わせる） */
+                  .rankingGrid5 .rankItemPrice,
+                  .rankingGrid5 .rankItemPrice *,
+                  .rankingGrid5 .rankItemName,
+                  .rankingGrid5 .rankItemName *,
+                  .productGrid2026 .goodsPrice,
+                  .productGrid2026 .goodsPrice *,
+                  .productGrid2026 .goodsName,
+                  .productGrid2026 .goodsName *,
+                  .herveGrid .goodsPrice,
+                  .herveGrid .goodsPrice *,
+                  .herveGrid .goodsName,
+                  .herveGrid .goodsName *,
+                  .mothersday2025 .goodsPrice,
+                  .mothersday2025 .goodsPrice *,
+                  .mothersday2025 .goodsName,
+                  .mothersday2025 .goodsName *,
+                  p.itemPrice,
+                  p.itemPrice *,
+                  p.itemName,
+                  p.itemName * {
+                    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif !important;
                   }
                   .sectionCta2026 {
                     text-align: center;
@@ -1907,31 +1958,6 @@
                         </a>
                       </div>
 
-                      <!-- イチゴホイップ1: カーネーション(イチゴホイップ)&ヨックモック -->
-                      <div class="goods">
-                        <a href="/goods/index.html?ggcd=ls25031015">
-                          <div class="goodsImg">
-                            <img src="/g_images/ls25031015/ls25031015_01_pdm.jpg?releaseVer=2510171926" alt="カーネーション(イチゴホイップ)&ヨックモック ビスキュイ">
-                          </div>
-                          <div class="goodsBox">
-                            <p class="goodsName">カーネーション(イチゴホイップ)＆<br>「ヨックモック」ビスキュイ</p>
-                            <div class="goodsPrice"><span>税込<span class="emphasis02">5,918</span>円</span></div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <!-- イチゴホイップ2: カーネーション(イチゴホイップ)＆アフタヌーンティー -->
-                      <div class="goods">
-                        <a href="/goods/index.html?ggcd=ls25031022">
-                          <div class="goodsImg">
-                            <img src="/g_images/ls25031022/ls25031022_01_pdm.jpg?releaseVer=2510171926" alt="カーネーション(イチゴホイップ)＆アフタヌーンティー">
-                          </div>
-                          <div class="goodsBox">
-                            <p class="goodsName">カーネーション(イチゴホイップ)＆<br>「アフタヌーンティー」ティータイムセット</p>
-                            <div class="goodsPrice"><span>税込<span class="emphasis02">6,918</span>円</span></div>
-                          </div>
-                        </a>
-                      </div>
 
                     </div>
 
@@ -1991,167 +2017,9 @@
                         </a>
                       </div>
 
-                      <!-- カーネーション イチゴホイップ -->
-                      <div class="goods">
-                        <a href="/goods/index.html?ggcd=ls25031001">
-                          <div class="goodsImg">
-                            <img src="/g_images/ls25031001/ls25031001_01_pdm.jpg?releaseVer=2510171926" alt="カーネーション イチゴホイップ">
-                          </div>
-                          <div class="goodsBox">
-                            <p class="goodsName">カーネーション イチゴホイップ</p>
-                            <div class="goodsPrice"><span>税込<span class="emphasis02">4,400</span>円</span></div>
-                          </div>
-                        </a>
-                      </div>
 
                     </div>
 
-                    <!-- HERVE サブセクション -->
-                    <style>
-                      .herveSubsection {
-                        margin-top: 40px;
-                        padding: 36px 24px;
-                        background: #FBF6EE;
-                        border: 1px solid #E8D8C8;
-                      }
-                      .herveSubsection .subHeading {
-                        text-align: center;
-                        margin-bottom: 8px;
-                      }
-                      .herveSubsection .subLabel {
-                        display: inline-block;
-                        background: #2A9BC8;
-                        color: #fff !important;
-                        font-size: 12px;
-                        font-weight: bold;
-                        padding: 5px 20px;
-                        letter-spacing: 0.1em;
-                        margin-bottom: 12px;
-                      }
-                      /* おすすめバッジ */
-                      .recommendBadge {
-                        position: absolute;
-                        top: -8px;
-                        left: -6px;
-                        background: #E25B70;
-                        color: #fff;
-                        font-size: 11px;
-                        font-weight: bold;
-                        padding: 4px 10px;
-                        z-index: 2;
-                        letter-spacing: 0.05em;
-                      }
-                      .herveSubsection .subHeading h4 {
-                        font-size: 22px;
-                        font-weight: bold;
-                        color: #2A1A0A;
-                        letter-spacing: 0.06em;
-                      }
-                      .herveSubsection .subCopy {
-                        text-align: center;
-                        font-size: 14px;
-                        color: #3A2A1A;
-                        line-height: 1.8;
-                        margin-bottom: 24px;
-                      }
-                      .herveGrid {
-                        display: grid;
-                        grid-template-columns: repeat(4, 1fr);
-                        gap: 20px;
-                      }
-                      @media screen and (max-width: 767px) {
-                        .herveSubsection { padding: 28px 16px; }
-                        .herveSubsection .subHeading h4 { font-size: 18px; }
-                        .herveGrid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-                      }
-                      .herveGrid .goods { position: relative; overflow: visible; }
-                      .herveGrid .goods a { text-decoration: none; color: inherit; display: block; }
-                      .herveGrid .goodsImg img { width: 100%; height: auto; display: block; }
-                      .herveGrid .goodsBox { padding: 8px 2px 0; text-align: left !important; }
-                      .herveGrid .goodsName { font-size: 14px; font-weight: bold; line-height: 1.5; color: #333; }
-                      .herveGrid .goodsBrand { font-size: 12px; color: #333; display: block; margin-bottom: 4px; }
-                      .herveGrid .goodsPrice { font-size: 14px; color: #333; margin-top: 4px; text-align: left !important; }
-                      .herveGrid .goodsPrice .emphasis02 { font-size: 17px; font-weight: bold; }
-                      .herveGrid .goodsPrice .icon { width: 50px; height: auto; display: inline; vertical-align: middle; margin-right: 4px; }
-                    </style>
-
-                    <div class="herveSubsection">
-                      <div class="subHeading">
-                        <span class="subLabel">Web限定</span><span class="subLabel" style="background: #E25B70; margin-left: 8px;"><img src="/d_images/campaign/mothersday2025/icon-car01.svg?releaseVer=2510171926" alt="" style="width:16px; height:auto; vertical-align:middle; margin-right:4px; filter:brightness(10);">送料込み</span>
-                        <h4>母の日限定デザインのお花のギフト</h4>
-                      </div>
-                      <p class="subCopy">ここでしか買えない、母の日だけの特別なデザイン。<br class="spNone">大切なお母様へ、とっておきの一箱を。すべて送料込みでお届けします。</p>
-
-                      <div class="herveGrid">
-
-                        <!-- ママBOX シトリン -->
-                        <div class="goods">
-                          <a href="/goods/index.html?ggcd=ls25031138">
-                            <span class="recommendBadge">おすすめ</span>
-                            <div class="goodsImg">
-                              <img src="/g_images/ls25031138/ls25031138_01_pdm.jpg?releaseVer=2510171926" alt="【母の日限定】ママBOXМ～シトリン">
-                            </div>
-                            <div class="goodsBox">
-                              <p class="goodsName"><span class="goodsBrand">878HERVE</span><br>【母の日限定】ママBOXМ～シトリン</p>
-                              <div class="goodsPrice">
-                                <img class="icon" src="/d_images/campaign/mothersday2025/icon-freeshipping01.svg?releaseVer=2510171926" alt="送料無料" width="50" height="22.04">
-                                <span>税込<span class="emphasis02">5,900</span>円</span>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <!-- ママBOX ペリドット -->
-                        <div class="goods">
-                          <a href="/goods/index.html?ggcd=ls25031139">
-                            <div class="goodsImg">
-                              <img src="/g_images/ls25031139/ls25031139_01_pdm.jpg?releaseVer=2510171926" alt="【母の日限定】ママBOXМ～ペリドット">
-                            </div>
-                            <div class="goodsBox">
-                              <p class="goodsName"><span class="goodsBrand">878HERVE</span><br>【母の日限定】ママBOXМ～ペリドット</p>
-                              <div class="goodsPrice">
-                                <img class="icon" src="/d_images/campaign/mothersday2025/icon-freeshipping01.svg?releaseVer=2510171926" alt="送料無料" width="50" height="22.04">
-                                <span>税込<span class="emphasis02">5,900</span>円</span>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <!-- ママBOX ガーネット -->
-                        <div class="goods">
-                          <a href="/goods/index.html?ggcd=ls25031137">
-                            <div class="goodsImg">
-                              <img src="/g_images/ls25031137/ls25031137_01_pdm.jpg?releaseVer=2510171926" alt="【母の日限定】ママBOXМ～ガーネット">
-                            </div>
-                            <div class="goodsBox">
-                              <p class="goodsName"><span class="goodsBrand">878HERVE</span><br>【母の日限定】ママBOXМ～ガーネット</p>
-                              <div class="goodsPrice">
-                                <img class="icon" src="/d_images/campaign/mothersday2025/icon-freeshipping01.svg?releaseVer=2510171926" alt="送料無料" width="50" height="22.04">
-                                <span>税込<span class="emphasis02">5,900</span>円</span>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                        <!-- ママブーケ ガーネット -->
-                        <div class="goods">
-                          <a href="/goods/index.html?ggcd=ls25031140">
-                            <div class="goodsImg">
-                              <img src="/g_images/ls25031140/ls25031140_01_pdm.jpg?releaseVer=2510171926" alt="【母の日限定】ママブーケ～ガーネット">
-                            </div>
-                            <div class="goodsBox">
-                              <p class="goodsName"><span class="goodsBrand">878HERVE</span><br>【母の日限定】ママブーケ～ガーネット</p>
-                              <div class="goodsPrice">
-                                <img class="icon" src="/d_images/campaign/mothersday2025/icon-freeshipping01.svg?releaseVer=2510171926" alt="送料無料" width="50" height="22.04">
-                                <span>税込<span class="emphasis02">5,900</span>円</span>
-                              </div>
-                            </div>
-                          </a>
-                        </div>
-
-                      </div>
-                    </div>
-                    <!-- /HERVE サブセクション -->
 
                     <div class="sectionCta2026">
                       <a href="/goods/list.html?cid=MothersDay-02-01">お花のギフトをすべて見る</a>
@@ -2365,10 +2233,7 @@
                     color: #333;
                   }
                   .catBrowseGrid .catBrowseItem .catBrowseDesc {
-                    font-size: 13px;
-                    color: #333;
-                    margin-top: 6px;
-                    line-height: 1.5;
+                    display: none;
                   }
                 </style>
 
