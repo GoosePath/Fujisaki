@@ -1023,14 +1023,16 @@
                     border-color: #B5566E !important;
                   }
 
-                  /* アコーディオン: Outlined ピンク、初心者マーク削除 */
+                  /* アコーディオン: 赤系ボーダー強調、初心者マーク削除 */
                   .mothersday2025 .accordion .accordionTitle {
-                    background: transparent !important;
-                    border: 1px solid #B5243C !important;
+                    background: #fff !important;
+                    border: 2px solid #B5243C !important;
                     color: #B5243C !important;
+                    font-weight: bold !important;
                   }
                   .mothersday2025 .accordion .accordionTitle span {
                     color: #B5243C !important;
+                    font-weight: bold !important;
                   }
                   .mothersday2025 .accordion .accordionTitle::before,
                   .mothersday2025 .accordion .accordionTitle::after {
@@ -1061,20 +1063,19 @@
                   .catGrid {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
-                    gap: 4px;
+                    gap: 16px;
                   }
                   .catGrid .catItem {
                     text-decoration: none;
                     color: #333;
                     display: block;
                     text-align: center;
-                    transition: opacity 0.2s;
                   }
-                  .catGrid .catItem:hover { opacity: 0.8; }
+                  .catGrid .catItem:hover { opacity: 1; }
                   .catGrid .catItem .catImgWrap {
                     position: relative;
                     overflow: hidden;
-                    border-radius: 4px;
+                    border-radius: 0;
                     aspect-ratio: 1/1;
                     background: #E8D5C0;
                   }
@@ -1093,18 +1094,17 @@
                     padding-top: 10%;
                   }
                   .catGrid .catItem .catLabel span {
-                    font-size: 44px;
+                    font-size: 52px;
                     font-weight: 800;
                     letter-spacing: 0.06em;
                     line-height: 1.3;
-                    text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                    text-shadow: 0 2px 10px rgba(0,0,0,0.25);
                     text-align: center;
                   }
-                  /* カテゴリごとのフォント色 */
-                  .catItem--flower .catLabel span { color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.15); }
-                  .catItem--sweets .catLabel span { color: #C47D3E; }
-                  .catItem--gourmet .catLabel span { color: #5A7A3A; }
-                  .catItem--fruit .catLabel span { color: #D45B5B; }
+                  .catItem--flower .catLabel span { color: #fff; }
+                  .catItem--sweets .catLabel span { color: #F0A040; }
+                  .catItem--gourmet .catLabel span { color: #C0A0D8; }
+                  .catItem--fruit .catLabel span { color: #A0D070; }
 
                   .catGrid .catItem .catName {
                     font-size: 18px;
@@ -1160,9 +1160,10 @@
                       padding-top: 8%;
                     }
                     .catSwiper .catLabel span {
-                      font-size: 28px;
+                      font-size: 34px;
                       font-weight: 800;
-                      text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                      color: #fff;
+                      text-shadow: 0 2px 10px rgba(0,0,0,0.25);
                       text-align: center;
                     }
                     .catSwiper .catName {
@@ -1181,10 +1182,10 @@
                     }
                     .catThumbs a {
                       display: block;
-                      border-radius: 4px;
+                      border-radius: 0;
                       overflow: hidden;
                       border: 2px solid transparent;
-                      transition: border-color 0.2s;
+                      transition: none;
                       aspect-ratio: 1/1;
                     }
                     .catThumbs a.active { border-color: #C8A063; }
@@ -1820,7 +1821,7 @@
                   <div class="sectionInner">
                     <div class="sectionHeading">
                       <span class="sectionLead">迷ったらこれ。母の日ギフトの定番。</span>
-                      <h3>フラワーギフト</h3>
+                      <h3>お花のギフト</h3>
                     </div>
                     <p class="sectionCopy">色とりどりのカーネーションで、<br class="spNone">まっすぐな「ありがとう」の気持ちを届けませんか。</p>
 
@@ -1952,7 +1953,7 @@
                     <div class="herveSubsection">
                       <div class="subHeading">
                         <span class="subLabel">Web限定</span><span class="subLabel" style="background: #E25B70; margin-left: 8px;"><img src="/d_images/campaign/mothersday2025/icon-car01.svg?releaseVer=2510171926" alt="" style="width:16px; height:auto; vertical-align:middle; margin-right:4px; filter:brightness(10);">送料込み</span>
-                        <h4>母の日限定デザインのフラワーギフト</h4>
+                        <h4>母の日限定デザインのお花のギフト</h4>
                       </div>
                       <p class="subCopy">ここでしか買えない、母の日だけの特別なデザイン。<br class="spNone">大切なお母様へ、とっておきの一箱を。すべて送料込みでお届けします。</p>
 
@@ -2159,12 +2160,12 @@
                 </div>
                 <!-- /お花とスイーツのギフトセット -->
 
-                <!-- ========== スイーツギフト ========== -->
+                <!-- ========== スイーツ ========== -->
                 <div class="productSection2026 sweetsSection">
                   <div class="sectionInner">
                     <div class="sectionHeading">
                       <span class="sectionLead">甘いものが好きなお母様へ、至福のひとときを。</span>
-                      <h3>スイーツギフト</h3>
+                      <h3>スイーツ</h3>
                     </div>
                     <p class="sectionCopy">母の日限定パッケージや人気ブランドのお菓子を集めました。<br class="spNone">甘いもの好きのお母様がきっと笑顔になる贈り物です。</p>
 
@@ -2283,11 +2284,11 @@
                     </div>
 
                     <div class="sectionCta2026">
-                      <a href="/goods/list.html?cid=MothersDay-04">スイーツギフトをすべて見る</a>
+                      <a href="/goods/list.html?cid=MothersDay-04">スイーツをすべて見る</a>
                     </div>
                   </div>
                 </div>
-                <!-- /スイーツギフト -->
+                <!-- /スイーツ -->
 
                 <!-- カテゴリーから選ぶ（差し替え） -->
                 <style>
@@ -2326,15 +2327,24 @@
                     }
                   }
                   .catBrowseGrid .catBrowseItem {
-                    text-decoration: none;
+                    text-decoration: none !important;
                     color: #333;
                     display: block;
                     text-align: left;
-                    border: 2px solid transparent;
-                    padding: 4px;
+                    border: none !important;
+                    outline: none !important;
+                    box-shadow: none !important;
+                    padding: 0;
+                    opacity: 1 !important;
+                    transform: none !important;
+                    transition: none !important;
                   }
-                  .catBrowseGrid .catBrowseItem:hover {
-                    border-color: #E88030;
+                  .catBrowseGrid .catBrowseItem:hover,
+                  .catBrowseGrid .catBrowseItem:focus,
+                  .catBrowseGrid .catBrowseItem:active {
+                    border: none !important;
+                    outline: none !important;
+                    box-shadow: none !important;
                     opacity: 1 !important;
                     transform: none !important;
                     transition: none !important;
@@ -2427,6 +2437,18 @@
                 </div>
                 <!-- /カテゴリーから選ぶ -->
 
+                <!-- 予算・贈る相手セクション見出しサイズ調整 -->
+                <style>
+                  .mothersday2025 .sectionPrice .title .h3 {
+                    font-size: 28px !important;
+                    letter-spacing: 0.06em;
+                  }
+                  @media screen and (max-width: 767px) {
+                    .mothersday2025 .sectionPrice .title .h3 {
+                      font-size: 18px !important;
+                    }
+                  }
+                </style>
                 <!-- 予算から選ぶ -->
                 <div id="price" class="section sectionPrice">
                   <div class="title">
@@ -2492,7 +2514,7 @@
                 <!-- /贈る相手から選ぶ -->
 
                 <div style="text-align:center; margin:40px 0;">
-                  <p style="font-size:20px; font-weight:bold; color:#4A90B8; margin-bottom:12px; letter-spacing:0.1em;">＼ ゴールデンウィークの手土産に ／</p>
+                  <p style="font-size:20px; font-weight:bold; color:#4A90B8; margin-bottom:12px; letter-spacing:0.1em;">＼ ゴールデンウィークの手土産におすすめ ／</p>
                   <a href="#" style="display:block; max-width:680px; margin:0 auto 20px; padding:20px 24px; background:#4A90B8; border:2px solid #4A90B8; color:#fff; text-align:center; font-size:18px; font-weight:bold; letter-spacing:0.06em; text-decoration:none; box-shadow:inset 0 0 0 2px rgba(255,255,255,0.4);">母の日より前にお届けする商品を見る</a>
                   <a href="/goods/list.html?cid=MothersDay-all" style="display:block; max-width:680px; margin:0 auto; padding:20px 24px; background:#C8186E; border:2px solid #C8186E; color:#fff; text-align:center; font-size:18px; font-weight:bold; letter-spacing:0.06em; text-decoration:none; box-shadow:inset 0 0 0 2px rgba(255,255,255,0.4);">母の日ギフトのすべての商品を見る</a>
                 </div>
@@ -2686,7 +2708,7 @@
 
                   <a id="goCategory-2" href="/goods/list.html?cid=MothersDay-04" class="linkHover" shape="rect">
 
-                    スイーツギフト
+                    スイーツ
                   </a>
 
                 </li>
