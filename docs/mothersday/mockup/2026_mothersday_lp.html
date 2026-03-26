@@ -973,12 +973,14 @@
                       </dd>
                     </dl>
                     <dl class="shippingFeeItem">
-                      <dt class="shippingFeeTerm">クール便</dt>
+                      <dt class="shippingFeeTerm shippingFeeTermStack">
+                        <span class="shippingFeeTermMain">クール便</span>
+                        <span class="shippingFeeTermNote">(冷凍・冷蔵)</span>
+                      </dt>
                       <dd class="shippingFeeDesc">
                         <span class="shippingFeePrice">880<span class="shippingFeeUnit">円</span></span>
                         <span class="shippingFeeTax">(税込)</span>
                       </dd>
-                      <dd class="shippingFeeTermNote">(冷凍・冷蔵)</dd>
                     </dl>
                   </div>
                 </div>
@@ -1028,14 +1030,14 @@
                   /* アコーディオン: 赤系アウトライン */
                   .mothersday2025 .accordion .accordionTitle {
                     background: #fff !important;
-                    border: 2px solid #B5243C !important;
-                    color: #B5243C !important;
+                    border: 2px solid #D42B2B !important;
+                    color: #D42B2B !important;
                     font-weight: bold !important;
                     position: relative !important;
                     cursor: pointer;
                   }
                   .mothersday2025 .accordion .accordionTitle span {
-                    color: #B5243C !important;
+                    color: #D42B2B !important;
                     font-weight: bold !important;
                   }
                   .mothersday2025 .accordion .accordionTitle::before {
@@ -1052,8 +1054,8 @@
                     top: 50% !important;
                     width: 12px !important;
                     height: 12px !important;
-                    border-right: 2.5px solid #B5243C !important;
-                    border-bottom: 2.5px solid #B5243C !important;
+                    border-right: 2.5px solid #D42B2B !important;
+                    border-bottom: 2.5px solid #D42B2B !important;
                     transform: translateY(-70%) rotate(45deg) !important;
                     transition: transform 0.3s !important;
                   }
@@ -1066,6 +1068,7 @@
 
                   /* カテゴリスライダー */
                   .catSection {
+                    display: none;
                     background: #F2EDE6;
                     padding: 36px 0 40px;
                     margin-left: calc(-50vw + 50%) !important;
@@ -1334,7 +1337,7 @@
                 <!-- アンカーナビ -->
                 <div class="anchor">
                   <div class="anchorBtn">
-                    <a class="linkHover anchorLink" href="#sectionCategory">カテゴリーから<br class="brTb">選ぶ</a>
+                    <a class="linkHover anchorLink" href="#sectionCategory">カテゴリーから<br class="brTb">探す</a>
                   </div>
                   <div class="anchorBtn">
                     <a class="linkHover anchorLink" href="#price">予算から選ぶ</a>
@@ -1572,7 +1575,6 @@
                       </svg>
                       <h3>母の日ギフト2026 人気ランキング</h3>
                     </div>
-                    <p class="rankingCopy">迷ったらここから。昨年、藤崎オンラインで多くのお客様に選ばれた<br class="spNone">人気のギフトをご紹介します。</p>
 
                     <div class="rankingGrid5">
 
@@ -1661,44 +1663,23 @@
                   .productSection2026 .sectionHeading .sectionLead {
                     display: none !important;
                   }
-                  /* タイトル: 帯スタイル（リボン左右V字切り込み） */
+                  /* タイトル: シンプルテキスト */
                   .productSection2026 .sectionHeading h3 {
                     display: inline-block;
                     position: relative;
-                    font-size: 22px;
+                    font-size: 28px;
                     font-weight: bold;
-                    color: #fff !important;
-                    padding: 10px 48px;
+                    color: #333 !important;
+                    padding: 0;
                     margin-bottom: 16px;
                     line-height: 1.6;
                     letter-spacing: 0.08em;
+                    background: none !important;
                   }
                   .productSection2026 .sectionHeading h3::before,
                   .productSection2026 .sectionHeading h3::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
+                    content: none !important;
                   }
-                  .productSection2026 .sectionHeading h3::before {
-                    left: 0;
-                    border-width: 24px 0 24px 14px;
-                  }
-                  .productSection2026 .sectionHeading h3::after {
-                    right: 0;
-                    border-width: 24px 14px 24px 0;
-                  }
-                  .carnationSection h3 { background: #E8977E; }
-                  .carnationSection h3::before { border-color: #E8977E transparent #E8977E #FDE8E0; }
-                  .carnationSection h3::after { border-color: #E8977E #FDE8E0 #E8977E transparent; }
-                  .giftsetSection h3 { background: #FF8FA0; }
-                  .giftsetSection h3::before { border-color: #FF8FA0 transparent #FF8FA0 #FCEEE9; }
-                  .giftsetSection h3::after { border-color: #FF8FA0 #FCEEE9 #FF8FA0 transparent; }
-                  .sweetsSection h3 { background: #F0A040; }
-                  .sweetsSection h3::before { border-color: #F0A040 transparent #F0A040 #FDF0E0; }
-                  .sweetsSection h3::after { border-color: #F0A040 #FDF0E0 #F0A040 transparent; }
                   .productSection2026 .sectionCopy {
                     text-align: center;
                     font-size: 15px;
@@ -1720,9 +1701,7 @@
                   }
                   @media screen and (max-width: 767px) {
                     .productSection2026 { padding: 36px 16px 32px; }
-                    .productSection2026 .sectionHeading h3 { font-size: 18px; padding: 8px 36px; }
-                    .productSection2026 .sectionHeading h3::before { border-width: 20px 0 20px 12px; }
-                    .productSection2026 .sectionHeading h3::after { border-width: 20px 12px 20px 0; }
+                    .productSection2026 .sectionHeading h3 { font-size: 22px; padding: 0; }
                     .productGrid2026 { grid-template-columns: repeat(2, 1fr); gap: 14px; }
                     .productGrid2026.sku3 { grid-template-columns: repeat(2, 1fr); max-width: 100%; }
                   }
@@ -1852,6 +1831,54 @@
                   .giftsetSection { background: #FCEEE9; }
                   /* スイーツセクション背景 */
                   .sweetsSection { background: #FDF0E0; }
+                  /* 送料：便名ラベルの折り返し許可＋クール便＋(冷凍・冷蔵)を縦積み */
+                  .shippingFeeList .shippingFeeTerm {
+                    white-space: normal !important;
+                  }
+                  .shippingFeeList .shippingFeeTerm.shippingFeeTermStack {
+                    display: flex !important;
+                    flex-direction: column !important;
+                    align-items: flex-start !important;
+                  }
+                  .shippingFeeList .shippingFeeTerm.shippingFeeTermStack::after {
+                    content: none !important;
+                  }
+                  .shippingFeeList .shippingFeeTerm.shippingFeeTermStack .shippingFeeTermMain::after {
+                    content: "：" !important;
+                  }
+                  .shippingFeeList .shippingFeeTerm .shippingFeeTermNote {
+                    display: block !important;
+                    font-size: 11px !important;
+                    line-height: 1.4 !important;
+                    font-weight: normal !important;
+                  }
+                  /* 送料：デスクトップで便種を常温便の直後に左詰め（space-between等の打ち消し）／行は上揃え */
+                  @media screen and (min-width: 768px) {
+                    .shippingFeeList .shippingFeeItem {
+                      display: flex !important;
+                      align-items: flex-start !important;
+                      margin: 0 !important;
+                      padding: 0 4px 0 0 !important;
+                      min-width: 0 !important;
+                      flex: 0 0 auto !important;
+                    }
+                    .mothersday2025 .shippingFeeList {
+                      display: flex !important;
+                      flex-direction: row !important;
+                      flex-wrap: wrap !important;
+                      justify-content: flex-start !important;
+                      align-items: flex-start !important;
+                      column-gap: 20px !important;
+                      row-gap: 0 !important;
+                    }
+                    .mothersday2025 .shippingFeeList .shippingFeeItem {
+                      margin-left: 0 !important;
+                      margin-right: 0 !important;
+                    }
+                    .mothersday2025 .shippingFeeList .shippingFeeItem + .shippingFeeItem {
+                      margin-left: 0 !important;
+                    }
+                  }
                 </style>
 
                 <!-- ========== お花とのセットギフト ========== -->
@@ -1861,7 +1888,6 @@
                       <span class="sectionLead">美しさと美味しさを合わせた、特別なギフト</span>
                       <h3>お花とのセットギフト</h3>
                     </div>
-                    <p class="sectionCopy">華やかなカーネーションに人気のお菓子を添えて。<br class="spNone">一つで気持ちが届く、贈る相手を選ばない安心のセットギフトです。</p>
 
                     <div class="productGrid2026">
 
@@ -1984,7 +2010,6 @@
                       <span class="sectionLead">迷ったらこれ。母の日ギフトの定番。</span>
                       <h3>お花のギフト</h3>
                     </div>
-                    <p class="sectionCopy">色とりどりのカーネーションで、<br class="spNone">まっすぐな「ありがとう」の気持ちを届けませんか。</p>
 
                     <div class="productGrid2026 sku3">
 
@@ -2045,7 +2070,6 @@
                       <span class="sectionLead">甘いものが好きなお母様へ、至福のひとときを。</span>
                       <h3>スイーツ</h3>
                     </div>
-                    <p class="sectionCopy">母の日限定パッケージや人気ブランドのお菓子を集めました。<br class="spNone">甘いもの好きのお母様がきっと笑顔になる贈り物です。</p>
 
                     <div class="productGrid2026">
 
@@ -3066,55 +3090,138 @@
   @media screen and (max-width: 767px) {
     #toTop.toTop { display:none !important; }
 
-    /* 送料セクション モバイル横並び */
+    /* 送料セクション モバイル：左右2カラム（縦ラインは全高、便名・価格は行内でセンター合わせ） */
+    .shippingFee {
+      display:flex !important;
+      flex-direction:row !important;
+      align-items:stretch !important;
+      padding:10px !important;
+    }
+    .shippingFeeHeader {
+      flex:0 0 auto !important;
+      border-bottom:none !important;
+      margin:0 !important;
+      padding:0 10px 0 0 !important;
+      border-right:1px solid #ccc !important;
+      text-align:center !important;
+      white-space:nowrap !important;
+      width:auto !important;
+      min-width:0 !important;
+      max-width:none !important;
+      display:flex !important;
+      flex-direction:column !important;
+      justify-content:center !important;
+      align-self:stretch !important;
+    }
+    .shippingFeeHeaderTop {
+      display:block !important;
+      text-align:center !important;
+      padding:0 !important;
+      margin:0 !important;
+    }
+    .shippingFeeIcon {
+      display:inline-block !important;
+      vertical-align:middle !important;
+      margin:0 !important;
+      padding:0 !important;
+    }
+    .shippingFeeIcon img {
+      width:28px !important;
+      height:auto !important;
+    }
+    .shippingFeeHeaderText {
+      font-size:14px !important;
+      display:inline !important;
+      vertical-align:middle !important;
+      margin:0 !important;
+      padding:0 !important;
+    }
+    .shippingFeeHeaderNote {
+      font-size:8px !important;
+      display:block !important;
+      text-align:center !important;
+      margin:2px 0 0 0 !important;
+      padding:0 !important;
+    }
     .shippingFeeList {
       display:flex !important;
+      flex-direction:column !important;
+      align-items:stretch !important;
       justify-content:center !important;
-      align-items:flex-start !important;
-      gap:0 !important;
+      gap:2px !important;
+      flex:1 1 auto !important;
+      padding:0 0 0 12px !important;
+      border-top:none !important;
+      margin:0 !important;
+      align-self:stretch !important;
+      min-height:0 !important;
     }
     .shippingFeeList .shippingFeeItem {
-      display:flex !important;
-      align-items:baseline !important;
-      flex-wrap:wrap !important;
-      flex:1 !important;
+      display:grid !important;
+      grid-template-columns:minmax(0,max-content) auto !important;
+      align-items:center !important;
+      column-gap:10px !important;
+      justify-content:start !important;
+      text-align:left !important;
       margin:0 !important;
-      padding:0 8px !important;
+      padding:0 !important;
       border:none !important;
     }
     .shippingFeeList .shippingFeeTerm {
       margin:0 !important;
       padding:0 !important;
-      font-size:14px !important;
-      white-space:nowrap !important;
+      font-size:11px !important;
+      white-space:normal !important;
+    }
+    .shippingFeeList .shippingFeeTerm.shippingFeeTermStack {
+      display:flex !important;
+      flex-direction:column !important;
+      align-items:flex-start !important;
+    }
+    .shippingFeeList .shippingFeeTerm.shippingFeeTermStack::after {
+      content:none !important;
+    }
+    .shippingFeeList .shippingFeeTerm.shippingFeeTermStack .shippingFeeTermMain::after {
+      content:"：" !important;
     }
     .shippingFeeList .shippingFeeTerm::after {
       content:"：" !important;
     }
     .shippingFeeList .shippingFeeDesc {
       margin:0 !important;
+      margin-inline-start:0 !important;
       padding:0 !important;
-      display:inline !important;
+      display:inline-flex !important;
+      flex-direction:row !important;
+      align-items:baseline !important;
+      flex-wrap:nowrap !important;
+      gap:4px !important;
       white-space:nowrap !important;
     }
     .shippingFeeList .shippingFeePrice {
-      font-size:22px !important;
+      font-size:16px !important;
     }
     .shippingFeeList .shippingFeeUnit {
-      font-size:14px !important;
+      font-size:11px !important;
     }
     .shippingFeeList .shippingFeeTax {
-      font-size:12px !important;
+      font-size:9px !important;
     }
-    .shippingFeeList dd.shippingFeeTermNote {
-      width:100% !important;
+    .shippingFeeList .shippingFeeTerm .shippingFeeTermNote {
       display:block !important;
-      font-size:11px !important;
+      font-size:9px !important;
       text-align:left !important;
-      margin:2px 0 0 0 !important;
+      margin:0 !important;
       padding:0 !important;
+      line-height:1.4 !important;
+      font-weight:normal !important;
     }
     .gwLeadText {
+      font-size:15px !important;
+      white-space:nowrap !important;
+    }
+    .sectionCta2026 a {
+      padding:16px 24px !important;
       font-size:15px !important;
       white-space:nowrap !important;
     }
