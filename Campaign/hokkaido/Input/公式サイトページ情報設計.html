@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公式サイト催事ページ 構成アウトライン v5</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #fff;
+      color: #333;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .section-header {
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .section-body {
+      padding: 16px;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    .section-body .label {
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .section-body .copy {
+      color: #6a3906;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 8px 0;
+    }
+
+    .section-body .copy-ec {
+      color: #004e7a;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1.7;
+      margin: 8px 0;
+    }
+
+    .section-body .note {
+      font-size: 11px;
+      color: #999;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed #ddd;
+    }
+
+    .section-body .discussion {
+      background: #e3f2fd;
+      border-left: 3px solid #006d9e;
+      padding: 10px 12px;
+      margin: 12px 0;
+      font-size: 12px;
+      color: #004e7a;
+      line-height: 1.8;
+    }
+
+    .section-body .new-tag {
+      display: inline-block;
+      background: #006d9e;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+
+    .section-body .changed-tag {
+      display: inline-block;
+      background: #e65100;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+
+    .section-body .notice-block {
+      background: #fff8e1;
+      border: 1px solid #ffe082;
+      border-radius: 6px;
+      padding: 12px 14px;
+      margin: 12px 0;
+      font-size: 13px;
+      font-weight: 700;
+      color: #6d5a00;
+      line-height: 1.6;
+    }
+
+    .store {
+      border-color: #E38B29;
+    }
+
+    .store .section-header {
+      background: #E38B29;
+    }
+
+    .nav-section {
+      border-color: #5c6bc0;
+    }
+
+    .nav-section .section-header {
+      background: #5c6bc0;
+    }
+
+    .ec {
+      border-color: #006d9e;
+    }
+
+    .ec .section-header {
+      background: #006d9e;
+    }
+
+    .info {
+      border-color: #888;
+    }
+
+    .info .section-header {
+      background: #888;
+    }
+
+    .divider {
+      text-align: center;
+      padding: 24px 0;
+      font-size: 12px;
+      color: #999;
+      position: relative;
+    }
+
+    .divider::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      border-top: 2px dashed #ddd;
+    }
+
+    .divider span {
+      background: #fff;
+      padding: 0 16px;
+      position: relative;
+    }
+
+    .page-title {
+      text-align: center;
+      padding: 20px 0 32px;
+    }
+
+    .page-title h1 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .page-title p {
+      font-size: 12px;
+      color: #999;
+    }
+
+    .arrow {
+      text-align: center;
+      padding: 8px 0;
+      font-size: 20px;
+      color: #ccc;
+    }
+
+    .legend {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 24px;
+      font-size: 12px;
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .legend-color {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+    }
+
+    .collapsed {
+      background: #fafafa;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      font-size: 12px;
+      color: #999;
+      text-align: center;
+    }
+
+    /* ナビモック */
+    .nav-row {
+      margin: 8px 0;
+    }
+
+    .nav-row-label {
+      font-size: 10px;
+      color: #999;
+      margin-bottom: 4px;
+    }
+
+    .nav-mock {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav-mock a {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      color: #555;
+      background: #fafafa;
+    }
+
+    .nav-ec-row {
+      margin-top: 8px;
+    }
+
+    .nav-ec-link {
+      display: block;
+      padding: 10px 16px;
+      border: 2px solid #006d9e;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      color: #006d9e;
+      background: #f0f7fa;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-title">
+    <h1>公式サイト催事ページ 構成アウトライン v5</h1>
+    <p>ナビ2段構成・ECセクション訴求修正</p>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-color" style="background:#E38B29;"></div>店頭催事情報
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background:#5c6bc0;"></div>ページ内ナビ
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background:#006d9e;"></div>EC導線
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background:#888;"></div>その他
+    </div>
+  </div>
+
+  <!-- ========== MV ========== -->
+  <div class="section store">
+    <div class="section-header">メインビジュアル</div>
+    <div class="section-body">
+      MV画像（店頭催事のキービジュアル）
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <!-- ========== 開催情報 ========== -->
+  <div class="section store">
+    <div class="section-header">開催情報・キャッチコピー</div>
+    <div class="section-body">
+      <div class="copy">＼ 北海道の甘い旨いも召し上がれ ／<br>春の北海道展</div>
+      ■4月10日(木)〜22日(火)　＜最終日は午後5時まで＞<br>
+      ■藤崎本館7階 催事場<br><br>
+      春の北海道から届く、大地の恵みと海の幸が大集合。<br>
+      スイーツ、海鮮弁当、ご当地グルメなど、<br>
+      北海道の魅力がたっぷり詰まった13日間です。
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <!-- ========== ページ内ナビ ========== -->
+  <div class="section nav-section">
+    <div class="section-header">ページ内ナビ【2段構成】</div>
+    <div class="section-body">
+      <span class="new-tag">NEW</span>
+
+      <div class="nav-row">
+        <div class="nav-row-label">店頭催事</div>
+        <div class="nav-mock">
+          <a href="#">会場のご案内</a>
+          <a href="#">WEBチラシ</a>
+        </div>
+      </div>
+
+      <div class="nav-ec-row">
+        <div class="nav-row-label">オンライン</div>
+        <a href="#ec-section" class="nav-ec-link">藤崎オンライン — オンライン限定の北海道グルメ ＞</a>
+      </div>
+
+      <div class="discussion">
+        <strong>設計意図：</strong><br>
+        1段目（会場のご案内・WEBチラシ）と2段目（藤崎オンライン）を視覚的に分離。<br>
+        並列に並べないことで「店頭商品がオンラインで買える」という誤解を構造的に防ぐ。<br>
+        2段目は下部ECセクションへのアンカーリンクとして機能。<br>
+        「オンライン限定の北海道グルメ」と明記し、店頭とは別の商品であることをナビの時点で伝える。
+      </div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <!-- ========== 店頭商品（折りたたみ） ========== -->
+  <div class="collapsed">
+    ▼ 店頭商品 ①〜⑧（変更なし・省略）<br>
+    北海道のご当地スイーツ → ランチタイム限定 → リピ確定！北海道グルメ →<br>
+    北の海鮮弁当 → テロノワール → 越冬野菜 → 北海道のいいモノ → 期間限定販売会
+  </div>
+  <div class="arrow">↓</div>
+
+  <!-- ========== マイキッチン ========== -->
+  <div class="collapsed">
+    ▼ 北海道フェア（マイキッチン）（変更なし・省略）
+  </div>
+  <div class="arrow">↓</div>
+
+  <!-- ========== WEBチラシ ========== -->
+  <div class="collapsed">
+    ▼ WEBチラシ（変更なし・省略）
+  </div>
+
+  <div class="divider"><span>ここまで店頭催事情報 ── ここからオンライン</span></div>
+
+  <!-- ========== ECセクション ========== -->
+  <div class="section ec">
+    <div class="section-header">藤崎オンライン ― EC送客セクション</div>
+    <div class="section-body">
+
+      <!-- 見出し -->
+      <div class="label">① 見出し</div>
+      <div class="copy-ec">ご自宅で堪能する、北海道。</div>
+
+      <!-- 注意書き（目立つ位置に移動） -->
+      <div class="label">② 店頭との違いの明示</div>
+      <span class="changed-tag">変更</span>
+      <div class="notice-block">
+        こちらは店頭催事とは異なる、オンライン限定の商品です。
+      </div>
+      <div class="discussion">
+        <strong>変更点：</strong>前年は最下部に小さな注釈として配置 → 今年はサブコピーの前、目立つ位置に移動。<br>
+        前年の最大の問題（店頭商品がオンラインで買えると誤解→大量離脱）を防ぐため、<br>
+        ECセクションに入った直後に期待値を正しく設定する。
+      </div>
+
+      <!-- サブコピー -->
+      <div class="label">③ サブコピー</div>
+      <span class="changed-tag">変更</span><br>
+      ジンギスカン、いくら、ローストビーフ、プレミアムソフト —<br>
+      北海道の海鮮・お肉・スイーツなど約40品を、<br>
+      全品送料込・産地直送でご自宅にお届けします。
+
+      <!-- ビジュアル -->
+      <div class="label" style="margin-top: 16px;">④ ビジュアル</div>
+      EC商品の写真<br>
+      （ジンギスカン、いくら、ローストビーフ、プレミアムソフト等のピックアップ or 商品集合写真）
+
+      <!-- 便益情報 -->
+      <div class="label" style="margin-top: 16px;">⑤ 便益情報</div>
+      全品送料込 ／ 北海道から産地直送 ／ 冷凍・冷蔵便でお届け
+
+      <!-- CTA -->
+      <div class="label" style="margin-top: 16px;">⑥ CTA</div>
+      <span class="changed-tag">変更</span><br>
+      ボタン：「オンライン限定商品を見る ＞」<br>
+      補足テキスト：全40商品｜税込3,240円〜｜全品送料込
+
+      <!-- 承り期間 -->
+      <div class="label" style="margin-top: 16px;">⑦ 承り期間</div>
+      ■承り期間／4月9日(木)〜21日(火)
+
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <!-- ========== お知らせ ========== -->
+  <div class="section info">
+    <div class="section-header">お知らせとお願い</div>
+    <div class="section-body">
+      注意事項各種
+    </div>
+  </div>
+
+  <div style="height: 60px;"></div>
+
+</body>
+
+</html>
