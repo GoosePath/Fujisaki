@@ -1,0 +1,388 @@
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+  }
+
+  body {
+    font-family: var(--font-sans, 'Noto Sans JP', sans-serif)
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 2rem
+  }
+
+  .hr-thick {
+    border: none;
+    border-top: 5px solid var(--color-border-tertiary, #ddd);
+    margin: 0
+  }
+
+  .hr-thin {
+    border: none;
+    border-top: 0.5px solid var(--color-border-tertiary, #ddd);
+    margin: 0
+  }
+
+  .mv-img {
+    width: 100%;
+    aspect-ratio: 16/5;
+    background: var(--color-background-secondary, #f0f0f0);
+    border: 0.5px dashed var(--color-border-secondary, #ccc);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px
+  }
+
+  .mv-img span {
+    font-size: 11px;
+    color: var(--color-text-tertiary, #aaa)
+  }
+
+  .mv-body {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid var(--color-border-tertiary, #ddd);
+    margin-bottom: 16px
+  }
+
+  .mv-eyebrow {
+    font-size: 11px;
+    color: var(--color-text-secondary, #888);
+    letter-spacing: 0.06em;
+    margin-bottom: 5px
+  }
+
+  .mv-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-text-primary, #333);
+    line-height: 1.5;
+    margin-bottom: 8px
+  }
+
+  .mv-date {
+    font-size: 12px;
+    color: #993556;
+    font-weight: 500
+  }
+
+  .anchor-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px
+  }
+
+  .anchor-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 12px;
+    border: 0.5px solid var(--color-border-secondary, #ccc);
+    border-radius: 6px
+  }
+
+  .anchor-item span {
+    font-size: 12px;
+    color: var(--color-text-primary, #333)
+  }
+
+  .anchor-item .arr {
+    font-size: 11px;
+    color: var(--color-text-secondary, #888)
+  }
+
+  .sec-head {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-text-primary, #333);
+    padding: 20px 0 10px;
+    border-bottom: 0.5px solid var(--color-border-tertiary, #ddd);
+    margin-bottom: 12px
+  }
+
+  .sec-head.center {
+    text-align: center
+  }
+
+  .sec-intro {
+    font-size: 12px;
+    color: var(--color-text-secondary, #888);
+    line-height: 1.6;
+    margin-bottom: 16px
+  }
+
+  .kan-title {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--color-text-secondary, #888);
+    letter-spacing: 0.05em;
+    padding: 8px 0 5px;
+    border-bottom: 0.5px solid var(--color-border-tertiary, #ddd);
+    margin-bottom: 8px
+  }
+
+  .floor-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 7px;
+    align-items: flex-start
+  }
+
+  .f-num {
+    font-size: 12px;
+    font-weight: 500;
+    color: #993556;
+    width: 28px;
+    flex-shrink: 0;
+    padding-top: 1px
+  }
+
+  .f-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-primary, #333)
+  }
+
+  .f-sub {
+    font-size: 11px;
+    color: var(--color-text-secondary, #888);
+    margin-top: 2px;
+    line-height: 1.4
+  }
+
+  .scene-head {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-text-primary, #333);
+    padding: 14px 0 10px;
+    border-top: 0.5px solid var(--color-border-tertiary, #ddd);
+    border-bottom: 0.5px solid var(--color-border-tertiary, #ddd)
+  }
+
+  .prod-item {
+    padding: 20px 0
+  }
+
+  .prod-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: var(--color-background-secondary, #f0f0f0);
+    border: 0.5px dashed var(--color-border-secondary, #ccc);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px
+  }
+
+  .prod-img span {
+    font-size: 11px;
+    color: var(--color-text-tertiary, #aaa)
+  }
+
+  .prod-brand {
+    font-size: 11px;
+    color: var(--color-text-secondary, #888);
+    margin-bottom: 3px
+  }
+
+  .prod-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-primary, #333);
+    line-height: 1.5;
+    margin-bottom: 4px
+  }
+
+  .prod-price {
+    font-size: 13px;
+    color: var(--color-text-primary, #333);
+    margin-bottom: 10px
+  }
+
+  .prod-location {
+    font-size: 13px;
+    font-weight: 500;
+    color: #993556;
+    margin-bottom: 6px
+  }
+
+  .prod-desc {
+    font-size: 12px;
+    color: var(--color-text-secondary, #888);
+    line-height: 1.7
+  }
+
+  .ec-wrap {
+    padding: 24px 0 32px;
+    text-align: center
+  }
+
+  .ec-text {
+    font-size: 12px;
+    color: var(--color-text-secondary, #888);
+    line-height: 1.7;
+    margin-bottom: 16px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .ec-btn {
+    display: inline-block;
+    border: 1px solid #D4537E;
+    color: #D4537E;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 28px;
+    border-radius: 6px
+  }
+
+  .ec-note {
+    font-size: 10px;
+    color: var(--color-text-tertiary, #aaa);
+    margin-top: 8px
+  }
+</style>
+
+<div style="background:var(--color-background-primary, #fff);padding-bottom:2rem">
+
+  <div class="wrap" style="padding-top:2rem">
+    <div class="mv-img"><span>THANKS DAY キービジュアル（横長）</span></div>
+    <div class="mv-body">
+      <div class="mv-eyebrow">FUJISAKI 2026 THANKS DAY</div>
+      <div class="mv-title">母の日も、父の日も、365日いつだってありがとう。</div>
+      <div class="mv-date">〇〇月〇〇日（〇）〜 〇〇月〇〇日（〇）</div>
+    </div>
+    <div class="anchor-row">
+      <div class="anchor-item"><span>フロアからギフトを探す</span><span class="arr">↓</span></div>
+      <div class="anchor-item"><span>シーンからギフトを探す</span><span class="arr">↓</span></div>
+      <div class="anchor-item"><span>オンラインストアで探す</span><span class="arr">↓</span></div>
+    </div>
+  </div>
+
+  <div class="hr-thick"></div>
+
+  <div class="wrap">
+    <div class="sec-head">フロアからギフトを探す</div>
+    <div class="sec-intro">「どこに行けばある？」をフロアごとにご案内します。</div>
+    <div class="kan-title">本館</div>
+    <div class="floor-row">
+      <div class="f-num">〇F</div>
+      <div>
+        <div class="f-name">〇〇カテゴリ</div>
+        <div class="f-sub">〇〇ブランド、〇〇ブランドなど</div>
+      </div>
+    </div>
+    <div class="floor-row">
+      <div class="f-num">〇F</div>
+      <div>
+        <div class="f-name">〇〇カテゴリ</div>
+        <div class="f-sub">〇〇ブランド、〇〇ブランドなど</div>
+      </div>
+    </div>
+    <div class="floor-row">
+      <div class="f-num">〇F</div>
+      <div>
+        <div class="f-name">〇〇カテゴリ</div>
+        <div class="f-sub">〇〇ブランド、〇〇ブランドなど</div>
+      </div>
+    </div>
+    <div class="floor-row">
+      <div class="f-num">B〇</div>
+      <div>
+        <div class="f-name">〇〇カテゴリ</div>
+        <div class="f-sub">〇〇ブランド、〇〇ブランドなど</div>
+      </div>
+    </div>
+    <div class="kan-title" style="margin-top:14px">大町館</div>
+    <div class="floor-row">
+      <div class="f-num">〇F</div>
+      <div>
+        <div class="f-name">〇〇カテゴリ</div>
+        <div class="f-sub">〇〇ブランド、〇〇ブランドなど</div>
+      </div>
+    </div>
+    <div class="floor-row">
+      <div class="f-num">〇F</div>
+      <div>
+        <div class="f-name">〇〇カテゴリ</div>
+        <div class="f-sub">〇〇ブランド、〇〇ブランドなど</div>
+      </div>
+    </div>
+    <div class="floor-row">
+      <div class="f-num">B〇</div>
+      <div>
+        <div class="f-name">〇〇カテゴリ</div>
+        <div class="f-sub">〇〇ブランド、〇〇ブランドなど</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hr-thick"></div>
+
+  <div class="wrap">
+    <div class="sec-head">シーンからギフトを探す</div>
+
+    <div class="scene-head">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</div>
+    <div class="prod-item">
+      <div class="prod-img"><span>商品画像（正方形）</span></div>
+      <div class="prod-brand">〇〇ブランド</div>
+      <div class="prod-name">〇〇〇〇〇〇〇〇〇〇〇〇商品名</div>
+      <div class="prod-price">税込 〇〇,〇〇〇円</div>
+      <div class="prod-location">場所：本館 〇F　〇〇売場</div>
+      <div class="prod-desc">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇。
+      </div>
+    </div>
+    <div class="hr-thin"></div>
+    <div class="prod-item">
+      <div class="prod-img"><span>商品画像（正方形）</span></div>
+      <div class="prod-brand">〇〇ブランド</div>
+      <div class="prod-name">〇〇〇〇〇〇〇〇〇〇〇〇商品名</div>
+      <div class="prod-price">税込 〇〇,〇〇〇円</div>
+      <div class="prod-location">場所：大町館 〇F　〇〇売場</div>
+      <div class="prod-desc">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇。
+      </div>
+    </div>
+
+    <div class="scene-head">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇</div>
+    <div class="prod-item">
+      <div class="prod-img"><span>商品画像（正方形）</span></div>
+      <div class="prod-brand">〇〇ブランド</div>
+      <div class="prod-name">〇〇〇〇〇〇〇〇〇〇〇〇商品名</div>
+      <div class="prod-price">税込 〇〇,〇〇〇円</div>
+      <div class="prod-location">場所：本館 〇F　〇〇売場</div>
+      <div class="prod-desc">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇。
+      </div>
+    </div>
+    <div class="hr-thin"></div>
+    <div class="prod-item">
+      <div class="prod-img"><span>商品画像（正方形）</span></div>
+      <div class="prod-brand">〇〇ブランド</div>
+      <div class="prod-name">〇〇〇〇〇〇〇〇〇〇〇〇商品名</div>
+      <div class="prod-price">税込 〇〇,〇〇〇円</div>
+      <div class="prod-location">場所：大町館 〇F　〇〇売場</div>
+      <div class="prod-desc">〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇〇。
+      </div>
+    </div>
+  </div>
+
+  <div class="hr-thick"></div>
+
+  <div class="wrap">
+    <div class="sec-head center">オンラインストアでも、ギフトを探せます</div>
+    <div class="ec-wrap">
+      <div class="ec-text">店頭とは取り扱い商品が異なりますが、オンラインストアでも母の日・父の日ギフトをご用意しています。遠方からのプレゼントにもぜひご利用ください。</div>
+      <div class="ec-btn">藤崎オンラインストアへ</div>
+      <div class="ec-note">※店頭とオンラインストアでは取り扱い商品が異なります</div>
+    </div>
+  </div>
+
+</div>
