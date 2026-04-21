@@ -30,12 +30,12 @@
   .page{width:100%;max-width:820px;margin:0 auto;background:#fff;overflow-x:hidden}
 
   /* ---------- Section shell ---------- */
-  .section{padding:64px 40px}
+  .section{padding:80px 40px;border-top:1px solid var(--line)}
   .section-inner{max-width:720px;margin:0 auto}
   .bg-pink{background:var(--bg-pink-soft)}
   .bg-pink-strong{background:var(--bg-pink)}
   @media (max-width:640px){
-    .section{padding:44px 20px}
+    .section{padding:56px 20px}
   }
 
   /* ---------- Hero ---------- */
@@ -72,7 +72,7 @@
   .anchors{background:#fff;padding:24px 40px;border-bottom:1px solid var(--line)}
   .anchors-inner{max-width:720px;margin:0 auto}
   .anchors-list{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:10px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
     list-style:none;
   }
   .anchors-list a{
@@ -151,12 +151,18 @@
   .stamp-list{
     display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:36px;
   }
-  .stamp-card{background:#fff}
+  .stamp-card{background:#fff;padding-bottom:18px}
   .stamp-card img{width:100%}
-  .stamp-card-note{
-    text-align:center;margin-top:12px;
+  .stamp-card-body{padding:14px 14px 0}
+  .stamp-card-desc{
+    font-size:13px;color:var(--text);line-height:1.8;margin-bottom:10px;
   }
-  .stamp-card-note a{
+  .stamp-card-related{
+    font-size:12px;color:var(--text-sub);line-height:1.7;margin-bottom:10px;
+  }
+  .stamp-card-related strong{color:var(--text);font-weight:700;margin-right:4px}
+  .stamp-card-link{text-align:center;margin-top:12px}
+  .stamp-card-link a{
     display:inline-block;font-size:13px;font-weight:500;
     color:var(--accent);text-decoration:underline;text-underline-offset:3px;padding:4px 0;
   }
@@ -173,6 +179,9 @@
   .apply-body img{margin:0 auto 14px}
 
   /* ---------- Workshop ---------- */
+  .ws-image{
+    width:100%;max-width:520px;margin:0 auto 28px;display:block;
+  }
   .ws-period{
     font-size:14px;color:var(--accent);font-weight:700;margin-bottom:8px;
   }
@@ -281,219 +290,13 @@
   <nav class="anchors" aria-label="目次">
     <div class="anchors-inner">
       <ul class="anchors-list">
-        <li><a href="#floor">フロアから探す</a></li>
         <li><a href="#stamp">スタンプラリー</a></li>
         <li><a href="#workshop">ワークショップ</a></li>
-        <li><a href="#online">オンラインで探す</a></li>
+        <li><a href="#online">藤崎オンライン</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- ============ 3. FLOOR GUIDE ============ -->
-  <section class="section" id="floor">
-    <div class="section-inner">
-      <div class="sec-head">
-        <div class="sec-head-en">FLOOR GUIDE</div>
-        <h2 class="sec-head-ja">フロアから、母の日ギフトを探す</h2>
-        <p class="sec-head-lead">「どこに行けば見つかるのか」をフロアごとにご案内します。「スタンプラリー対象」の売場は4ヵ所です。</p>
-      </div>
-
-      <!-- 本館 -->
-      <h3 class="kan-title first">本館</h3>
-
-      <p class="floor-label"><strong>1F　ファッションパーツ</strong><span class="floor-stamp">スタンプラリー対象</span></p>
-      <p class="floor-sub">ポーチやコーム・ミラー・ヘアアクセなど、きもちが上がるカワイイ雑貨</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <p class="floor-label"><strong>1F　化粧品</strong></p>
-      <p class="floor-sub">母娘で共有できる、こだわりのコスメ＆フレグランス</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <p class="floor-label"><strong>2F　ビューティ雑貨</strong><span class="floor-stamp">スタンプラリー対象</span></p>
-      <p class="floor-sub">こころをいやすフレグランスとビューティアイテム／「生活の木」「ナチュレサプリ」ほか</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <p class="floor-label"><strong>○F　婦人服・ランジェリー</strong></p>
-      <p class="floor-sub">「アフタヌーンティーリビング」「キッドブルー」「ワコール」「トリンプ」「近沢レース」</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <p class="floor-label"><strong>○F　伊達クラフト／和雑貨・呉服</strong></p>
-      <p class="floor-sub">仙台ならではの贈りもの</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <p class="floor-label"><strong>B○　お菓子・和洋酒・惣菜・フルーツ</strong></p>
-      <p class="floor-sub">リプレイス／菓子／惣菜／和洋酒の重点売場</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <div class="cta-wrap">
-        <a href="https://www.fujisaki.co.jp/floorguide/honkan/" class="cta">本館の全フロアガイドを見る</a>
-      </div>
-
-      <!-- 大町館 -->
-      <h3 class="kan-title">大町館</h3>
-
-      <p class="floor-label"><strong>2F　食器・ライフスタイル</strong><span class="floor-stamp">スタンプラリー対象</span></p>
-      <p class="floor-sub">「ドゥ・セー」「イッタラ」「光原社」ほか</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <p class="floor-label"><strong>4F　家庭用品</strong><span class="floor-stamp">スタンプラリー対象</span></p>
-      <p class="floor-sub">「くらしの道具kaji」「クロワッサンの店」「栗原はるみ」ほか、キッチン用品と暮らしのセレクトショップ</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <p class="floor-label"><strong>○F　タオル・寝具</strong></p>
-      <p class="floor-sub">「ホットマン」ほか、エプロン・スリッパ・パジャマも</p>
-      <div class="floor-products">
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-        <div>
-          <div class="floor-product-img">商品画像</div>
-          <div class="floor-product-name">商品名が入ります</div>
-          <div class="floor-product-price">税込 〇,〇〇〇円</div>
-        </div>
-      </div>
-
-      <div class="cta-wrap">
-        <a href="https://www.fujisaki.co.jp/floorguide/oomachi/" class="cta">大町館の全フロアガイドを見る</a>
-      </div>
-
-    </div>
-  </section>
 
   <!-- ============ 4. STAMP RALLY ============ -->
   <section class="section bg-pink" id="stamp">
@@ -511,19 +314,34 @@
       <div class="stamp-list">
         <div class="stamp-card">
           <img src="honkan1.png" alt="本館1階 婦人雑貨売場">
-          <div class="stamp-card-note"><a href="#floor">本館1Fのフロアガイドへ</a></div>
+          <div class="stamp-card-body">
+            <p class="stamp-card-desc">ポーチ・コーム・ヘアアクセなど、きもちが上がるカワイイ雑貨を集めました。</p>
+            <p class="stamp-card-link"><a href="https://www.fujisaki.co.jp/floorguide/honkan/">本館1Fのフロアガイドへ →</a></p>
+          </div>
         </div>
         <div class="stamp-card">
           <img src="honkan2.png" alt="本館2階 ビューティ雑貨売場">
-          <div class="stamp-card-note"><a href="#floor">本館2Fのフロアガイドへ</a></div>
+          <div class="stamp-card-body">
+            <p class="stamp-card-desc">フレグランス・ヘアブラシ・ヘアアクセサリーなど、こころをいやすビューティアイテム。</p>
+            <p class="stamp-card-related"><strong>同フロアには</strong>「生活の木」「ナチュレサプリ」も</p>
+            <p class="stamp-card-link"><a href="https://www.fujisaki.co.jp/floorguide/honkan/">本館2Fのフロアガイドへ →</a></p>
+          </div>
         </div>
         <div class="stamp-card">
           <img src="omachi2.png" alt="大町館2階 食器売場">
-          <div class="stamp-card-note"><a href="#floor">大町館2Fのフロアガイドへ</a></div>
+          <div class="stamp-card-body">
+            <p class="stamp-card-desc">食器・テーブルウェアをはじめ、日々の暮らしを彩るライフスタイルアイテム。</p>
+            <p class="stamp-card-related"><strong>同フロアには</strong>「ドゥ・セー」「イッタラ」「光原社」</p>
+            <p class="stamp-card-link"><a href="https://www.fujisaki.co.jp/floorguide/oomachi/">大町館2Fのフロアガイドへ →</a></p>
+          </div>
         </div>
         <div class="stamp-card">
           <img src="omachi4.png" alt="大町館4階 家庭用品売場">
-          <div class="stamp-card-note"><a href="#floor">大町館4Fのフロアガイドへ</a></div>
+          <div class="stamp-card-body">
+            <p class="stamp-card-desc">キッチン用品と暮らしのセレクトショップから、母の日にふさわしい逸品を。</p>
+            <p class="stamp-card-related"><strong>同フロアには</strong>「くらしの道具kaji」「クロワッサンの店」「栗原はるみ」</p>
+            <p class="stamp-card-link"><a href="https://www.fujisaki.co.jp/floorguide/oomachi/">大町館4Fのフロアガイドへ →</a></p>
+          </div>
         </div>
       </div>
 
@@ -545,6 +363,7 @@
         <h2 class="sec-head-ja">母の日、選べるフラワーワークショップ</h2>
       </div>
 
+      <img src="workshop.png" alt="お花のワークショップ 見本品" class="ws-image">
       <h3 class="ws-title">お花のワークショップ</h3>
       <p class="ws-period">開催期間：4月30日（木）〜 5月6日（水）</p>
       <p class="ws-desc">「多肉のブッタナッツ」または「紫陽花ボール」から、お好きなアレンジをお選びいただけます。今年の母の日は、お母さまへ手づくりのフラワーアレンジを贈りませんか。日頃の「ありがとう」を、特別なかたちで。</p>
