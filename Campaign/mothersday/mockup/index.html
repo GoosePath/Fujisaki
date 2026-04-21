@@ -32,8 +32,13 @@
   /* ---------- Section shell ---------- */
   .section{padding:80px 40px;border-top:1px solid var(--line)}
   .section-inner{max-width:720px;margin:0 auto}
-  .bg-pink{background:var(--bg-pink-soft)}
+  .bg-pink{
+    background:linear-gradient(#fff 48px, var(--bg-pink-soft) 48px);
+  }
   .bg-pink-strong{background:var(--bg-pink)}
+  @media (max-width:640px){
+    .bg-pink{background:linear-gradient(#fff 32px, var(--bg-pink-soft) 32px)}
+  }
   @media (max-width:640px){
     .section{padding:56px 20px}
   }
@@ -45,9 +50,16 @@
   }
   .hero-inner{max-width:720px;margin:0 auto;text-align:center}
   .hero-mv{margin:0 auto 28px}
+  .hero-event{
+    font-size:28px;font-weight:700;letter-spacing:.06em;
+    color:var(--accent);margin-bottom:14px;line-height:1.4;
+  }
   .hero-title{
     font-size:20px;font-weight:700;line-height:1.8;margin-bottom:16px;
     letter-spacing:.03em;
+  }
+  @media (max-width:640px){
+    .hero-event{font-size:22px}
   }
   .hero-lead{
     font-size:14px;color:var(--text-sub);line-height:2;
@@ -278,6 +290,7 @@
   <section class="hero" id="top">
     <div class="hero-inner">
       <img src="MV.png" alt="MOTHER'S DAY 5.10" class="hero-mv">
+      <div class="hero-event">MOTHER'S DAY 5.10</div>
       <h1 class="hero-title">"いつもありがとう"の気持ちを込めて。</h1>
       <p class="hero-lead">
         今年の母の日は、5月10日（日）。藤崎では「どこに行けば、お母さまへのギフトが見つかるのか」がひと目でわかるよう、本館・大町館のフロアごとにおすすめ売場をご案内。期間中は4つの売場をめぐるスタンプラリーも開催します。
