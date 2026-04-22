@@ -423,15 +423,17 @@
     }
     .gift-merit-main-title .gift-big{
       font-size:52px;color:var(--c-accent);font-weight:700;
-      letter-spacing:.02em;display:inline-block;line-height:1.05;
+      letter-spacing:.02em;line-height:1.2;
     }
     .gift-merit-main-title .gift-mark{
       background:linear-gradient(transparent 60%,var(--c-mark) 60%);
       padding:0 6px;
+      -webkit-box-decoration-break:clone;box-decoration-break:clone;
     }
     .gift-merit-main-title .gift-accent-strong{
       color:var(--c-accent);font-weight:700;
     }
+    .gift-merit-main-title .gift-nowrap{white-space:nowrap}
     .gift-merit-main-desc{
       font-size:24px;color:var(--c-text);line-height:1.8;font-weight:500;
     }
@@ -656,12 +658,15 @@
       .gift-float{
         display:block;
         position:fixed;left:0;right:0;bottom:0;z-index:60;
+        background:#fff;
+        padding-bottom:env(safe-area-inset-bottom,0);
         box-shadow:0 -2px 10px rgba(0,0,0,0.06);
       }
       .gift-float .gift-float-primary{
-        display:block;width:100%;text-align:center;text-decoration:none;
-        padding:18px 12px;font-size:17px;font-weight:700;letter-spacing:.02em;
-        background:#29aabf;color:#fff;
+        display:flex;align-items:center;justify-content:center;
+        width:100%;min-height:56px;text-decoration:none;
+        padding:14px 12px;font-size:17px;font-weight:700;letter-spacing:.02em;
+        line-height:1.3;background:#29aabf;color:#fff;
       }
     }
   </style>
@@ -904,8 +909,7 @@
                 <h3 class="gift-merit-main-title">
                   期間中、藤崎オンラインで税込<strong>10,000円以上</strong>お買い上げで、<br>
                   冬のギフトでも使える<br>
-                  <span class="gift-big gift-mark">オンラインクーポン1,000円分</span>を<br>
-                  進呈いたします！
+                  <span class="gift-big gift-mark">オンラインクーポン1,000円分</span><span class="gift-nowrap">を進呈いたします！</span>
                 </h3>
                 <p class="gift-merit-main-note">
                   ※店頭ではご利用いただけません／※会員お1人様1回限り<br>
@@ -1103,26 +1107,6 @@
     <div class="c-page-top js-page-top">
       <a href="#"><img src="/assets/images/common/btn_fixed_pagetop.svg" alt="ページトップ"></a>
     </div>
-    <div class="c-share-btn">
-      <div class="c-share-btn__ac">
-        <label for="sharebutton" class="c-share-btn__toggle"><img src="/assets/images/common/ico_fixed_share.svg"
-            alt=""></label>
-        <input id="sharebutton" type="checkbox" autocomplete="off">
-        <div class="c-share-btn__content">
-          <p class="c-share-btn__ttl">共有する</p>
-          <ul class="c-share-btn__list">
-            <li class="c-share-btn__item"><a
-                href="https://twitter.com/share?url=https%3A%2F%2Fwww.fujisaki.co.jp&amp;text=" target="blank"><img
-                  src="/assets/images/common/ico_fixed_x.svg" alt="X"></a></li>
-            <li class="c-share-btn__item"><a
-                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.fujisaki.co.jp" target="blank"><img
-                  src="/assets/images/common/ico_fixed_facebook.svg" alt="facebook"></a></li>
-            <li class="c-share-btn__item"><a href="http://line.me/R/msg/text/?https%3A%2F%2Fwww.fujisaki.co.jp"
-                target="blank"><img src="/assets/images/common/ico_fixed_line.svg" alt="line"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
   </div>
   <footer class="l-footer">
     <div class="l-footer__wrap">
@@ -1264,7 +1248,7 @@
 
   <!-- モバイル用フローティングCTA -->
   <div class="gift-float">
-    <a href="https://fujisaki-online.jp/summergift/" class="gift-float-primary" target="_blank">藤崎オンラインへ »</a>
+    <a href="https://fujisaki-online.jp/summergift/" class="gift-float-primary" target="_blank">藤崎オンラインを見る »</a>
   </div>
   <script>document.body.classList.add('gift-active');</script>
 </body>
