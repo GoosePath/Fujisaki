@@ -186,20 +186,6 @@
       .gift .sp{display:block}
     }
 
-    /* === 全幅 帯（ページ最上部の継続訴求） === */
-    .gift-strip{
-      background:#c0392b;color:#fff;text-align:center;
-      padding:14px 16px;font-size:17px;font-weight:500;letter-spacing:.02em;
-    }
-    .gift-strip a{display:block;color:#fff}
-    .gift-strip .gift-strip-num{
-      display:inline-block;color:#fff;
-      font-size:22px;font-weight:700;margin:0 6px;letter-spacing:.04em;
-    }
-    @media (max-width:767px){
-      .gift-strip{font-size:15px;padding:12px;line-height:1.7}
-      .gift-strip .gift-strip-num{font-size:18px;margin:0 3px}
-    }
 
     /* === コンテナ === */
     /* 視覚的なコンテンツ幅 = 990px。PC では外側 padding を持たず、990px を丸ごと使い切る */
@@ -213,31 +199,18 @@
     /* === ヒーロー === */
     .gift-hero{padding:36px 0 40px;text-align:center}
     .gift-hero h1{
-      font-size:34px;font-weight:700;letter-spacing:.06em;line-height:1.5;
+      font-size:60px;font-weight:400;letter-spacing:.06em;line-height:1.4;
       margin-bottom:24px;
     }
     .gift-hero-mv{margin:0 auto 28px}
-    /* リードと承り期間ボックスの左右ラインを揃えるための共通ラッパー */
-    .gift-hero-stack{
-      display:inline-flex;flex-direction:column;align-items:stretch;
-      text-align:left;margin:0 auto;
-    }
     .gift-hero-lead{
       font-size:22px;line-height:1.95;color:var(--c-text);font-weight:500;
-      margin:0 0 24px;text-align:center;
+      margin:0 auto;text-align:center;
     }
-    .gift-hero-period{
-      display:block;margin:12px 0 0;
-      font-size:24px;color:var(--c-text);font-weight:700;
-      padding:0;letter-spacing:.02em;text-align:center;
-    }
-    .gift-hero-period strong{color:var(--c-accent);font-weight:700;margin-right:12px}
     @media (max-width:767px){
       .gift-hero{padding:28px 0 32px}
-      .gift-hero h1{font-size:26px;margin-bottom:20px;letter-spacing:.04em}
-      .gift-hero-stack{display:block;width:100%}
+      .gift-hero h1{font-size:36px;margin-bottom:20px;letter-spacing:.04em}
       .gift-hero-lead{font-size:18px;line-height:1.9}
-      .gift-hero-period{font-size:20px;padding:0;margin-top:8px}
     }
 
     /* === セクション見出し === */
@@ -263,20 +236,29 @@
     .gift-sec-head .gift-sec-lead{
       font-size:17px;color:var(--c-sub);margin-top:14px;line-height:1.85;
     }
+    .gift-sec-head .gift-sec-period{
+      font-size:26px;color:var(--c-text);font-weight:700;
+      margin-top:28px;margin-bottom:48px;
+      letter-spacing:.02em;line-height:1.5;
+    }
+    .gift-sec-head .gift-sec-period strong{
+      color:var(--c-text);font-weight:700;margin-right:14px;
+    }
     @media (max-width:767px){
       .gift-sec-head{margin-bottom:28px}
       .gift-sec-head h2{font-size:24px;letter-spacing:.02em}
       .gift-sec-head .gift-eyebrow{font-size:19px;margin-bottom:14px}
       .gift-sec-head .gift-eyebrow::before,
       .gift-sec-head .gift-eyebrow::after{width:22px;margin:0 8px}
+      .gift-sec-head .gift-sec-period{font-size:20px;margin-top:20px;margin-bottom:32px}
+      .gift-sec-head .gift-sec-period strong{margin-right:10px}
     }
 
     /* === セクション === */
     .gift-section{padding:64px 0;background:#fff}
-    .gift-section-soft{padding:64px 0;background:var(--c-bg-soft)}
     .gift-section-pale{padding:64px 0;background:var(--c-bg-pale)}
     @media (max-width:767px){
-      .gift-section,.gift-section-soft,.gift-section-pale{padding:48px 0}
+      .gift-section,.gift-section-pale{padding:48px 0}
     }
 
     /* === 主アクション：藤崎オンラインで注文（主役） === */
@@ -289,23 +271,24 @@
     }
     .gift-primary-action::before{
       content:"いちばんおすすめ";display:inline-block;
-      position:absolute;top:-18px;left:50%;transform:translateX(-50%);
+      position:absolute;top:-20px;left:50%;transform:translateX(-50%);
       background:var(--c-accent);color:#fff;
-      font-size:14px;font-weight:700;letter-spacing:.06em;padding:7px 20px;
+      font-size:17px;font-weight:700;letter-spacing:.06em;padding:9px 26px;
     }
     .gift-primary-catch{
-      font-size:20px;color:var(--c-text);line-height:1.9;font-weight:500;
+      font-size:24px;color:var(--c-text);line-height:1.9;font-weight:500;
       margin-bottom:64px;
     }
-    .gift-primary-catch strong{color:var(--c-accent);font-weight:700}
-    .gift-primary-catch .gift-mark{
-      background:linear-gradient(transparent 60%,var(--c-mark) 60%);
-      padding:0 4px;font-weight:700;
+    .gift-primary-catch strong{
+      color:var(--c-accent);font-weight:700;
     }
-    /* フル幅を避け、読みやすい固定幅に */
-    .gift .gift-btn-primary-big{
+    .gift-primary-catch .gift-mark{
+      color:var(--c-accent);font-weight:700;background:none;padding:0;
+    }
+    /* フル幅を避け、読みやすい固定幅に（.gift-btn の width:100% より後ろで上書き） */
+    .gift .gift-btn.gift-btn-primary-big{
       display:inline-block;width:auto;min-width:380px;max-width:100%;
-      font-size:19px;padding:22px 48px;
+      font-size:24px;padding:22px 48px;
     }
 
     /* === 補助アクション：デジタルカタログで商品を見る（大きく・明確） === */
@@ -316,10 +299,10 @@
     }
     /* ボーダーラインに被せるリボン型バッジ（主アクションと同系統の表現） */
     .gift-catalog-aux-eyebrow{
-      display:inline-block;position:absolute;top:-16px;left:50%;transform:translateX(-50%);
+      display:inline-block;position:absolute;top:-18px;left:50%;transform:translateX(-50%);
       background:#fff;color:var(--c-accent);
-      font-size:15px;font-weight:700;letter-spacing:.06em;
-      padding:6px 20px;border:1px solid var(--c-accent);
+      font-size:17px;font-weight:700;letter-spacing:.06em;
+      padding:8px 26px;border:1px solid var(--c-accent);
       white-space:nowrap;
     }
     /* 画像自体もクリック可能：ブロック表示＋hover でフィードバック */
@@ -330,18 +313,18 @@
       border:1px solid var(--c-line-soft);
     }
     .gift-catalog-aux-title{
-      font-size:25px;font-weight:700;line-height:1.5;margin-bottom:16px;color:var(--c-text);
+      font-size:28px;font-weight:700;line-height:1.5;margin-bottom:16px;color:var(--c-text);
     }
     .gift-catalog-aux-desc{
-      font-size:16px;color:var(--c-text);line-height:1.95;margin-bottom:28px;
+      font-size:20px;color:var(--c-text);line-height:1.95;margin-bottom:28px;
       text-align:center;
     }
     @media (max-width:767px){
       .gift-primary-action{padding:44px 22px 36px;margin-top:22px}
       .gift-primary-catch{font-size:17px;margin-bottom:44px}
-      .gift .gift-btn-primary-big{display:block;width:100%;min-width:0;font-size:16px;padding:18px 20px}
+      .gift .gift-btn.gift-btn-primary-big{display:block;width:100%;min-width:0;font-size:16px;padding:18px 20px}
       .gift-catalog-aux{margin-top:36px;padding:36px 22px 32px}
-      .gift-catalog-aux-eyebrow{font-size:13px;padding:5px 14px}
+      .gift-catalog-aux-eyebrow{font-size:15px;padding:7px 18px}
       .gift-catalog-aux-visual img{max-width:320px}
       .gift-catalog-aux-title{font-size:20px}
       .gift-catalog-aux-desc{font-size:15px}
@@ -417,14 +400,17 @@
       background:linear-gradient(transparent 60%,var(--c-mark) 60%);
       padding:0 6px;
     }
+    .gift-merit-main-title .gift-accent-strong{
+      color:var(--c-accent);font-weight:700;
+    }
     .gift-merit-main-desc{
-      font-size:17px;color:var(--c-text);line-height:1.95;
+      font-size:24px;color:var(--c-text);line-height:1.8;font-weight:500;
     }
     .gift-merit-main-note{
-      font-size:14.5px;color:var(--c-sub);line-height:1.9;margin-top:14px;
+      font-size:18px;color:var(--c-sub);line-height:1.9;margin-top:14px;
     }
     @media (max-width:767px){
-      .gift-merit-main-note{font-size:13.5px}
+      .gift-merit-main-note{font-size:15px}
     }
     @media (max-width:767px){
       .gift-merit-main{gap:16px;margin-bottom:24px}
@@ -432,7 +418,7 @@
       .gift-merit-num{font-size:15px}
       .gift-merit-main-title{font-size:22px}
       .gift-merit-main-title .gift-big{font-size:36px}
-      .gift-merit-main-desc{font-size:15px}
+      .gift-merit-main-desc{font-size:18px;line-height:1.75}
     }
 
     .gift-merit-sub{
@@ -448,9 +434,9 @@
     .gift-merit-sub-desc{
       font-size:15px;color:var(--c-sub);line-height:1.85;
     }
-    .gift-merit-sub-link{
+    .gift a.gift-merit-sub-link{
       display:inline-block;font-size:14px;color:var(--c-accent);
-      text-decoration:underline;margin-top:8px;
+      text-decoration:underline;text-underline-offset:3px;margin-top:8px;
     }
     @media (max-width:767px){
       .gift-merit-sub{grid-template-columns:1fr;gap:10px}
@@ -469,11 +455,11 @@
       margin-top:48px;padding:0;text-align:center;
     }
     .gift-member-text{
-      font-size:18px;color:var(--c-text);line-height:1.95;margin-bottom:22px;
+      font-size:22px;color:var(--c-text);line-height:1.9;margin-bottom:24px;font-weight:500;
     }
     .gift-member-text strong{color:var(--c-text);font-weight:700}
     @media (max-width:767px){
-      .gift-member-text{font-size:16px}
+      .gift-member-text{font-size:18px;line-height:1.8}
     }
 
     /* === 詳細条件（注釈） === */
@@ -498,7 +484,7 @@
       padding:28px 24px;text-align:left;
     }
     .gift-order-card-title{
-      font-size:26px;font-weight:700;color:var(--c-text);
+      font-size:28px;font-weight:700;color:var(--c-text);
       padding-bottom:14px;margin-bottom:24px;
       border-bottom:2px solid var(--c-accent);
     }
@@ -510,7 +496,8 @@
       line-height:1.5;
     }
     .gift-order-block p{
-      font-size:17px;color:var(--c-text);line-height:1.95;margin-bottom:6px;
+      font-size:21px;color:var(--c-text);line-height:1.85;font-weight:700;
+      margin-bottom:10px;
     }
     .gift-order-block p:last-child{margin-bottom:0}
     .gift-order-block ul.gift-notes{
@@ -522,8 +509,8 @@
     /* 承り期間：旧 LP と同じく "■" プレフィックス＋太字のシンプル表記。
        カラーバー＋淡色背景の callout（AI 風の付箋デザイン）はやめる。 */
     .gift-order-period-big{
-      display:block;font-size:17px;color:var(--c-text);font-weight:700;
-      padding:0;background:none;border:0;margin:0 0 12px;line-height:1.6;
+      display:block;font-size:24px;color:var(--c-text);font-weight:700;
+      padding:0;background:none;border:0;margin:0 0 14px;line-height:1.55;
     }
     .gift-order-period-big::before{
       content:"■ ";color:var(--c-accent);font-weight:700;
@@ -541,10 +528,10 @@
     }
     @media (max-width:767px){
       .gift-order-card{padding:24px 22px}
-      .gift-order-card-title{font-size:22px}
-      .gift-order-period-big{font-size:15px}
+      .gift-order-card-title{font-size:24px}
+      .gift-order-period-big{font-size:19px}
       .gift-order-block h4{font-size:18px}
-      .gift-order-block p{font-size:16px}
+      .gift-order-block p{font-size:18px}
       .gift-order-table{font-size:14px}
       .gift-order-table th,.gift-order-table td{padding:10px 10px}
     }
@@ -558,26 +545,45 @@
       padding-bottom:14px;border-bottom:2px solid var(--c-accent);text-align:left;
     }
     .gift-fcard-rows{
-      display:flex;flex-direction:column;gap:12px;margin-bottom:14px;
+      display:flex;flex-direction:column;gap:14px;margin-bottom:18px;
     }
     .gift-fcard-row{
-      display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;
-      padding:16px 18px;border:1px solid var(--c-line-soft);
+      display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:center;
+      padding:20px 24px;border:1px solid var(--c-line-soft);
     }
-    .gift-fcard-row img{width:96px;height:auto}
-    .gift-fcard-row-text{font-size:17px;color:var(--c-text);line-height:1.7}
-    .gift-fcard-row-text strong{color:var(--c-text);font-weight:700;display:block;margin-bottom:4px;font-size:17px}
+    .gift-fcard-row img{width:120px;height:auto}
+    .gift-fcard-row-text{color:var(--c-text);line-height:1.5}
+    .gift-fcard-row-pre{
+      font-size:17px;color:var(--c-text);font-weight:700;
+      margin-bottom:6px;line-height:1.5;
+    }
+    .gift-fcard-row-main{
+      display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;line-height:1.2;
+    }
+    .gift-fcard-row-mid{
+      font-size:19px;font-weight:700;color:var(--c-text);
+    }
+    .gift-fcard-row-amount{
+      font-size:34px;font-weight:700;letter-spacing:.02em;
+    }
+    .gift-fcard-amount-red{color:#c0392b}
+    .gift-fcard-amount-blue{color:#1f4e93}
     .gift-fcard-note{font-size:15px;color:var(--c-sub);line-height:1.85}
     @media (max-width:767px){
-      .gift-fcard{padding:22px 20px}
-      .gift-fcard-row img{width:80px}
+      .gift-fcard{padding:22px 18px}
+      .gift-fcard-row{grid-template-columns:auto 1fr;gap:14px;padding:16px 14px}
+      .gift-fcard-row img{width:82px}
+      .gift-fcard-row-pre{font-size:14px;margin-bottom:4px}
+      .gift-fcard-row-main{gap:10px}
+      .gift-fcard-row-mid{font-size:15px}
+      .gift-fcard-row-amount{font-size:22px}
     }
 
     /* === カタログを郵送でお取り寄せ（紙面を主役に、縦積み構成） === */
     .gift-cat-mail{
       background:#fff;border:1px solid var(--c-line);
       padding:48px 48px 52px;text-align:center;
-      max-width:760px;margin:0 auto;
+      max-width:990px;margin:0 auto;
     }
     /* 画像自体もクリック可能：ブロック表示＋hover でフィードバック */
     .gift-cat-mail-visual{
@@ -591,12 +597,12 @@
     }
     .gift-cat-mail-body{margin-bottom:36px}
     .gift-cat-mail-body p{
-      font-size:17px;color:var(--c-text);line-height:1.95;
-      max-width:560px;margin:0 auto;
+      font-size:20px;color:var(--c-text);line-height:1.95;
+      max-width:620px;margin:0 auto;
     }
     /* 期限は通常色＋太字（アクセント色だと動線の優先度が高く見えてしまうため） */
     .gift-cat-mail-body .gift-cat-mail-period{
-      font-size:18px;color:var(--c-text);font-weight:700;margin-top:16px;
+      font-size:22px;color:var(--c-text);font-weight:700;margin-top:16px;
     }
     /* 動線の優先度としてはデジカタ > 郵送カタログ。アウトラインで主張を抑える */
     .gift .gift-cat-mail-link{
@@ -610,8 +616,8 @@
       .gift-cat-mail{padding:32px 22px 36px}
       .gift-cat-mail-visual{max-width:220px;margin-bottom:24px}
       .gift-cat-mail-body{margin-bottom:28px}
-      .gift-cat-mail-body p{font-size:15px}
-      .gift-cat-mail-body .gift-cat-mail-period{font-size:16px;margin-top:12px}
+      .gift-cat-mail-body p{font-size:17px}
+      .gift-cat-mail-body .gift-cat-mail-period{font-size:18px;margin-top:12px}
       .gift .gift-cat-mail-link{font-size:17px;padding:16px 22px;min-width:0;width:100%}
     }
 
@@ -789,13 +795,6 @@
       </div>
       <div class="gift">
 
-        <!-- 上部 帯（継続訴求） -->
-        <div class="gift-strip">
-          <a href="#gift-online">
-            藤崎オンラインなら夏ギフトが<span class="gift-strip-num">送料無料</span>＆<span class="gift-strip-num">1,000円クーポン</span>進呈　»
-          </a>
-        </div>
-
         <!-- ヒーロー -->
         <section class="gift-hero">
           <div class="gift-container">
@@ -804,15 +803,10 @@
               <img src="gift_s/main.jpg" alt="令和8年 藤崎 夏のギフト" class="pc">
               <img src="gift_s/main_sp.jpg" alt="令和8年 藤崎 夏のギフト" class="sp">
             </div>
-            <div class="gift-hero-stack">
-              <p class="gift-hero-lead">
-                日頃の感謝を、夏のごあいさつに。<br>
-                藤崎が選ぶ、心のこもった夏のギフトをお届けします。
-              </p>
-              <p class="gift-hero-period">
-                <strong>承り期間</strong>6月5日（金）〜 8月6日（木）
-              </p>
-            </div>
+            <p class="gift-hero-lead">
+              日頃の感謝を、夏のごあいさつに。<br>
+              藤崎が選ぶ、心のこもった夏のギフトをお届けします。
+            </p>
           </div>
 
           <!-- 冒頭アンカーナビ -->
@@ -829,14 +823,15 @@
         <section class="gift-section-pale" id="gift-online">
           <div class="gift-container">
             <div class="gift-sec-head">
-              <span class="gift-eyebrow">ご注文方法</span>
+              <span class="gift-eyebrow">藤崎オンラインでのご注文</span>
               <h2>藤崎の夏のギフトは、<span class="gift-mark">オンラインで。</span></h2>
               <p class="gift-sec-lead">送料無料・クーポン進呈・お届け先入力もかんたん。お得で便利な藤崎オンラインをご利用ください。</p>
+              <p class="gift-sec-period"><strong>承り期間</strong>6月5日（金）〜 8月6日（木）</p>
             </div>
             <!-- 主アクション：藤崎オンラインで注文（主役） -->
             <div class="gift-primary-action">
               <p class="gift-primary-catch">
-                対象 <strong>1,000点以上が送料無料</strong>。さらに税込10,000円以上で<span class="gift-mark">1,000円クーポン</span>をもれなく進呈。<br>
+                対象 <strong>1,000点以上が送料無料</strong>。さらに税込10,000円以上で<span class="gift-mark">オンラインで使える1,000円クーポン</span>をもれなく進呈。<br>
                 お届け先の入力もかんたん、いちばんお得で便利なご注文方法です。
               </p>
               <a href="https://fujisaki-online.jp/summergift/" class="gift-btn gift-btn-primary gift-btn-primary-big" target="_blank">
@@ -873,8 +868,8 @@
                 <span class="gift-merit-num">メリット その1</span>
                 <h3 class="gift-merit-main-title">
                   「送料無料」マークの付いた<br>
-                  対象商品 <span class="gift-big">1,000点以上</span>が<br>
-                  藤崎オンラインなら <span class="gift-mark">全国送料無料</span>でお届け！
+                  対象商品 1,000点以上が<br>
+                  藤崎オンラインなら <span class="gift-big gift-mark">全国送料無料</span>でお届け！
                 </h3>
                 <p class="gift-merit-main-desc">カタログ・サイト上で「送料無料」マークの付いた商品は、藤崎オンライン（ネットショッピング）でのお買い上げに限り、全国送料無料でお届けいたします。</p>
                 <p class="gift-merit-main-note">※オンラインの送料特典は8月6日（木）まで／一部離島などを除きます。</p>
@@ -883,10 +878,10 @@
               <div class="gift-merit-main-card">
                 <span class="gift-merit-num">メリット その2</span>
                 <h3 class="gift-merit-main-title">
-                  <span class="gift-morenaku">もれなく</span>
-                  期間中、税込 <strong>10,000円以上</strong> のお買い上げで、<br>
-                  <span class="gift-mark">冬のギフトでも使える <ruby>オンライン<rt>・・・・・</rt></ruby></span><br>
-                  <span class="gift-big">クーポン1,000円分</span>を進呈！
+                  期間中、藤崎オンラインで税込<strong>10,000円以上</strong>お買い上げで、<br>
+                  冬のギフトでも使える<br>
+                  <span class="gift-big gift-mark">オンラインクーポン1,000円分</span>を<br>
+                  進呈いたします！
                 </h3>
                 <p class="gift-merit-main-note">
                   ※店頭ではご利用いただけません／※会員お1人様1回限り<br>
@@ -938,11 +933,11 @@
         </section>
 
         <!-- 店頭・FAX/郵送 でのご注文 -->
-        <section class="gift-section-soft">
+        <section class="gift-section-pale">
           <div class="gift-container">
             <div class="gift-sec-head">
               <span class="gift-eyebrow">店舗・FAX・郵送でのご注文</span>
-              <h2>店頭・FAX・郵送でご注文の方へ</h2>
+              <h2>店頭・FAX・郵送でご注文も承ります</h2>
             </div>
 
             <div class="gift-order-list">
@@ -1017,11 +1012,23 @@
               <div class="gift-fcard-rows">
                 <div class="gift-fcard-row">
                   <img src="gift_s/f_220.png" alt="F 220円">
-                  <div class="gift-fcard-row-text"><strong>このマークの商品</strong>Fカード会員様に限り 全国送料 220円</div>
+                  <div class="gift-fcard-row-text">
+                    <p class="gift-fcard-row-pre">このマークのついた商品は</p>
+                    <p class="gift-fcard-row-main">
+                      <span class="gift-fcard-row-mid">Fカード会員様に限り</span>
+                      <span class="gift-fcard-row-amount gift-fcard-amount-red">全国送料220円</span>
+                    </p>
+                  </div>
                 </div>
                 <div class="gift-fcard-row">
                   <img src="gift_s/f_230.png" alt="F 330円">
-                  <div class="gift-fcard-row-text"><strong>このマークの商品</strong>Fカード会員様に限り 全国送料 330円</div>
+                  <div class="gift-fcard-row-text">
+                    <p class="gift-fcard-row-pre">このマークのついた商品は</p>
+                    <p class="gift-fcard-row-main">
+                      <span class="gift-fcard-row-mid">Fカード会員様に限り</span>
+                      <span class="gift-fcard-row-amount gift-fcard-amount-blue">全国送料330円</span>
+                    </p>
+                  </div>
                 </div>
               </div>
               <p class="gift-fcard-note">※店頭の送料特典は8月〇日（〇）まで／一部送料は藤崎が負担いたします／一部離島などを除きます。</p>
