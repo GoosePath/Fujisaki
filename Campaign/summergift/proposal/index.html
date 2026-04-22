@@ -213,38 +213,6 @@
       .gift-hero-lead{font-size:18px;line-height:1.9}
     }
 
-    /* === 冒頭アンカーナビ（2枚のカード型導線） === */
-    .gift-anchor-nav{
-      display:grid;grid-template-columns:1fr 1fr;gap:16px;
-      max-width:820px;margin:36px auto 0;
-    }
-    .gift .gift-anchor-nav a{
-      display:flex;align-items:center;justify-content:center;gap:10px;
-      padding:24px 20px;font-size:20px;font-weight:700;letter-spacing:.02em;
-      line-height:1.4;text-align:center;border:2px solid var(--c-accent);
-      transition:background .15s,color .15s,border-color .15s;
-    }
-    .gift .gift-anchor-nav .gift-anchor-nav-primary{
-      background:var(--c-accent);color:#fff;
-    }
-    .gift .gift-anchor-nav .gift-anchor-nav-primary:hover{
-      background:var(--c-accent-dark);border-color:var(--c-accent-dark);
-    }
-    .gift .gift-anchor-nav .gift-anchor-nav-secondary{
-      background:#fff;color:var(--c-accent);
-    }
-    .gift .gift-anchor-nav .gift-anchor-nav-secondary:hover{
-      background:var(--c-accent);color:#fff;
-    }
-    .gift-anchor-nav .gift-anchor-arrow{
-      display:inline-block;font-weight:400;font-size:22px;
-    }
-    @media (max-width:767px){
-      .gift-anchor-nav{grid-template-columns:1fr;gap:10px;margin-top:24px}
-      .gift .gift-anchor-nav a{padding:18px 16px;font-size:16px}
-      .gift-anchor-nav .gift-anchor-arrow{font-size:18px}
-    }
-
     /* === セクション見出し === */
     .gift-sec-head{text-align:center;margin-bottom:36px}
     .gift-sec-head .gift-eyebrow{
@@ -613,14 +581,14 @@
 
     /* === カタログを郵送でお取り寄せ（紙面を主役に、縦積み構成） === */
     .gift-cat-mail{
-      background:transparent;border:0;
-      padding:0;text-align:center;
+      background:#fff;border:1px solid var(--c-line);
+      padding:48px 48px 52px;text-align:center;
       max-width:990px;margin:0 auto;
     }
     /* 画像自体もクリック可能：ブロック表示＋hover でフィードバック */
     .gift-cat-mail-visual{
-      display:block;margin:0 auto 36px;transition:opacity .15s;
-      max-width:520px;
+      display:block;margin:0 auto 32px;transition:opacity .15s;
+      max-width:320px;
     }
     .gift-cat-mail-visual:hover{opacity:.85}
     .gift-cat-mail-visual img{
@@ -645,8 +613,8 @@
     }
     .gift .gift-cat-mail-link:hover{background:var(--c-accent);color:#fff}
     @media (max-width:767px){
-      .gift-cat-mail{padding:0}
-      .gift-cat-mail-visual{max-width:320px;margin-bottom:24px}
+      .gift-cat-mail{padding:32px 22px 36px}
+      .gift-cat-mail-visual{max-width:220px;margin-bottom:24px}
       .gift-cat-mail-body{margin-bottom:28px}
       .gift-cat-mail-body p{font-size:17px}
       .gift-cat-mail-body .gift-cat-mail-period{font-size:18px;margin-top:12px}
@@ -844,8 +812,9 @@
           <!-- 冒頭アンカーナビ -->
           <div class="gift-container">
             <nav class="gift-anchor-nav">
-              <a href="#gift-online" class="gift-anchor-nav-primary">藤崎オンラインでのご注文<span class="gift-anchor-arrow">»</span></a>
-              <a href="#gift-offline" class="gift-anchor-nav-secondary">店舗・FAX・郵送でのご注文<span class="gift-anchor-arrow">»</span></a>
+              <a href="#gift-online"><span class="gift-anchor-arrow">»</span>藤崎オンラインでのご注文</a>
+              <a href="#gift-store"><span class="gift-anchor-arrow">»</span>店頭でのご注文</a>
+              <a href="#gift-fax"><span class="gift-anchor-arrow">»</span>FAX・郵送でのご注文</a>
             </nav>
           </div>
         </section>
@@ -874,7 +843,7 @@
             <div class="gift-catalog-aux">
               <span class="gift-catalog-aux-eyebrow">商品をじっくりご覧になりたい方へ</span>
               <a href="https://www.fujisaki.co.jp/summergift/catalog/" class="gift-catalog-aux-visual" target="_blank" aria-label="デジタルカタログを見る">
-                <img src="http://127.0.0.1:5501/Campaign/summergift/img/digital_catalog.png" alt="デジタルカタログ見開きイメージ">
+                <img src="https://fujisaki-summergift-proposal.vercel.app/img/digital_catalog.png" alt="デジタルカタログ見開きイメージ">
               </a>
               <h3 class="gift-catalog-aux-title">デジタルカタログで商品を見る</h3>
               <p class="gift-catalog-aux-desc">紙のカタログと同じ感覚で、ページをめくりながら商品をご覧いただけます。気になった商品は、そのまま藤崎オンラインへ。</p>
@@ -964,7 +933,7 @@
         </section>
 
         <!-- 店頭・FAX/郵送 でのご注文 -->
-        <section class="gift-section-pale" id="gift-offline">
+        <section class="gift-section-pale">
           <div class="gift-container">
             <div class="gift-sec-head">
               <span class="gift-eyebrow">店舗・FAX・郵送でのご注文</span>
@@ -1077,7 +1046,7 @@
             </div>
             <div class="gift-cat-mail">
               <a href="https://shop.fujisaki.co.jp/shopping/2026catalog.xhtml" class="gift-cat-mail-visual" target="_blank" aria-label="カタログ郵送お申込み">
-                <img src="http://127.0.0.1:5501/Campaign/summergift/img/catalog_yuso.png" alt="令和8年 藤崎 夏のギフト カタログ表紙">
+                <img src="https://fujisaki-summergift-proposal.vercel.app/img/catalog_yuso.png" alt="令和8年 藤崎 夏のギフト カタログ表紙">
               </a>
               <div class="gift-cat-mail-body">
                 <p>令和8年 藤崎 夏のギフト カタログを、ご自宅まで郵送でお届けいたします。</p>
