@@ -612,7 +612,9 @@
         var viewer_init_height = 0;
         var screenSize_height = window.parent.getScreenSize();
         // CTA などビューワ下部の要素が隠れないよう高さを制限する
-        var MAX_VIEWER_HEIGHT = 560;
+        // モバイルでは viewport の 55% 以内に抑えて CTA を見えるようにする
+        var viewportH = window.innerHeight || document.documentElement.clientHeight || screenSize_height;
+        var MAX_VIEWER_HEIGHT = Math.min(560, Math.round(viewportH * 0.55));
         var computed_viewer_height = Math.min(screenSize_height - adjustNum, MAX_VIEWER_HEIGHT);
 
         $(".book-detail-block__viewer-dummy").animate({"height": computed_viewer_height}, 0);
