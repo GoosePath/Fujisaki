@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ActiBook Viewer (Mock)</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #4a4a4a;
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      overflow: hidden;
+    }
+    .viewer-root {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .book-cover {
+      position: relative;
+      height: 100%;
+      max-height: 640px;
+      aspect-ratio: 210 / 297;
+      background: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+    }
+    .book-cover__placeholder {
+      text-align: center;
+    }
+    .book-cover__placeholder-label {
+      display: block;
+      font-size: 12px;
+      color: #bbb;
+      margin-top: 8px;
+      letter-spacing: 0.2em;
+    }
+    .mock-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 2px;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+    }
+  </style>
+</head>
+<body>
+  <div class="viewer-root">
+    <div class="book-cover">
+      <div class="book-cover__placeholder">
+        COVER
+        <span class="book-cover__placeholder-label">MOCK</span>
+      </div>
+    </div>
+  </div>
+  <div class="mock-badge">pdfViewer / mock</div>
+  <script>
+    function showShareContent() {}
+    function showPrintDialogContent() {}
+    function triggerFullScreenFun() {}
+  </script>
+</body>
+</html>

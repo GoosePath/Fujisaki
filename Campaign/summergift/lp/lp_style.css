@@ -1,0 +1,908 @@
+@charset "utf-8";
+
+#giftCo h2,
+#giftCo h3,
+#giftCo h4,
+#giftCo h5,
+#giftCo h6 {
+  font-weight: bold;
+}
+
+#giftCo .pctR {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+#giftCo .red {
+  color: #FF0000;
+}
+
+
+
+#giftCo {
+  text-align: center;
+}
+
+/* ------------------------ division ----------------- */
+
+#giftCo .l-breadcrumbs {
+  text-align: left;
+}
+
+#giftCo h1 {
+  margin: auto;
+  padding: 0 0 1em;
+  text-align: center;
+  font-size: 2.625rem;
+}
+
+#giftCo #Contents {
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  width: 990px;
+}
+
+#giftCo p {
+  line-height: 1.6em;
+  margin: 0 0 1.5em;
+}
+
+#giftCo p.catch {
+  color: #52AFA4;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1em 0;
+  text-align: center
+}
+
+#giftCo .tento p {
+  margin: 0;
+}
+
+#giftCo .aCENTER {
+  text-align: center
+}
+
+#giftCo .ver {
+  flex-direction: row-reverse
+}
+
+@media screen and (max-width:767px) {
+  #giftCo .pc {
+    display: none;
+  }
+
+  #giftCo .pctR.w100 {
+    width: 100%;
+    float: none;
+    margin: 0 0 1em;
+  }
+
+  #giftCo h1 {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+  #giftCo .sp {
+    display: none;
+  }
+
+  #giftCo .tbl th img {
+    padding-top: 15px;
+  }
+
+  #giftCo #main img {
+    width: 990px;
+  }
+}
+
+@media print {
+  .sp {
+    display: none;
+  }
+}
+
+/* -------------- chugen --------------- */
+
+
+#giftCo #link01,
+#giftCo #link02,
+#giftCo #link03 {
+  clear: both;
+  display: block;
+}
+
+#giftCo h2 {
+  background: #C5E4E1;
+  clear: both;
+  color: #333;
+  font-size: 1.5em;
+  margin: 2em 0 1em;
+  padding: .6em;
+  position: relative;
+  text-align: center;
+}
+
+#giftCo h2.bg {
+  background: #F9E7AE
+}
+
+#giftCo h2.specialTitle {
+  background: #fbf1ec;
+  clear: both;
+  color: #8DBDD1;
+  font-size: 2.1em;
+  line-height: 1.4;
+  margin: 1em 0;
+  padding: .6em;
+  position: relative;
+  text-align: center;
+}
+
+#giftCo h2.specialTitle .ss {
+  font-size: 0.75em;
+}
+
+#giftCo .txtL p {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+
+#giftCo h3 {
+  font-size: 1.435rem;
+  border: 2px solid #52AFA4;
+  color: #52AFA4;
+  padding: .6em 0;
+  margin: 2em 0 1em;
+  text-align: center;
+}
+
+/*お知らせ*/
+#giftCo .tento,
+#giftCo .oshirase {
+  margin: 0 0 6em
+}
+
+#giftCo .oshirase h2 {
+  background: transparent;
+  color: #cc0000;
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+#giftCo .oshirase .Inner {
+  border: 2px solid #CC0000;
+  padding: 25px;
+  border-radius: 0 0 8px 8px;
+  margin: 0 0 2em
+}
+
+#giftCo .oshirase h3 {
+  color: #FFF;
+  background: #cc0000;
+  padding: .6em 0;
+  font-size: 1.65em;
+  margin: .6em 0 0;
+  text-align: center;
+  position: relative;
+  border: 0;
+  border-radius: 8px 8px 0 0;
+}
+
+#giftCo .oshirase h3 img {
+  position: absolute;
+  left: 1em;
+  top: -.6em;
+  width: 20%;
+}
+
+#giftCo .oshirase h3 .big {
+  font-size: 1.65em;
+}
+
+#giftCo .oshirase h4 {
+  background: #8E8AA6;
+  color: #fff;
+  font-size: 1.313rem;
+  text-align: center;
+  width: 22%;
+  margin: 0;
+  border-radius: 8px;
+  display: table;
+  border: 0;
+  padding: 0;
+}
+
+#giftCo .oshirase h4 span {
+  display: table-cell;
+  vertical-align: middle
+}
+
+
+#giftCo .oshirase p {
+  margin: 0
+}
+
+#giftCo .oshirase .itemBox,
+#giftCo .oshirase .shosai {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#giftCo .oshirase .gift {
+  background: #8E8AA6;
+  border-radius: 10px;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 1.4;
+  margin-right: 10px;
+  padding: .3em 0;
+  text-align: center;
+  width: 80px;
+}
+
+#giftCo .oshirase .shosai {
+  justify-content: space-between;
+}
+
+#giftCo .oshirase .itemBox {
+  align-items: center;
+  width: 76%;
+}
+
+#giftCo .oshirase .onLine strong {
+  font-size: 1.75rem
+}
+
+#giftCo .oshirase .onLine p {
+  line-height: 2em;
+}
+
+#giftCo .oshirase hr {
+  width: 100%;
+  border: 0;
+  border-top: 2px dotted #DDD;
+  height: 1em;
+  padding: 0;
+  display: block;
+  margin: 1em 0 0
+}
+
+#giftCo .ss,
+#giftCo .oshirase h4 .ss,
+#giftCo .oshirase .itemBox .small {
+  font-size: 70%
+}
+
+#giftCo .oshirase .itemBox p.ico {
+  margin: 0 15px 0 0
+}
+
+#giftCo .oshirase h5 {
+  font-size: 1.15em;
+  line-height: 1.3;
+}
+
+#giftCo .oshirase h5 strong {
+  color: #c21920;
+  font-size: 1.45em;
+}
+
+#giftCo .oshirase p.price {
+  color: #c21920;
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.4em
+}
+
+#giftCo .oshirase p.blu {
+  color: #375095
+}
+
+#giftCo .marker {
+  background: linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(255, 255, 0, .9) 70%);
+  display: inline;
+}
+
+#giftCo .oshirase ul.listNote {
+  padding: .62em 0 0
+}
+
+
+#giftCo .oshirase h4.onLine img {
+  position: absolute;
+  bottom: -10px;
+  left: 60px;
+}
+
+#giftCo .oshirase h4.onLine {
+  color: #666;
+  background: #EFE07A;
+  padding: 1.4em 0 0;
+  position: relative;
+}
+
+
+/**/
+#giftCo table {
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+#giftCo th,
+#giftCo td {
+  padding: 1em;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #666;
+}
+
+#giftCo th {
+  background: #E4EFED
+}
+
+/* --- */
+
+
+#giftCo .benri {
+  margin-bottom: 3em
+}
+
+#giftCo a {
+  text-decoration: underline;
+}
+
+
+
+#giftCo .tokuten p {
+  font-weight: bold;
+  font-size: 1.375rem;
+  margin: 0 0 .2em
+}
+
+#giftCo .tokuten .morenaku {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#giftCo .tokuten .morenaku .sub {
+  display: block;
+  width: 60px;
+  line-height: 60px;
+  border-radius: 200px;
+  margin: 0 15px 0 0;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #CCC;
+}
+
+#giftCo .tokuten ul.listNote li {
+  display: inline-block
+}
+
+#giftCo .tokuten .morenaku strong {
+  color: #cc0000;
+  font-size: 120%;
+}
+
+
+#giftCo .tokuten .listPoint {
+  text-align: left;
+  padding: 1.5em 0;
+  margin: 1.5em 0 0;
+  border-top: 1px dotted #CCC;
+
+}
+
+#giftCo .tokuten .listPoint li {
+  line-height: 1.8em;
+}
+
+#giftCo .tokuten .listPoint li:first-letter {
+  color: #52AFA4;
+
+}
+
+
+
+/* ------ common ------ */
+
+#giftCo h3 strong {
+  background: #ffff00;
+  border: 1px solid #00ab96;
+  display: inline-block;
+  font-size: .5em;
+  line-height: 1em;
+  padding: .5em;
+  vertical-align: middle;
+}
+
+#giftCo h3 em {
+  font-size: 1.75em;
+  vertical-align: sub;
+}
+
+#giftCo ul.tab {
+  background: #000;
+  display: table;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 990px;
+}
+
+#giftCo ul.tab li {
+  background: #000;
+  display: table-cell;
+  text-align: center;
+  width: 330px;
+}
+
+#giftCo ul.tab li.line a {
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
+
+#giftCo ul.tab a {
+  color: #FFF;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+#giftCo ul.tab a:active {
+  background: #333;
+}
+
+#giftCo h4 {
+  color: #000;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin-bottom: 5px;
+}
+
+#giftCo td .bb {
+  font-size: 1.5em;
+}
+
+#giftCo ul.listNote {
+  display: inline-block;
+  padding: 0 0 1.5em;
+  text-align: left;
+}
+
+#giftCo ul.listNote li {
+  line-height: 1.8em;
+  padding: 0 0 0 1em;
+  text-indent: -1em;
+}
+
+#giftCo .btnMore {
+  clear: both;
+  padding: 2em 0;
+  text-align: center;
+}
+
+#giftCo .btnMore.mgb {
+  padding-bottom: 6em
+}
+
+#giftCo .btnMore a {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: .34em;
+  text-decoration: none;
+}
+
+#giftCo .btnMore a span {
+  background: #52AFA4;
+  border-radius: 8px;
+  display: block;
+  padding: 1em 2em;
+}
+
+/* -------------- tokuten_02Box --------------- */
+
+
+#giftCo .flexPC.catalog .box {
+  text-align: center
+}
+
+#giftCo .flexPC.catalog h3 {
+  border: 0;
+  color: #000;
+}
+
+#giftCo .flexPC.catalog p.txt {
+  display: inline-block;
+  text-align: left
+}
+
+@media screen and (min-width:768px) {
+
+  #giftCo .Column,
+  #giftCo .flexPC {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #giftCo .flexPC .Inn {
+    width: 48%;
+  }
+
+  #giftCo .Column.three .box {
+    width: 32%;
+  }
+
+  #giftCo #Contents a:active img {
+    filter: alpha(opacity=75);
+    -moz-opacity: .75;
+    opacity: .75;
+  }
+
+  #giftCo th br,
+  #giftCo td br {
+    display: none
+  }
+
+  #giftCo .flexPC.catalog {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #giftCo .flexPC.catalog .box {
+    width: 50%;
+  }
+
+  #giftCo .flexPC.catalog .box:nth-of-type(1) {
+    border-right: 1px solid #CCC;
+  }
+
+}
+
+@media only screen and (max-width:767px) {
+  #giftCo .txtL {
+    text-align: center;
+  }
+
+  #giftCo img {
+    max-width: 100%;
+  }
+
+  #giftCo .w30 {
+    width: 30%;
+  }
+
+  #giftCo .w40 {
+    width: 40%;
+  }
+
+  #giftCo #Contents {
+    clear: both;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 10px;
+    text-align: left;
+    width: 96%;
+  }
+
+  /* -------------- chugen --------------- */
+
+  #giftCo p {
+    font-size: .938em;
+  }
+
+  #giftCo .ss {
+    font-size: .75em;
+  }
+
+  #giftCo .txtL p {
+    font-size: 5.6vw;
+  }
+
+  #giftCo .txtL p a {
+    font-size: 1rem;
+  }
+
+  #giftCo h2 {
+    font-size: 1.25em;
+  }
+
+  #giftCo h3 {
+    font-size: 1em;
+    font-feature-settings: "palt";
+  }
+
+  #giftCo h3.LL {
+    font-size: 1.25em;
+  }
+
+  #giftCo .flexPC.benri .Inn {
+    padding-bottom: 1em;
+  }
+
+  #giftCo ul.tab {
+    background: #000;
+    display: table;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  #giftCo ul.tab li {
+    background: #000;
+    display: table-cell;
+    font-weight: 100;
+    line-height: 1.2em;
+    text-align: center;
+    width: 33%;
+  }
+
+  #giftCo .bb {
+    font-size: 1.25em;
+  }
+
+  #giftCo ul.tab li.line {
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+  }
+
+  #giftCo ul.tab a {
+    color: #FFF;
+    display: block;
+    font-size: 11px;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+
+  #giftCo .postageBox {
+    padding: 1em .6em;
+  }
+
+  #giftCo .tokutenBox p.price {
+    font-size: 1.15em;
+  }
+
+  #giftCo .tokutenBox p.price .big {
+    font-size: 1.25em;
+  }
+
+  #giftCo .tento {
+    margin: 0
+  }
+
+  #giftCo .oshirase {
+    margin: 0 0 2em
+  }
+
+  #giftCo .btnMore.mgb {
+    padding-bottom: 2em
+  }
+
+  #giftCo h4 {
+    font-size: 1.063em;
+  }
+
+  #giftCo .flexPC.catalog .box {
+    padding: 1em 0 2em 0;
+    width: 90%;
+    margin: auto
+  }
+
+  #giftCo .flexPC.catalog .box:nth-of-type(1) {
+    border-bottom: 1px solid #CCC;
+    padding-top: 0;
+  }
+
+  #giftCo .tokutenBox {
+    padding: 1em;
+    margin: 0 0 2em;
+    text-align: center;
+  }
+
+  #giftCo .tokutenBox ul {
+    text-align: left
+  }
+
+  #giftCo .btnMore a {
+    font-size: 1em;
+  }
+
+  #giftCo ul.listNote li {
+    font-size: .813em;
+  }
+
+  #giftCo .bb {
+    font-size: 1.5em;
+  }
+
+  #giftCo .flexPC p {
+    margin: 0 0 1em;
+  }
+
+  #giftCo .flexPC .Inn strong {
+    color: #00ab96;
+  }
+
+
+
+  /**/
+  #giftCo .oshirase h3 {
+    font-size: 1.25em;
+  }
+
+  #giftCo .oshirase h3 .big {
+    font-size: 1.25em;
+  }
+
+  #giftCo .oshirase h4 {
+    font-size: 1.15em;
+  }
+
+  #giftCo .oshirase .box02 {
+    display: block;
+  }
+
+  #giftCo .oshirase {
+    padding: 0;
+    width: 100%;
+  }
+
+  #giftCo .oshirase .gift {
+    font-size: .75em;
+  }
+
+  #giftCo .oshirase .box02 .shosai:first-child {
+    border-bottom: 1px solid #231815;
+    border-right: none;
+    margin: 0 0 2em 0;
+    padding: 0 0 2em 0;
+  }
+
+  #giftCo .oshirase h5 {
+    font-size: .938em;
+    line-height: 1.3;
+  }
+
+  #giftCo .oshirase h5 strong {
+    font-size: 1.25em;
+  }
+
+  #giftCo .oshirase p.price {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  #giftCo .oshirase h3 img {
+    top: -.8em;
+    width: 40%;
+  }
+
+  #giftCo .oshirase .Inner {
+    padding: .8em
+  }
+
+  #giftCo .oshirase .shosai,
+  #giftCo .oshirase .itemBox {
+    display: block
+  }
+
+  #giftCo .oshirase .itemBox,
+  #giftCo .oshirase h4 {
+    margin: 0 0 .6em;
+    width: 100%;
+    padding: .6em 0 !important;
+  }
+
+  #giftCo .oshirase h4 br {
+    display: none
+  }
+
+
+  #giftCo .oshirase .itemBox h5:nth-of-type(1)+p {
+    margin-bottom: .4em
+  }
+
+  #giftCo .oshirase .itemBox img {
+    margin: 0 1em 0 0;
+    float: left
+  }
+
+  #giftCo .oshirase h4.onLine {
+    text-align: right;
+    padding-right: 1em
+  }
+
+  #giftCo .oshirase h4.onLine img {
+    left: 10px;
+    top: -4px;
+    bottom: aout;
+  }
+
+  #giftCo .benri {
+    margin: 0
+  }
+
+  #giftCo .benri h3 {
+    margin-top: 0
+  }
+
+  #giftCo .tokuten p {
+    font-feature-settings: "palt";
+    font-size: 4vw
+  }
+
+
+  #giftCo .tokuten .morenaku {
+    display: block;
+  }
+
+  #giftCo .tokuten .morenaku .sub {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #giftCo .tokuten .morenaku .sub {
+    width: 10em;
+    font-size: 4vw;
+    border: 0;
+    margin: .6em auto;
+    position: relative;
+  }
+
+  #giftCo .tokuten .morenaku .sub::before,
+  #giftCo .tokuten .morenaku .sub::after {
+    position: absolute;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    background: #CCC;
+    width: 2em;
+    content: "";
+  }
+
+  #giftCo .tokuten .morenaku .sub::before {
+    left: 0;
+  }
+
+  #giftCo .tokuten .morenaku .sub::after {
+
+    right: 0
+  }
+
+  #giftCo .tokuten .morenaku strong {
+    display: block;
+    margin-bottom: .3em
+  }
+
+  #giftCo .tokuten .morenaku .off {
+    font-size: 5.6vw
+  }
+
+  #giftCo .tokuten ul.listNote {
+    padding-top: 2em;
+  }
+
+  #giftCo th,
+  #giftCo td {
+    font-feature-settings: "palt";
+    padding: 1em .4em;
+    font-size: 3vw;
+  }
+}
