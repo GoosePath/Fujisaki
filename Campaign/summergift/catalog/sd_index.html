@@ -613,9 +613,12 @@
         var screenSize_height = window.parent.getScreenSize();
         // CTA などビューワ下部の要素が隠れないよう高さを制限する
         // モバイルでは viewport の 55% 以内に抑えて CTA を見えるようにする
-        var viewportH = window.innerHeight || document.documentElement.clientHeight || screenSize_height;
-        var MAX_VIEWER_HEIGHT = Math.min(560, Math.round(viewportH * 0.55));
-        var computed_viewer_height = Math.min(screenSize_height - adjustNum, MAX_VIEWER_HEIGHT);
+        function computeCappedViewerHeight(base){
+          var viewportH = window.innerHeight || document.documentElement.clientHeight || base;
+          var cap = Math.min(560, Math.round(viewportH * 0.55));
+          return Math.min(base, cap);
+        }
+        var computed_viewer_height = computeCappedViewerHeight(screenSize_height - adjustNum);
 
         $(".book-detail-block__viewer-dummy").animate({"height": computed_viewer_height}, 0);
 
@@ -701,7 +704,7 @@
     <!-- SD横竖屏切换 -->
     <script>
         var iframe_zoomType = "";
-        var viewer_init_height = window.parent.getScreenSize() - adjustNum;
+        var viewer_init_height = computeCappedViewerHeight(window.parent.getScreenSize() - adjustNum);
         var screenSize_height = window.parent.getScreenSize();
         var maxHeight = Math.max(window.parent.getScreenSize(), window.parent.getScreenSize_width());
         var minHeight = Math.min(window.parent.getScreenSize(), window.parent.getScreenSize_width());
@@ -749,18 +752,18 @@
           if(isTilted){
             if (orientation === 0) {  // 横
               screenSize_height = minHeight;
-              viewer_init_height = screenSize_height - adjustNum;
+              viewer_init_height = computeCappedViewerHeight(screenSize_height - adjustNum);
             } else {  // 縦
               screenSize_height = maxHeight;
-              viewer_init_height = screenSize_height - adjustNum;
+              viewer_init_height = computeCappedViewerHeight(screenSize_height - adjustNum);
             }
           } else {
             if (orientation === 0) {  // 縦
               screenSize_height = maxHeight;
-              viewer_init_height = screenSize_height - adjustNum;
+              viewer_init_height = computeCappedViewerHeight(screenSize_height - adjustNum);
             } else {  // 横
               screenSize_height = minHeight;
-              viewer_init_height = screenSize_height - adjustNum;
+              viewer_init_height = computeCappedViewerHeight(screenSize_height - adjustNum);
             }
           }
 
