@@ -263,7 +263,7 @@
       padding:0 4px;
     }
     .gift-sec-head .gift-sec-lead{
-      font-size:20px;color:var(--c-text);margin-top:16px;line-height:1.9;
+      font-size:22px;color:var(--c-text);margin-top:18px;line-height:1.9;
     }
     .gift-sec-head .gift-sec-period{
       font-size:26px;color:var(--c-text);font-weight:700;
@@ -364,7 +364,7 @@
     /* `.gift a` を上書きするため、ボタン系は .gift プレフィックス＋!important なしで specificity を確保 */
     .gift .gift-btn{
       display:block;width:100%;text-align:center;text-decoration:none;
-      padding:20px 20px;font-size:20px;font-weight:700;letter-spacing:.04em;
+      padding:22px 24px;font-size:24px;font-weight:700;letter-spacing:.04em;
       transition:background .15s,color .15s,box-shadow .15s;
       cursor:pointer;
     }
@@ -460,14 +460,14 @@
       padding:22px 20px;text-align:left;
     }
     .gift-merit-sub-title{
-      font-size:18px;font-weight:700;line-height:1.5;margin-bottom:8px;color:var(--c-text);
+      font-size:20px;font-weight:700;line-height:1.5;margin-bottom:10px;color:var(--c-text);
     }
     .gift-merit-sub-desc{
-      font-size:15px;color:var(--c-sub);line-height:1.85;
+      font-size:17px;color:var(--c-sub);line-height:1.85;
     }
     .gift a.gift-merit-sub-link{
-      display:inline-block;font-size:14px;color:var(--c-accent);
-      text-decoration:underline;text-underline-offset:3px;margin-top:8px;
+      display:inline-block;font-size:16px;color:var(--c-accent);
+      text-decoration:underline;text-underline-offset:3px;margin-top:10px;
     }
     @media (max-width:767px){
       .gift-merit-sub{grid-template-columns:1fr;gap:10px}
@@ -499,11 +499,11 @@
       border:1px solid var(--c-line-soft);
     }
     .gift-fineprint h3{
-      font-size:16px;font-weight:700;color:var(--c-text);margin-bottom:10px;
+      font-size:17px;font-weight:700;color:var(--c-text);margin-bottom:10px;
       padding-bottom:8px;border-bottom:1px solid var(--c-line-soft);
     }
     .gift-fineprint ul{
-      font-size:14px;color:var(--c-sub);line-height:1.9;
+      font-size:15px;color:var(--c-sub);line-height:1.9;
     }
     .gift-fineprint ul li{padding-left:1em;text-indent:-1em}
     .gift-fineprint ul li::before{content:"・"}
@@ -532,7 +532,7 @@
     }
     .gift-order-block p:last-child{margin-bottom:0}
     .gift-order-block ul.gift-notes{
-      margin-top:8px;font-size:15px;color:var(--c-sub);line-height:1.85;
+      margin-top:8px;font-size:16px;color:var(--c-sub);line-height:1.85;
     }
     .gift-order-block ul.gift-notes li{padding-left:1.2em;text-indent:-1.2em;margin-bottom:4px}
     .gift-order-block ul.gift-notes li::before{content:"※"}
@@ -599,7 +599,7 @@
     }
     .gift-fcard-amount-red{color:#c0392b}
     .gift-fcard-amount-blue{color:#1f4e93}
-    .gift-fcard-note{font-size:15px;color:var(--c-sub);line-height:1.85}
+    .gift-fcard-note{font-size:16px;color:var(--c-sub);line-height:1.85}
     @media (max-width:767px){
       .gift-fcard{padding:22px 18px}
       .gift-fcard-title{font-size:24px;margin-bottom:18px}
@@ -637,9 +637,9 @@
     }
     /* 動線の優先度としてはデジカタ > 郵送カタログ。アウトラインで主張を抑える */
     .gift .gift-cat-mail-link{
-      display:inline-block;font-size:20px;
+      display:inline-block;font-size:24px;
       color:var(--c-accent);background:#fff;
-      padding:18px 46px;font-weight:700;min-width:360px;letter-spacing:.04em;
+      padding:22px 52px;font-weight:700;min-width:380px;letter-spacing:.04em;
       border:2px solid var(--c-accent);
     }
     @media (max-width:767px){
@@ -928,7 +928,7 @@
 
               <div class="gift-merit-sub-card">
                 <h4 class="gift-merit-sub-title">04. お届け先入力がかんたん</h4>
-                <p class="gift-merit-sub-desc">昨年（令和7年）「藤崎 夏のギフト」の「ご進物お申込票」または藤崎からのハガキDMをお持ちの方は、<strong>「かんたんお届けリストサービス」</strong>で印字されたお届け先をそのまま呼び出せるため、入力の手間を大幅に省けます。</p>
+                <p class="gift-merit-sub-desc">「ご進物お申込票」またはハガキDMの<strong>お問合せ番号を入力するだけ</strong>で、昨年までのお届け先をアドレス帳に一括登録できます。</p>
                 <a href="https://fujisaki-online.jp/sp.html?fkey=jizenlist" class="gift-merit-sub-link" target="_blank">かんたんお届けリストサービスについて »</a>
               </div>
 
@@ -1250,7 +1250,20 @@
   <div class="gift-float">
     <a href="https://fujisaki-online.jp/summergift/" class="gift-float-primary" target="_blank">藤崎オンラインを見る »</a>
   </div>
-  <script>document.body.classList.add('gift-active');</script>
+  <script>
+    document.body.classList.add('gift-active');
+    // <base href> により #id のジャンプリンクが外部サイトに解決されるのを回避
+    document.querySelectorAll('.gift-anchor-nav a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var id = a.getAttribute('href').slice(1);
+        var target = document.getElementById(id);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
