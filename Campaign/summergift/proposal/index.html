@@ -299,7 +299,7 @@
       position:relative;
     }
     .gift-primary-action::before{
-      content:"いちばんおすすめ";display:inline-block;
+      content:"いちばんおすすめ";display:inline-block;white-space:nowrap;
       position:absolute;top:-20px;left:50%;transform:translateX(-50%);
       background:var(--c-accent);color:#fff;
       font-size:17px;font-weight:700;letter-spacing:.06em;padding:9px 26px;
@@ -349,7 +349,8 @@
       text-align:center;
     }
     @media (max-width:767px){
-      .gift-primary-action{padding:44px 22px 36px;margin-top:22px}
+      .gift-primary-action{padding:44px 16px 32px;margin-top:22px}
+      .gift-primary-action::before{font-size:14px;padding:7px 18px;top:-16px}
       .gift-primary-catch{font-size:17px;margin-bottom:44px}
       .gift .gift-btn.gift-btn-primary-big{display:block;width:100%;min-width:0;font-size:16px;padding:18px 20px}
       .gift-catalog-aux{margin-top:36px;padding:36px 22px 32px}
@@ -445,7 +446,7 @@
       .gift-merit-main-card{padding:28px 22px;gap:14px}
       .gift-merit-num{font-size:15px}
       .gift-merit-main-title{font-size:22px}
-      .gift-merit-main-title .gift-big{font-size:36px}
+      .gift-merit-main-title .gift-big{font-size:26px;letter-spacing:0}
       .gift-merit-main-desc{font-size:18px;line-height:1.75}
     }
 
@@ -569,7 +570,7 @@
       margin-top:24px;padding:26px 24px;background:#fff;border:1px solid var(--c-line);
     }
     .gift-fcard-title{
-      font-size:22px;font-weight:700;color:var(--c-text);margin-bottom:18px;
+      font-size:28px;font-weight:700;color:var(--c-text);margin-bottom:24px;
       padding-bottom:14px;border-bottom:2px solid var(--c-accent);text-align:left;
     }
     .gift-fcard-rows{
@@ -599,6 +600,7 @@
     .gift-fcard-note{font-size:15px;color:var(--c-sub);line-height:1.85}
     @media (max-width:767px){
       .gift-fcard{padding:22px 18px}
+      .gift-fcard-title{font-size:24px;margin-bottom:18px}
       .gift-fcard-row{grid-template-columns:auto 1fr;gap:14px;padding:16px 14px}
       .gift-fcard-row img{width:82px}
       .gift-fcard-row-pre{font-size:14px;margin-bottom:4px}
@@ -652,18 +654,15 @@
     @media (max-width:767px){
       body.gift-active{padding-bottom:88px}
       .gift-float{
-        display:flex;gap:8px;
+        display:block;
         position:fixed;left:0;right:0;bottom:0;z-index:60;
-        background:#fff;border-top:1px solid var(--c-line);
-        padding:10px 12px;
         box-shadow:0 -2px 10px rgba(0,0,0,0.06);
       }
-      .gift-float a{
-        flex:1;text-align:center;text-decoration:none;
-        padding:15px 8px;font-size:16px;font-weight:700;letter-spacing:.02em;
+      .gift-float .gift-float-primary{
+        display:block;width:100%;text-align:center;text-decoration:none;
+        padding:18px 12px;font-size:17px;font-weight:700;letter-spacing:.02em;
+        background:#29aabf;color:#fff;
       }
-      .gift-float-primary{background:var(--c-accent);color:#fff}
-      .gift-float-secondary{background:#fff;color:var(--c-accent);border:2px solid var(--c-accent)}
     }
   </style>
 </head>
@@ -838,8 +837,8 @@
           <!-- 冒頭アンカーナビ -->
           <div class="gift-container">
             <nav class="gift-anchor-nav">
-              <a href="#gift-online" class="gift-anchor-nav-primary">藤崎オンラインでのご注文<span class="gift-anchor-arrow">»</span></a>
-              <a href="#gift-offline" class="gift-anchor-nav-secondary">店舗・FAX・郵送でのご注文<span class="gift-anchor-arrow">»</span></a>
+              <a href="#gift-online" class="gift-anchor-nav-primary">藤崎オンラインでのご注文<span class="gift-anchor-arrow" aria-hidden="true">↓</span></a>
+              <a href="#gift-offline" class="gift-anchor-nav-secondary">店舗・FAX・郵送でのご注文<span class="gift-anchor-arrow" aria-hidden="true">↓</span></a>
             </nav>
           </div>
         </section>
@@ -925,13 +924,13 @@
 
               <div class="gift-merit-sub-card">
                 <h4 class="gift-merit-sub-title">04. お届け先入力がかんたん</h4>
-                <p class="gift-merit-sub-desc">「ご進物お申込票」または藤崎からのハガキDMをお持ちの方は、入力の手間を大幅に省けます。</p>
+                <p class="gift-merit-sub-desc">昨年（令和7年）「藤崎 夏のギフト」の「ご進物お申込票」または藤崎からのハガキDMをお持ちの方は、<strong>「かんたんお届けリストサービス」</strong>で印字されたお届け先をそのまま呼び出せるため、入力の手間を大幅に省けます。</p>
                 <a href="https://fujisaki-online.jp/sp.html?fkey=jizenlist" class="gift-merit-sub-link" target="_blank">かんたんお届けリストサービスについて »</a>
               </div>
 
               <div class="gift-merit-sub-card">
                 <h4 class="gift-merit-sub-title">05. 友の会お買物カードが使える</h4>
-                <p class="gift-merit-sub-desc">［友の会お買物カード］は、藤崎オンラインでのお支払いにもご利用いただけます。</p>
+                <p class="gift-merit-sub-desc">友の会お買物カードは、藤崎オンラインでのお支払いにもご利用いただけます。<br>※ご利用には、友の会お買物カードのご利用登録が必要です。<br>※旧プリペイドカードはご利用いただけません。</p>
                 <a href="https://fujisaki-online.jp/sp.html?fkey=tomonokai" class="gift-merit-sub-link" target="_blank">ご利用登録について »</a>
               </div>
             </div>
@@ -962,7 +961,7 @@
           <div class="gift-container">
             <div class="gift-sec-head">
               <span class="gift-eyebrow">店舗・FAX・郵送でのご注文</span>
-              <h2>店頭・FAX・郵送でご注文も承ります</h2>
+              <h2>店頭・FAX・郵送でのご注文も承ります</h2>
             </div>
 
             <div class="gift-order-list">
@@ -1265,7 +1264,6 @@
 
   <!-- モバイル用フローティングCTA -->
   <div class="gift-float">
-    <a href="https://www.fujisaki.co.jp/summergift/catalog/" class="gift-float-secondary" target="_blank">デジタルカタログ</a>
     <a href="https://fujisaki-online.jp/summergift/" class="gift-float-primary" target="_blank">藤崎オンラインへ »</a>
   </div>
   <script>document.body.classList.add('gift-active');</script>
