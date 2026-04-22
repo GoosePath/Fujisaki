@@ -233,9 +233,6 @@
     .gift .gift-anchor-nav .gift-anchor-nav-secondary{
       background:#fff;color:var(--c-accent);
     }
-    .gift .gift-anchor-nav .gift-anchor-nav-secondary:hover{
-      background:var(--c-accent);color:#fff;
-    }
     .gift-anchor-nav .gift-anchor-arrow{
       display:inline-block;font-weight:400;font-size:22px;
     }
@@ -266,7 +263,7 @@
       padding:0 4px;
     }
     .gift-sec-head .gift-sec-lead{
-      font-size:17px;color:var(--c-sub);margin-top:14px;line-height:1.85;
+      font-size:20px;color:var(--c-text);margin-top:16px;line-height:1.9;
     }
     .gift-sec-head .gift-sec-period{
       font-size:26px;color:var(--c-text);font-weight:700;
@@ -379,7 +376,6 @@
       background:#fff;color:var(--c-accent);
       border:2px solid var(--c-accent);
     }
-    .gift .gift-btn-outline:hover{background:var(--c-accent);color:#fff}
     .gift .gift-btn-arrow{margin-left:6px}
     /* インラインボタン：単発 CTA はフル幅にせず、自然な可読幅に */
     .gift .gift-btn-inline{display:inline-block;width:auto;padding:18px 40px;min-width:320px;max-width:100%}
@@ -613,19 +609,18 @@
 
     /* === カタログを郵送でお取り寄せ（紙面を主役に、縦積み構成） === */
     .gift-cat-mail{
-      background:transparent;border:0;
-      padding:0;text-align:center;
+      background:#fff;border:1px solid var(--c-line);
+      padding:48px 48px 52px;text-align:center;
       max-width:990px;margin:0 auto;
     }
     /* 画像自体もクリック可能：ブロック表示＋hover でフィードバック */
     .gift-cat-mail-visual{
-      display:block;margin:0 auto 36px;transition:opacity .15s;
+      display:block;margin:0 auto 32px;transition:opacity .15s;
       max-width:520px;
     }
     .gift-cat-mail-visual:hover{opacity:.85}
     .gift-cat-mail-visual img{
-      width:100%;height:auto;border:1px solid var(--c-line-soft);
-      margin:0 auto;
+      width:100%;height:auto;margin:0 auto;
     }
     .gift-cat-mail-body{margin-bottom:36px}
     .gift-cat-mail-body p{
@@ -643,9 +638,8 @@
       padding:18px 46px;font-weight:700;min-width:360px;letter-spacing:.04em;
       border:2px solid var(--c-accent);
     }
-    .gift .gift-cat-mail-link:hover{background:var(--c-accent);color:#fff}
     @media (max-width:767px){
-      .gift-cat-mail{padding:0}
+      .gift-cat-mail{padding:32px 22px 36px}
       .gift-cat-mail-visual{max-width:320px;margin-bottom:24px}
       .gift-cat-mail-body{margin-bottom:28px}
       .gift-cat-mail-body p{font-size:17px}
@@ -968,7 +962,7 @@
           <div class="gift-container">
             <div class="gift-sec-head">
               <span class="gift-eyebrow">店舗・FAX・郵送でのご注文</span>
-              <h2>店頭・FAX・郵送でご注文も承ります</h2>
+              <h2>店頭・FAX・郵送でのご注文も承ります</h2>
             </div>
 
             <div class="gift-order-list">
