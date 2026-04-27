@@ -294,14 +294,173 @@
 </div>
 
 <!-- ================================================================
-  Part 2/3 : 人気キーワード / 送料無料のアイテムから選ぶ / 予算から選ぶ
+  Part 2/3 : 商品を探す（検索＋人気キーワード）/ 送料無料のアイテムから選ぶ / 予算から選ぶ
+
+  【改修方針／2026年版】
+  Clarityヒートマップ(2025年7月,SP,7332PV) の上位タップ要素から、
+  ユーザーは「特定商品を探す」意図が強いと判明：
+   - #selectCatalog 関連クリック合計 ≈ 1,100超（全クリック12%）
+   - 一方 #hashCategory（人気キーワード）合計 ≈ 170 と利用は限定的
+  →「カタログ番号検索」（手元にカタログがある層）に対する
+   「キーワード検索」（カタログ非保有層）の受け皿としてフォーム追加。
+   既存の人気キーワード（タグ）は補助UIとして温存。
 ================================================================ -->
-<div id="hashCategory" class="section section--hash-category">
-  <div class="heading heading--main-content text-left">
-    <h3>人気キーワード</h3>
-  </div>
-  <div class="body">
-    <ul></ul>
+
+<style>
+  /* キーワードから選ぶ セクション固有スタイル */
+  /* 幅は親 .vw100-content__inner（他セクションと共通）に追従させる */
+
+  .summergift .searchBox {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0 0 36px;
+    box-sizing: border-box;
+  }
+  .summergift .searchBox__row {
+    display: flex;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .summergift .searchBox__input {
+    flex: 1 1 auto;
+    height: 64px;
+    padding: 0 20px;
+    font-size: 18px; /* iOSの自動ズーム抑止のため16px以上 */
+    color: #272727;
+    background: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+  .summergift .searchBox__input::placeholder {
+    color: #aaa;
+  }
+  .summergift .searchBox__input:focus {
+    outline: 2px solid #ce4d66;
+    outline-offset: -1px;
+  }
+  .summergift .searchBox__submit {
+    flex: 0 0 auto;
+    min-width: 128px;
+    height: 64px;
+    padding: 0 28px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    background: #ce4d66;
+    border: 0;
+    cursor: pointer;
+    transition: opacity .2s ease;
+    box-sizing: border-box;
+  }
+  .summergift .searchBox__submit:hover { opacity: 0.85; }
+  .summergift .searchBox__hint {
+    margin: 10px 0 0;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #777;
+    text-align: center;
+  }
+
+  /* 人気のキーワード（サブ見出し + チップ） */
+  .summergift .hashCategory__pills {
+    margin-top: 0;
+  }
+  .summergift .hashCategory__label {
+    font-size: 22px;
+    font-weight: 600;
+    color: #272727;
+    text-align: center;
+    margin: 0 0 22px;
+    letter-spacing: 0.04em;
+  }
+  .summergift .hashCategory__pills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 14px;
+  }
+  .summergift .hashCategory__pills li a {
+    display: inline-block;
+    padding: 13px 24px;
+    font-size: 16px;
+    color: #444;
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .summergift .hashCategory__pills li a:hover {
+    background: #ce4d66;
+    color: #fff;
+    border-color: #ce4d66;
+  }
+
+  @media screen and (max-width: 767px) {
+    .summergift .section--hash-category { padding: 0 14px; }
+    .summergift .searchBox__row { gap: 6px; }
+    .summergift .searchBox__input {
+      height: 56px;
+      padding: 0 16px;
+      font-size: 17px;
+    }
+    .summergift .searchBox__submit {
+      min-width: 96px;
+      height: 56px;
+      padding: 0 16px;
+      font-size: 15px;
+    }
+    .summergift .hashCategory__label { font-size: 19px; margin-bottom: 18px; }
+    .summergift .hashCategory__pills li a { font-size: 15px; padding: 11px 18px; }
+  }
+</style>
+
+<div class="vw100-content vw100-content--hash-category">
+  <div class="vw100-content__inner">
+    <div id="hashCategory" class="section section--hash-category">
+      <div class="heading heading--main-content">
+        <h3>キーワード<span class="small">から選ぶ</span></h3>
+      </div>
+      <div class="body">
+
+    <!-- ▼ キーワード検索ボックス -->
+    <form class="searchBox" action="/goods/search.html" method="get" role="search">
+      <!-- 夏のギフトカテゴリ内検索にスコープ。
+           ※ 本番のEC側検索仕様(パラメータ名/エンドポイント)に合わせて要調整。
+              想定: word=キーワード, cid=summer_gift -->
+      <input type="hidden" name="cid" value="summer_gift" />
+      <div class="searchBox__row">
+        <input
+          class="searchBox__input"
+          type="search"
+          name="word"
+          placeholder="笹かまぼこ"
+          autocomplete="off"
+          inputmode="search"
+          aria-label="商品名・キーワードで検索"
+        />
+        <button class="searchBox__submit" type="submit">検索</button>
+      </div>
+    </form>
+    <!-- /キーワード検索ボックス -->
+
+    <!-- ▼ 人気のキーワード（クイック選択） -->
+    <div class="hashCategory__pills">
+      <p class="hashCategory__label">人気のキーワード</p>
+      <ul></ul>
+    </div>
+    <!-- /人気のキーワード -->
+
+      </div>
+    </div>
   </div>
 </div>
 
@@ -309,15 +468,16 @@
   var hashCategoryUl = document.querySelector('#hashCategory ul'),
     fragment = document.createDocumentFragment();
 
+  // 仮置きの具体名キーワード。藤崎側で実検索ワード上位に差し替え運用。
+  // クリック先はカテゴリ固定ではなくキーワード検索URLに統一
+  // （検索フォームと挙動を揃え、運用上の品名差し替えを楽にするため）。
   var hashCategory = [
-    { name: '笹かまぼこ',      categoryId: 'summer_gift-tohoku-sasakama' },
-    { name: '牛たん',           categoryId: 'summer_gift-tohoku-gyutan' },
-    { name: '仙台小箱',        categoryId: 'summer_gift-original-kobako' },
-    { name: '送料無料',        categoryId: 'summer_gift-item' },
-    { name: '藤崎オリジナル', categoryId: 'summer_gift-original' },
-    { name: '東北の銘菓',     categoryId: 'summer_gift-tohoku-meika' },
-    { name: '送料込み',        categoryId: 'summer_gift-santyoku' },
-    { name: '手渡し贈答品',   categoryId: 'summer_gift-tewatasi' },
+    { name: '笹かまぼこ' },
+    { name: '牛タン' },
+    { name: '仙台小箱' },
+    { name: 'アイスクリーム' },
+    { name: '萩の月' },
+    { name: 'ビール' },
   ];
 
   for (var i = 0, l = hashCategory.length; i < l; i++) {
@@ -326,7 +486,8 @@
 
     a.setAttribute('class', 'linkHover');
     a.innerHTML = hashCategory[i].name;
-    a.setAttribute('href', '/goods/list.html?cid=' + hashCategory[i].categoryId);
+    a.setAttribute('href',
+      '/goods/search.html?cid=summer_gift&word=' + encodeURIComponent(hashCategory[i].name));
     li.append(a);
     fragment.append(li);
   }
