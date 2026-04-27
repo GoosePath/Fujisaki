@@ -3,7 +3,7 @@
 <head>
   <base href="https://www.fujisaki.co.jp/">
   <meta charset="utf-8">
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <script async="" src="https://scripts.clarity.ms/0.8.59/clarity.js"></script>
   <script type="text/javascript" async="" src="//cdn.activity.smart-bdash.com/tracking-script/bdash_log.js"></script>
   <script type="text/javascript" async=""
@@ -14,9 +14,9 @@
     (function (doc) {
       var viewport = document.getElementById('viewport');
       if (navigator.userAgent.match(/iPad/i)) {
-        viewport.setAttribute("content", "initial-scale=0.6");
+        viewport.setAttribute("content", "initial-scale=0.6, viewport-fit=cover");
       } else {
-        viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
+        viewport.setAttribute("content", "width=device-width, initial-scale=1.0, viewport-fit=cover");
       }
     }(document));
   </script>
