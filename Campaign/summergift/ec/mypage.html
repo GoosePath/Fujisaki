@@ -162,6 +162,123 @@
   </style>
   <!-- ▲ MOCK -->
 
+  <!-- ▼ MOCK: 夏ギフト PICK UP ヒーロー スタイル（templateで再描画されてもhead側で生き残る） -->
+  <style>
+    .summerHero {
+      margin: 0 0 28px;
+      padding: 0 16px;
+      box-sizing: border-box;
+    }
+    .summerHero__card {
+      display: flex;
+      align-items: stretch;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #e3dccd;
+      text-decoration: none;
+      color: inherit;
+      overflow: hidden;
+    }
+    .summerHero__visual {
+      flex: 0 0 56%;
+      overflow: hidden;
+      background: #f7f3ec;
+    }
+    .summerHero__visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .summerHero__body {
+      flex: 1 1 44%;
+      padding: 36px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .summerHero__tag {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 12px;
+      letter-spacing: .14em;
+      line-height: 1;
+      padding: 8px 14px;
+      background: #ce4d66;
+      color: #fff;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+    .summerHero__lead {
+      font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+      font-size: 13px;
+      letter-spacing: .12em;
+      color: #b18a3c;
+      margin: 0 0 8px;
+      text-transform: uppercase;
+    }
+    .summerHero__heading {
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #1f1f1f;
+      margin: 0 0 14px;
+      letter-spacing: .03em;
+    }
+    .summerHero__text {
+      font-size: 14px;
+      line-height: 1.85;
+      color: #555;
+      margin: 0 0 26px;
+    }
+    .summerHero__cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      align-self: flex-start;
+      min-width: 240px;
+      padding: 15px 26px;
+      background: #ce4d66;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: .08em;
+    }
+    .summerHero__arrow {
+      display: inline-block;
+      width: 22px;
+      height: 1px;
+      background: #fff;
+      position: relative;
+    }
+    .summerHero__arrow::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: -3px;
+      width: 8px;
+      height: 8px;
+      border-top: 1px solid #fff;
+      border-right: 1px solid #fff;
+      transform: rotate(45deg);
+    }
+    @media screen and (max-width: 767px) {
+      .summerHero { margin: 0 0 22px; padding: 0 12px; }
+      .summerHero__card { flex-direction: column; }
+      .summerHero__visual { flex: 0 0 auto; aspect-ratio: 16 / 9; }
+      .summerHero__body { padding: 20px 18px 22px; }
+      .summerHero__tag { font-size: 11px; padding: 6px 12px; margin-bottom: 14px; }
+      .summerHero__lead { font-size: 12px; margin-bottom: 6px; }
+      .summerHero__heading { font-size: 19px; margin-bottom: 10px; }
+      .summerHero__text { font-size: 13px; margin-bottom: 18px; line-height: 1.8; }
+      .summerHero__cta { width: 100%; min-width: 0; padding: 14px 18px; font-size: 14px; }
+    }
+  </style>
+  <!-- ▲ MOCK -->
+
   <!-- ▼ MOCK: matchHeight / heightLine が後から押し付けてくる inline height を解除 -->
   <script>
     (function () {
@@ -497,6 +614,25 @@
             <div class="contentsTitleWrap mypage">
               <h2 class="headingFlowLv2"><span>MYPAGE TOPICS</span>マイページ トピックス</h2>
             </div>
+
+            <!-- ▼▼▼ MOCK：夏ギフト特集 PICK UP ヒーロー（A案／会員マイページ用） ▼▼▼ -->
+            <section class="summerHero" aria-label="夏ギフト特集 ピックアップ">
+              <a class="summerHero__card" href="https://fujisaki-online.jp/event/summergift.html" aria-label="藤崎 夏のギフト 2026 特集を見る">
+                <div class="summerHero__visual">
+                  <!-- TODO: 本番では公式の夏ギフトキービジュアルに差し替え -->
+                  <img src="https://official-swart.vercel.app/img/summergift2025_mv.jpg" alt="藤崎 夏のギフト 2026 キービジュアル">
+                </div>
+                <div class="summerHero__body">
+                  <span class="summerHero__tag">PICK UP</span>
+                  <p class="summerHero__lead">FUJISAKI Summer Gift 2026</p>
+                  <h2 class="summerHero__heading">藤崎 夏のギフト 2026</h2>
+                  <p class="summerHero__text">大切な方へ贈る、この夏のおすすめギフトを特集してご紹介します。</p>
+                  <span class="summerHero__cta">特集を見る<span class="summerHero__arrow"></span></span>
+                </div>
+              </a>
+            </section>
+            <!-- ▲▲▲ MOCK：夏ギフト特集 PICK UP ヒーロー ▲▲▲ -->
+
             <div class="topicsSlide">
               <!-- Sliderを包むコンテナ要素 -->
               <div id="myPageSwiper"
@@ -617,6 +753,24 @@
               <div class="contentsTitleWrap mypage">
                 <h2 class="headingFlowLv2"><span>MYPAGE TOPICS</span>マイページ トピックス</h2>
               </div>
+
+              <!-- ▼▼▼ MOCK：夏ギフト特集 PICK UP ヒーロー（テンプレート再描画後にも残るように複製） ▼▼▼ -->
+              <section class="summerHero" aria-label="夏ギフト特集 ピックアップ">
+                <a class="summerHero__card" href="https://fujisaki-online.jp/event/summergift.html" aria-label="藤崎 夏のギフト 2026 特集を見る">
+                  <div class="summerHero__visual">
+                    <img src="https://official-swart.vercel.app/img/summergift2025_mv.jpg" alt="藤崎 夏のギフト 2026 キービジュアル">
+                  </div>
+                  <div class="summerHero__body">
+                    <span class="summerHero__tag">PICK UP</span>
+                    <p class="summerHero__lead">FUJISAKI Summer Gift 2026</p>
+                    <h2 class="summerHero__heading">藤崎 夏のギフト 2026</h2>
+                    <p class="summerHero__text">大切な方へ贈る、この夏のおすすめギフトを特集してご紹介します。</p>
+                    <span class="summerHero__cta">特集を見る<span class="summerHero__arrow"></span></span>
+                  </div>
+                </a>
+              </section>
+              <!-- ▲▲▲ MOCK -->
+
                <div class="topicsSlide">
                 <!-- Sliderを包むコンテナ要素 -->
                 <div id="myPageSwiper" class="swiper">
@@ -695,12 +849,13 @@
                     <dd>
                       <div id="freeArea3" freeareakey="mypage_onlinecontent">
                         <div class="online">
-                          <a href="/goods/list.html?cid=food-fruit">
-                            <p class="bnr"><img src="/d_images/mypage/20240305_onlinebnr.jpg?releaseVer=2510280302"
-                                alt="旬のフルーツ">
+                          <a href="/event/summergift.html">
+                            <!-- TODO: 本番では公式の夏ギフトバナー画像に差し替え -->
+                            <p class="bnr"><img src="https://official-swart.vercel.app/img/summergift2025_mv.jpg"
+                                alt="藤崎 夏のギフト 2026">
                             </p>
                           </a>
-                          <p class="txt">日本全国からセレクトしたフルーツをお届けします。</p>
+                          <p class="txt">藤崎厳選の夏ギフト特集を公開しました。大切な方へお届けする一品をぜひご覧ください。</p>
                         </div>
 
                         <style>
