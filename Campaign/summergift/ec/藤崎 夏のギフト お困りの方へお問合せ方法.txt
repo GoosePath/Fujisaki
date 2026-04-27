@@ -1,0 +1,94 @@
+<link href="/d_images/campaign/summergift_attention/style_250613.css" rel="stylesheet" type="text/css" media="all">
+
+<div id="summergift_attention">
+
+<div class="wrap wrapInquiry">
+      <div class="titleH3">
+      <h3 class="ttl">
+        <span>お困りの方へ お問合せ方法</span>
+      </h3>
+    </div>
+
+ <div class="btnWrap">
+  <ul>
+    <li>
+      <a class="linkHover" href="/sp.html?fkey=faq">
+        <p>よくある質問はこちら</p>
+      </a>
+    </li>
+    <li>
+      <a class="linkHover" href="/guide/index.html">
+        <p>ご利用ガイドはこちら</p>
+      </a>
+    </li>
+    <li>
+      <a class="linkHover" href="/inquiry/index.html">
+        <p>ご注文前のお問合せはこちら</p>
+      </a>
+    </li>
+    <li>
+      <a class="linkHover" href="/member/history/index.html">
+        <p>ご注文後のお問合せはこちら<br /><span>FUJISAKI onlineにログイン後、<br class="tbOn"/><br class="pcNone"/>ご注文履歴からお問合せください。</span></p>
+      </a>
+    </li>
+  </ul>
+ </div>     
+
+</div>
+
+  <!-- ご注意事項 -->
+  <div class="section sectionAttention textLeft">
+    <div class="title">
+      <h2 class="h2"><span>【重要】夏のギフト／冬のギフトの<br class="pcNone" /><br class="brTb" />今後のご案内について</span></h2>
+    </div>
+    <dl>
+      <dd>
+        <ul>
+          <li>ギフトセンター等でのご注文が<b>2シーズン連続して無い</b>場合は、個人情報取扱いの事情により次回のご案内は差し上げておりません。予めご了承ください。
+            <ul class="proviso">
+              <li class="exa">2024年夏のギフトおよび2024年冬のギフトの実績がない場合は、2025年夏のギフトのご案内は差し上げておりません。</li>
+            </ul>
+          </li>
+          <li>藤崎オンラインでのご注文の際には、デジタルカタログをご利用ください。
+            <ul class="proviso">
+              <li>付箋やメモ機能なども搭載されており、同一端末の同一のブラウザにてご利用いただくと、一定期間、付箋やメモ情報が残ります。</li>
+            </ul>
+          </li>
+          <li class="link-underline"><a class="link" href="https://www.fujisaki.co.jp/summergift/catalog/"  target="_blank">「夏のギフト」デジタルカタログはこちら</a></li>
+          <li class="link-underline"><a class="link" href="https://shop.fujisaki.co.jp/shopping/2025catalog.xhtml"  target="_blank">カタログを郵送ご希望の方はこちら</a></li>
+        </ul>
+      </dd>
+    </dl>
+  </div>
+  <!-- /ご注意事項 -->
+
+
+<div class="bnrWrap">
+    <div class="bnrWrapBtn topBtn">
+      <a class="linkHover" href="/summergift/">夏のギフト　TOPページヘ</a>
+    </div>
+  </div>
+
+
+</div>
+<style>
+#summergift_attention .bnrWrap .topBtn{
+margin: 0 auto;
+width:auto;
+}
+#summergift_attention .bnrWrap .topBtn a{
+font-size: 20px;
+width:360px
+}
+@media screen and (max-width: 767px){
+#summergift_attention {
+    margin-bottom: 0em;
+}
+#summergift_attention .bnrWrap .topBtn a{
+font-size: 20px;
+width: 100%;
+max-width: 360px;
+padding: 0 20px;
+}
+}
+</style>

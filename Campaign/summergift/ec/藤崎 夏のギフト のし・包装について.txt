@@ -1,0 +1,121 @@
+<link href="/d_images/campaign/summergift_attention/style_250613.css" rel="stylesheet" type="text/css" media="all">
+
+<div id="summergift_attention">
+
+<div class="wrap wrapWrapping">
+      <div class="titleH3">
+      <h3 class="ttl">
+        <span>のし・包装について</span>
+      </h3>
+    </div>
+
+    <p class="con-text">「夏のギフト」では、環境に配慮したエコ包装にてお届けしております。</p>
+
+      <div class="img-container">
+        <div class="img-head-wrap">
+          <h4 class="img-head"><span>エコ包装</span></h4>
+          <p>※ゴミの少ない、環境にやさしい包装です。</p>
+        </div>
+        <div class="imgWrap">
+          <div class="imgBox">
+            <div class="img">
+              <img src="/d_images/campaign/summergift_attention/img-wrapping01_2025.png">
+            </div>
+          </div>
+          <div class="img-text">
+            <ol>
+              <li>商品の外箱に、直に短冊のしを貼り付けます。</li>
+              <li>帯状の包装紙（掛け紙）を巻きます。</li>
+              <li><span class="num">2</span>に配送伝票を貼り付けます。</li>
+            </ol>
+            <p class="img-note-text">※手提げ袋の同送もできません。</p>
+          </div>
+        </div>
+      </div>
+
+      <h5 class="img-head-sub"><span>＜手渡し贈答用の場合＞</span></h5>
+      
+      <dl class="explanation">
+        <dd>
+          <ul>
+            <li>各商品ページに記載、配送・包装について「二重包装　〇」と表示されている商品は二重包装が可能です。</li>
+            <li>包装形態 二重包装を選択後、中のし・上のし／手提げ袋あり・なしを指定できます。</li>
+            <li>二重包装可能商品は<a class="textLink corporateTxtCollar" href="/goods/list.html?cid=summer_gift-tewatasi">こちら</a>。</li>
+          </ul>
+        </dd>
+      </dl>
+
+      <div class="img-container double-wrapping">
+        <h4 class="img-head"><span>二重包装</span></h4>
+        <div class="imgWrap">
+          <div class="imgBox">
+            <div class="img">
+              <img src="/d_images/campaign/summergift_attention/img-wrapping02_2025.png">
+            </div>
+          </div>
+          <div class="img-text">
+            <ol>
+              <li>商品にのし紙をかけます。<br />（または短冊のしを貼付）</li>
+              <li>包装紙で完全に包装します。</li>
+              <li>商品･包装を保護するため、さらに茶紙などでお包みします。<br />※段ボール（再利用）に入れてお届けする場合もございます。</li>
+              <li><span class="num">3</span>に配送伝票を貼り付けます。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="otoiawase">
+
+      <p class="otoiawaseTxt clr231109">上記以外でののしや<br class="pcNone">包装に関するお問合せ</p>
+      
+      <div class="btnWrap">
+        <ul>
+          <li>
+            <a class="linkHover" href="/inquiry/index.html">
+              <p>ご注文前のお問合せはこちら</p>
+            </a>
+          </li>
+          <li>
+            <a class="linkHover" href="/member/history/index.html">
+              <p>ご注文後のお問合せはこちら<br /><span>FUJISAKI onlineにログイン後、<br class="tbOn"/><br class="pcNone"/>ご注文履歴からお問合せください。</span></p>
+            </a>
+          </li>
+        </ul>
+       </div>
+
+      </div>
+
+</div>
+
+
+<div class="bnrWrap">
+    <div class="bnrWrapBtn topBtn">
+      <a class="linkHover" href="/summergift/">夏のギフト　TOPページヘ</a>
+    </div>
+  </div>
+  
+
+
+</div>
+<style>
+
+#summergift_attention .bnrWrap .topBtn{
+margin: 0 auto;
+width:auto;
+}
+#summergift_attention .bnrWrap .topBtn a{
+font-size: 20px;
+width:360px
+}
+@media screen and (max-width: 767px){
+#summergift_attention {
+    margin-bottom: 0em;
+}
+#summergift_attention .bnrWrap .topBtn a{
+font-size: 20px;
+width: 100%;
+max-width: 360px;
+padding: 0 20px;
+}
+}
+</style>

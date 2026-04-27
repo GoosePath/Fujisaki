@@ -1,0 +1,245 @@
+<link href="/d_images/campaign/summergift2025/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<style>
+.summergift .accordion .accordionTitle::after {
+    content: none;
+}
+/* =======================================
+終了
+======================================= */
+  .summergift .confirmHistory {
+    background-color: #f6f6f6;
+    color: #272727;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 45px 63px 50px;
+  }
+
+  .summergift .confirmHistory .lead {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .summergift .confirmHistory .lead span {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .summergift .confirmHistory p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .summergift .confirmHistory .btn {
+    text-align: center;
+  }
+
+  .summergift .confirmHistory .btn a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ce4d66;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 0 20px;
+  }
+
+  .summergift .confirmHistory .notes {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .summergift .markerLine {
+    background: linear-gradient(transparent 70%, #ffd1d1 70%);
+  }
+
+  .summergift .bnrWrap {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 71px auto 5em;
+    max-width: 880px;
+    width: 100%;
+  }
+
+  .summergift .mainvisual {
+    margin-bottom: 70px;
+  }
+
+  .summergift .vw100-content:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .summergift .confirmHistory {
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding: 20px 20px 21px 20px;
+    }
+
+    .summergift .confirmHistory .lead {
+      margin-bottom: 16px;
+    }
+
+    .summergift .confirmHistory p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .summergift .confirmHistory .btn a {
+      font-size: 15px;
+      width: 230px;
+      line-height: 1.1em;
+      padding: 20px
+    }
+
+    .summergift .confirmHistory .notes {
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .summergift .sectionAttention .title .h2 {
+      letter-spacing: 0;
+    }
+
+    .summergift .sectionAttention .title span::before {
+      bottom: -15px;
+      width: 30px;
+    }
+
+    .contents {
+      padding: 0 14px !important;
+    }
+
+    .summergift .bnrWrap {
+      padding: 0;
+    }
+
+    .summergift .mainvisual {
+      margin-left: -15px;
+      margin-right: -15px;
+      margin-bottom: 30px;
+    }
+
+    .summergift .vw100-content:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .summergift .confirmHistory {
+      margin: 0;
+    }
+  }
+</style>
+
+<div class="mainvisual">
+  <h2>
+    <span class="block text-center mainvisual-title">夏のギフト（お中元）</span>
+    <img class="spNone" src="/d_images/campaign/summergift2025/mv_pc_end.jpg" alt="FUJISAKI SUMMER GIFT 2025 HAPPY CROSSING GIFT 送料無料マークの商品は期間中全国送料無料 ※送料有料、送料込みの商品もございます ご注文期間／8月3日（日）まで" />
+    <img class="pcNone" src="/d_images/campaign/summergift2025/mv_sp_end.jpg" alt="FUJISAKI SUMMER GIFT 2025 HAPPY CROSSING GIFT 送料無料マークの商品は期間中全国送料無料 ※送料有料、送料込みの商品もございます ご注文期間／8月3日（日）まで" />
+  </h2>
+  <div class="mainvisual-link linkHover" data-href="/goods/list.html?cid=summer_gift-item"></div>
+</div>
+
+<div class="accordion">
+  <p class="accordionTitle js-slideHead">
+    <span>ご注文前に必ずお読みください</span>
+  </p>
+  <div class="js-slideContent">
+    <!-- ご注意事項 -->
+    <div id="attention" class="attention">
+      <dl>
+        <dt>［オンラインでのご注文について］</dt>
+        <dd>
+          <ul>
+            <li>承り期間： <span class="emphasis">6月5日（木）午前10時～8月3日（日）</span>
+              <ul class="proviso">
+                <li>7月25日(金)～8月3日(日)までは取り扱い商品が縮小となります。</li>
+              </ul>
+            </li>
+            <li>お届け期間： <span class="emphasis">6月中旬以降より順次</span>お届けします。
+              <ul class="proviso">
+                <li>商品により承り期間が異なります。詳しくは商品ページをご確認ください。</li>
+                <li>送料有料、送料込みの商品がございます。詳しくは商品ページをご確認ください。</li>
+              </ul>
+            </li>
+            <li>お支払い方法は、クレジットカード・コンビニ・友の会お買物カード決済からお選びいただけます。
+              <ul class="proviso">
+                <li>コンビニ決済での承りは<span class="bold">7月30日（水）</span>までとなります。</li>
+                <li>商品やお申し込み時期によりお選びいただけないお支払方法がございます。</li>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+        <dt>［お願い・ご注意］</dt>
+        <dd>
+          <ul>
+            <li>メッセージカード等の同送品は承れません。</li>
+            <li><span class="emphasis">お申込後の変更、キャンセル、返品はできません。予めご了承ください。</span></li>
+            <li>カタログ掲載品は、一部オンラインでお取り扱いのない商品がございます。</li>
+            <li>離島地域へのお届けや天候不順等により、お届けが遅延する場合がございます。予めご了承ください｡</li>
+            <li>賞味期限や消費期限の表記はお届け日からではなく、製造加工日を基準にしております。</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+    <!-- /ご注意事項 -->
+  </div>
+</div>
+
+
+
+<div class="vw100-content vw100-content--notification">
+  <div class="vw100-content__inner">
+    <div id="notification2" class="section section--notification">
+      <div class="heading text-center">
+        <h3>夏ギフトについて<br class="pcNone" />重要なご案内</h3>
+      </div>
+
+      <div class="body">
+        <ul class="notification-navigation">
+          <li>
+            <a href="/sp.html?fkey=summergift_delivery">
+              <img class="spNone" src="/d_images/campaign/summergift2025/btn-notification01.svg?d=0530" alt="お届けについて" />
+              <img class="pcNone" src="/d_images/campaign/summergift2025/btn-notification01-sp.svg?d=0530" alt="お届けについて" />
+            </a>
+          </li>
+          <li>
+            <a href="/sp.html?fkey=summergift_wrapping">
+              <img class="spNone" src="/d_images/campaign/summergift2025/btn-notification02.svg?d=0530" alt="のし・包装について" />
+              <img class="pcNone" src="/d_images/campaign/summergift2025/btn-notification02-sp.svg?d=0530" alt="のし・包装について" />
+            </a>
+          </li>
+          <li>
+            <a href="/sp.html?fkey=summergift_procedure">
+              <img class="spNone" src="/d_images/campaign/summergift2025/btn-notification03.svg?d=0530" alt="お買い物の手順について" />
+              <img class="pcNone" src="/d_images/campaign/summergift2025/btn-notification03-sp.svg?d=0530" alt="お買い物の手順について" />
+            </a>
+          </li>
+          <li>
+            <a href="/sp.html?fkey=summergift_inquiry">
+              <img class="spNone" src="/d_images/campaign/summergift2025/btn-notification04.svg?d=0530" alt="お困りの方へお問合せ方法" />
+              <img class="pcNone" src="/d_images/campaign/summergift2025/btn-notification04-sp.svg?d=0530" alt="お困りの方へお問合せ方法" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="confirmHistory attention">
+  <p class="lead"><span>ご注文いただきました商品の注文履歴・配送伝票番号は<br class="spNone">「マイページ」の「ご注文履歴」→「詳細を見る」からご確認いただけます。</span></p>
+  <div class="btn"><a class="linkHover" href="/member/history/index.html">ご注文履歴・<br class="pcNone">配送伝票番号を確認する</a></div>
+</div>
+
+<div class="bnrWrap">
+  <div class="bnrWrapBtn categoryLink">
+    <a class="linkHover" href="/goods/list.html?cid=gift">ギフトページへ</a>
+  </div>
+  <div class="bnrWrapBtn topBtn">
+    <a class="linkHover" href="/">TOPページへ</a>
+  </div>
+</div>

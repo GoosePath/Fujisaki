@@ -1,0 +1,214 @@
+<link href="/d_images/campaign/summergift2025/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+<div class="mainvisual">
+  <h2>
+    <span class="block text-center mainvisual-title">夏のギフト（お中元）</span>
+    <img class="spNone" src="/d_images/campaign/summergift2025/mv_pc.jpg" alt="FUJISAKI SUMMER GIFT 2025 HAPPY CROSSING GIFT 送料無料マークの商品は期間中全国送料無料 ※送料有料、送料込みの商品もございます ご注文期間／8月3日（日）まで" />
+    <img class="pcNone" src="/d_images/campaign/summergift2025/mv_sp.jpg" alt="FUJISAKI SUMMER GIFT 2025 HAPPY CROSSING GIFT 送料無料マークの商品は期間中全国送料無料 ※送料有料、送料込みの商品もございます ご注文期間／8月3日（日）まで" />
+  </h2>
+  <div class="mainvisual-link linkHover" data-href="/goods/list.html?cid=summer_gift-item"></div>
+</div>
+
+<div class="accordion">
+  <p class="accordionTitle js-slideHead">
+    <span>ご注文前に必ずお読みください</span>
+  </p>
+  <div class="js-slideContent">
+    <!-- ご注意事項 -->
+    <div id="attention" class="attention">
+      <dl>
+        <dt>［オンラインでのご注文について］</dt>
+        <dd>
+          <ul>
+            <li>承り期間： <span class="emphasis">6月5日（木）午前10時～8月3日（日）</span>
+              <ul class="proviso">
+                <li>7月25日(金)～8月3日(日)までは取り扱い商品が縮小となります。</li>
+              </ul>
+            </li>
+            <li>お届け期間： <span class="emphasis">6月中旬以降より順次</span>お届けします。
+              <ul class="proviso">
+                <li>商品により承り期間が異なります。詳しくは商品ページをご確認ください。</li>
+                <li>送料有料、送料込みの商品がございます。詳しくは商品ページをご確認ください。</li>
+              </ul>
+            </li>
+            <li>お支払い方法は、クレジットカード・コンビニ・友の会お買物カード決済からお選びいただけます。
+              <ul class="proviso">
+                <li>コンビニ決済での承りは<span class="bold">7月30日（水）</span>までとなります。</li>
+                <li>商品やお申し込み時期によりお選びいただけないお支払方法がございます。</li>
+              </ul>
+            </li>
+          </ul>
+        </dd>
+        <dt>［お願い・ご注意］</dt>
+        <dd>
+          <ul>
+            <li>メッセージカード等の同送品は承れません。</li>
+            <li><span class="emphasis">お申込後の変更、キャンセル、返品はできません。予めご了承ください。</span></li>
+            <li>カタログ掲載品は、一部オンラインでお取り扱いのない商品がございます。</li>
+            <li>離島地域へのお届けや天候不順等により、お届けが遅延する場合がございます。予めご了承ください｡</li>
+            <li>賞味期限や消費期限の表記はお届け日からではなく、製造加工日を基準にしております。</li>
+          </ul>
+        </dd>
+      </dl>
+      <dl class="note">
+        <dt>&nbsp;&nbsp;&nbsp;＜お詫び＞</dt>
+        <dd>お米（特選米）につきまして、<br /><span class="bold">一部の商品について</span>オンライン<br class="pcNone" />（ネットショッピング）では<br class="brTb" />販売を見合わせる運びとなりました。<br />また、販売の際も<span class="bold">個数制限</span>させて<br class="pcNone" />いただいております。<br />何卒ご理解いただきますよう<br class="pcNone" />お願い申し上げます。</dd>
+      </dl>
+    </div>
+    <!-- /ご注意事項 -->
+  </div>
+</div>
+
+<div class="anchorLinkNav">
+  <div class="anchorLinkBtn">
+    <a class="linkHover anchorLink" href="#selectCatalog">カタログ番号から<br class="brTb" />選ぶ</a>
+  </div>
+  <div class="anchorLinkBtn">
+    <a class="linkHover anchorLink" href="#selectFreeShipping">送料無料の<br class="brTb" />アイテムから選ぶ</a>
+  </div>
+  <div class="anchorLinkBtn">
+    <a class="linkHover anchorLink" href="#selectPrice">予算から選ぶ</a>
+  </div>
+  <div class="anchorLinkBtn">
+    <a class="linkHover anchorLink" href="#sectionMiyagiTohoku">宮城東北の名産品から選ぶ</a>
+  </div>
+</div>
+
+<div class="anchorLinkNav anchorLinkNavNotice">
+  <div class="anchorLinkBtn">
+    <a class="linkHover anchorLink" href="#notification2">夏のギフトについて重要なご案内</a>
+  </div>
+</div>
+
+<div class="vw100-content vw100-content--coupon">
+  <div class="vw100-content__inner">
+    <div class="coupon">
+      <div class="couponSummary">
+        <div class="couponSummaryTop">
+          <p class="couponLead">「夏のギフト」をご注文で</p>
+          <h3 class="couponTtl"><span class="emphashis">1,000<span class="small">円</span>OFF</span><br class="pcNone">クーポン<br class="brTb">プレゼント！</h3>
+        </div>
+        <div class="couponSummaryBottom">
+          <p class="couponDesc">藤崎オンラインで<br class="pcNone" />「夏のギフト」の対象商品を<br />税込10,000円以上お買い上げで、<span class="emphashis inlineBlock">1,000円OFFクーポンをプレゼント！</span></p>
+        </div>
+        <div class="couponBtn js-slideHead"><span>詳細を見る</span></div>
+      </div>
+
+      <div class="couponBody js-slideContent" style="">
+        <ul class="couponSchedule">
+          <li>
+            <dl>
+              <dt>・キャンペーン期間：</dt>
+              <dd class="bold">2025年6月5日（木）～<br class="pcNone">8月3日（日）</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>・クーポン進呈日　：</dt>
+              <dd>2025年8月末</dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>・クーポン有効期限：</dt>
+              <dd>2025年9月1日（月）～<br class="pcNone">12月20日（土）</dd>
+            </dl>
+          </li>
+        </ul>
+
+        <ul class="couponNote">
+          <li><span class="emphasis">オンラインクーポンは、店頭ではご利用いただけません。</span>会員お一人様１回限りとなります。</li>
+          <li>オンラインクーポン1,000円分は“クーポンコード”を8月末頃にメールにてお知らせいたします。<br />メールでお知らせした"クーポンコード"を、オンライン決済時に入力すると1,000円OFFが適用されます。<br />クーポンコードは有効期限内であれば、“冬のギフト”や“おせち”等でもご利用いただけます。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/d_images/js/jquery.matchHeight-min.js"></script>
+
+<script>
+  // MV内の部分リンク設定
+  var setScrollbarWidth = function () {
+    var scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    var pcBreakPoint = 1100;
+    var spBreakPoint = 375;
+    document.documentElement.style.setProperty('--scrollbar-width', scrollbarWidth);
+    document.documentElement.style.setProperty('--pc-break-point', pcBreakPoint);
+    document.documentElement.style.setProperty('--sp-break-point', spBreakPoint);
+  };
+
+  window.addEventListener('DOMContentLoaded', setScrollbarWidth);
+  window.addEventListener('resize', setScrollbarWidth);
+
+  $(function () {
+    $('.mainvisual-link').on('click', function () {
+      location.href = $(this).data('href');
+    });
+
+    var slideHead = $('.js-slideHead'),
+      slideContent = $('.js-slideContent');
+
+    slideContent.css('display', 'none');
+
+    slideHead.on('click', function (e) {
+      var $this = $(this);
+      var index = slideHead.index($this);
+      var currentContent = slideContent.eq(index);
+
+      $this.toggleClass('open');
+
+      if ($this.hasClass('open')) {
+        currentContent.stop().slideDown(200);
+      } else {
+        currentContent.stop().slideUp(200);
+      }
+
+      if ($this.children('span').text() === '詳細を見る') {
+        $this.children('span').text('閉じる');
+      } else {
+        if ($this.children('span').text() === '閉じる') {
+          $this.children('span').text('詳細を見る');
+        }
+      }
+    });
+
+    // ランキング
+    if ($('.summergiftRankingSwiper').length) {
+      var summergiftRankingSwiper = new Swiper(".summergiftRankingSwiper", {
+        slidesPerView: 5,
+        slidesPerGroup: 1,
+        spaceBetween: 13,
+        loop: false,
+        allowTouchMove: false,
+        navigation: {
+          nextEl: ".summergiftRankingSwiperSlideNext",
+          prevEl: ".summergiftRankingSwiperSlidePrev",
+        },
+        on: {
+          init: function () {
+            var imgHeight = $('.summergiftRankingSwiper .swiper-slide img').eq(0).innerWidth();
+            $('.summergiftRankingSwiperSlideNext').css('top', (imgHeight / 2) + 'px');
+            $('.summergiftRankingSwiperSlidePrev').css('top', (imgHeight / 2) + 'px');
+          },
+          resize: function () {
+            var imgHeight = $('.summergiftRankingSwiper .swiper-slide img').eq(0).innerWidth();
+            $('.summergiftRankingSwiperSlideNext').css('top', (imgHeight / 2) + 'px');
+            $('.summergiftRankingSwiperSlidePrev').css('top', (imgHeight / 2) + 'px');
+          },
+        },
+        breakpoints: {
+          767: {
+            loop: true,
+            allowTouchMove: true,
+            slidesPerView: 2,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+          },
+        }
+      });
+
+      $('.summergiftRankingSwiper .item__name').matchHeight();
+    }
+  });
+</script>

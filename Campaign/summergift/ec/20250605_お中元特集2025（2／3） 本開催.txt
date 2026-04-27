@@ -1,0 +1,298 @@
+<div id="hashCategory" class="section section--hash-category">
+  <div class="heading heading--main-content text-left">
+    <h3>人気キーワード</h3>
+  </div>
+  <div class="body">
+    <ul></ul>
+  </div>
+</div>
+
+<script>
+  var hashCategoryUl = document.querySelector('#hashCategory ul'),
+    fragment = document.createDocumentFragment();
+
+  var hashCategory = [
+    {
+      name: '笹かまぼこ',
+      categoryId: 'summer_gift-tohoku-sasakama'
+    },
+    {
+      name: '牛たん',
+      categoryId: 'summer_gift-tohoku-gyutan'
+    },
+    {
+      name: '仙台小箱',
+      categoryId: 'summer_gift-original-kobako'
+    },
+    {
+      name: '送料無料',
+      categoryId: 'summer_gift-item'
+    },
+    {
+      name: '藤崎オリジナル',
+      categoryId: 'summer_gift-original'
+    },
+    {
+      name: '東北の銘菓',
+      categoryId: 'summer_gift-tohoku-meika'
+    },
+    {
+      name: '送料込み',
+      categoryId: 'summer_gift-santyoku'
+    },
+    {
+      name: '手渡し贈答品',
+      categoryId: 'summer_gift-tewatasi'
+    },
+  ];
+
+  for (var i = 0, l = hashCategory.length; i < l; i++) {
+    var li = document.createElement('li'),
+      a = document.createElement('a');
+
+    a.setAttribute('class', 'linkHover');
+    a.innerHTML = hashCategory[i].name;
+    a.setAttribute('href', '/goods/list.html?cid=' + hashCategory[i].categoryId);
+    li.append(a);
+    fragment.append(li);
+  }
+  hashCategoryUl.append(fragment);
+</script>
+
+<!-- 送料無料のアイテムから選ぶ -->
+<div class="vw100-content vw100-content--free-shipping">
+  <div class="vw100-content__inner">
+    <div id="selectFreeShipping" class="section section--free-shipping">
+      <div class="heading heading--main-content">
+        <h3>送料無料のアイテム<br class="pcNone" /><span class="small">から選ぶ</span></h3>
+      </div>
+      <div class="body">
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-06">
+              <div class="item__rankingLabel">
+                <div class="item__rankingLabel__image">
+                  <img src="/d_images/campaign/summergift2025/icon-number01.svg" alt="1" />
+                </div>
+                <p class="item__rankingLabel__text">昨年人気1位</p>
+              </div>
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_fish.jpg" alt="明太子・魚漬・海産品">
+              <img class="pcNone" src="/d_images/campaign/summergift2025//item_fish_sp.jpg" alt="明太子・魚漬・海産品">
+            </a>
+          </div>
+          <p class="item__name">明太子・魚漬・<br class="brTb">海産品</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-01">
+              <div class="item__rankingLabel">
+                <div class="item__rankingLabel__image">
+                  <img src="/d_images/campaign/summergift2025/icon-number02.svg" alt="2" />
+                </div>
+                <p class="item__rankingLabel__text">昨年人気2位</p>
+              </div>
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_sweets.jpg" alt="洋菓子・アイスクリーム">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_sweets_sp.jpg" alt="洋菓子・アイスクリーム">
+            </a>
+          </div>
+          <p class="item__name">洋菓子・<br class="brTb">アイスクリーム</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-09">
+              <div class="item__rankingLabel">
+                <div class="item__rankingLabel__image">
+                  <img src="/d_images/campaign/summergift2025/icon-number03.svg" alt="3" />
+                </div>
+                <p class="item__rankingLabel__text">昨年人気3位</p>
+              </div>
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_beer.jpg" alt="ビール">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_beer_sp.jpg" alt="ビール">
+            </a>
+          </div>
+          <p class="item__name">ビール</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-02">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_wagashi.jpg" alt="和菓子">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_wagashi_sp.jpg" alt="和菓子">
+            </a>
+          </div>
+          <p class="item__name">和菓子</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-07">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_ham.jpg" alt="加工肉・精肉">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_ham_sp.jpg" alt="加工肉・精肉">
+            </a>
+          </div>
+          <p class="item__name">加工肉・精肉</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-04">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_drink.jpg" alt="飲料・コーヒー・紅茶・日本茶">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_drink_sp.jpg" alt="飲料・コーヒー・紅茶・日本茶">
+            </a>
+          </div>
+          <p class="item__name item__name--coffee">飲料・コーヒー・<br />紅茶・日本茶</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-10">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_sake.jpg" alt="洋酒・日本酒・焼酎・ワイン">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_sake_sp.jpg" alt="洋酒・日本酒・焼酎・ワイン">
+            </a>
+          </div>
+          <p class="item__name">洋酒・日本酒・<br class="pcNone"><br class="brMax1370">焼酎・ワイン</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-05">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_noodle.jpg" alt="麺">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_noodle_sp.jpg" alt="麺">
+            </a>
+          </div>
+          <p class="item__name">麺</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-03">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_fruit.jpg" alt="フルーツ">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_fruit_sp.jpg" alt="フルーツ">
+            </a>
+          </div>
+          <p class="item__name">フルーツ</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-08">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_souzai.jpg" alt="惣菜">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_souzai_sp.jpg" alt="惣菜">
+            </a>
+          </div>
+          <p class="item__name">惣菜</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-11">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_umeboshi.jpg" alt="梅干">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_umeboshi_sp.jpg" alt="梅干">
+            </a>
+          </div>
+          <p class="item__name">梅干</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-12">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_kanbutsu.jpg" alt="乾物・吸物・佃煮">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_kanbutsu_sp.jpg" alt="乾物・吸物・佃煮">
+            </a>
+          </div>
+          <p class="item__name">乾物・吸物・佃煮</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-13">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_can.jpg" alt="缶詰・ホテル缶">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_can_sp.jpg" alt="缶詰・ホテル缶">
+            </a>
+          </div>
+          <p class="item__name">缶詰・ホテル缶</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-15">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_oil.jpg" alt="食用油・調味料">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_oil_sp.jpg" alt="食用油・調味料">
+            </a>
+          </div>
+          <p class="item__name">食用油・調味料</p>
+        </div>
+        <div class="item text-center">
+          <div class="item__image">
+            <a class="linkHover" href="/goods/list.html?cid=summer_gift-item-16">
+              <img class="spNone" src="/d_images/campaign/summergift2025/item_living.jpg" alt="リビング">
+              <img class="pcNone" src="/d_images/campaign/summergift2025/item_living_sp.jpg" alt="リビング">
+            </a>
+          </div>
+          <p class="item__name">リビング</p>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <div class="button">
+          <a class="linkHover" href="/goods/list.html?cid=summer_gift-item">送料無料のアイテム<span class="spNone">　</span><br class="pcNone">すべての商品を見る</a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <a class="linkHover" href="/goods/list.html?cid=summer_gift-santyoku">
+          <img class="spNone" src="/d_images/campaign/summergift2025/bnr_santyoku.jpg" alt="全国の美味しいをお届け！送料込産地直送グルメ 詳細を見る" />
+          <img class="pcNone" src="/d_images/campaign/summergift2025/bnr_santyoku_sp.jpg" alt="全国の美味しいをお届け！送料込産地直送グルメ 詳細を見る" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /送料無料のアイテムから選ぶ -->
+
+<!-- 予算から選ぶ -->
+<div class="vw100-content vw100-content--price">
+  <div class="vw100-content__inner">
+    <div id="selectPrice" class="section section--price">
+      <div class="heading heading--main-content">
+        <h3>予算<span class="small">から選ぶ</span></h3>
+      </div>
+      <div class="body">
+          <ul class="price-list">
+            <li class="price-item">
+              <a class="linkHover" href="/goods/list.html?cid=summer_gift-price-01">
+                <span class="baseline"><span class="small">～税込</span>3,000
+                  <span class="small">円</span>
+                </span>
+              </a>
+            </li>
+            <li class="price-item">
+              <a class="linkHover" href="/goods/list.html?cid=summer_gift-price-02">
+                <span class="baseline"><span class="small">税込</span>3,001
+                  <span class="small">円</span>～4,000
+                  <span class="small">円</span>
+                </span>
+              </a>
+            </li>
+            <li class="price-item">
+              <a class="linkHover" href="/goods/list.html?cid=summer_gift-price-03">
+                <span class="baseline"><span class="small">税込</span>4,001
+                  <span class="small">円</span>～5,000
+                  <span class="small">円</span>
+                </span>
+              </a>
+            </li>
+            <li class="price-item">
+              <a class="linkHover" href="/goods/list.html?cid=summer_gift-price-04">
+                <span class="baseline"><span class="small">税込</span>5,001
+                  <span class="small">円</span>～10,000
+                  <span class="small">円</span>
+                </span>
+              </a>
+            </li>
+            <li class="price-item">
+              <a class="linkHover" href="/goods/list.html?cid=summer_gift-price-05">
+                <span class="baseline"><span class="small">税込</span>10,001
+                  <span class="small">円</span>～
+                </span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /予算から選ぶ -->
+<style>
+    .bodyOpen .section--free-shipping .item__rankingLabel {z-index: 0;}
+    .bodyOpen .summergiftRankingSwiper .swiper-wrapper {z-index: 0;}
+</style>
